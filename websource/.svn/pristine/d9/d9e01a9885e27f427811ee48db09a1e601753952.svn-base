@@ -1,0 +1,26 @@
+
+<style>
+    p{
+        display:inline;         /*去掉p标签的独占一行*/
+    }
+
+</style>
+
+
+<?php $newid=$row["id"]; if(!$row['K']) { ?>
+<dt class="num"><?php if($row['seq']) {  ?><font size="3"> {$row['seq']} : </font><?php } ?>   {$row['stem']}
+
+    <input type="button" value="信息编辑"  class="btn btn-blue pdt_5 blank25" default-status="1" onclick="return _asr.popupFun('<?php echo U("/Home/Question/index?func=edit_base&id=$newid"); ?>', '<?php echo filterFuncId("/Home/Question/index?func=edit_base&id=$newid","");?>'); " /></dt>
+
+<?php } else { ?>
+
+<?php if($row['seq']) { ?><dt class="num"><b>{$row['seq']}.</b></dt><?php } ?>
+{$row['stem']}
+<?php } ?>
+<?php if(!$row['K']) { ?>
+<dt class="num"><?php if($row['seq']) { ?><b>{$row['seq']}.</b><?php } ?>{$row['stem']}</dt>
+<?php } else { ?>
+<?php if($row['seq']) { ?><dt class="num"><b>{$row['seq']}.</b></dt><?php } ?>
+{$row['stem']}
+<?php } ?>
+{$row['stem']}

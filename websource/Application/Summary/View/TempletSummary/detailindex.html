@@ -1,0 +1,63 @@
+{__NOLAYOUT__}
+<tr style="display:" detail="1" id="{$funcid}-detail">
+  <td colspan="99" style="padding:0;">
+  <!-- 明细表 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table-in ta-tr-hover" style=" width:100%;">
+      <colgroup>
+        <col style="width: 40px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 150px ;">
+        <col style="width: 150px ;">
+        <col style="width:auto" >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>序号</th>
+          <th class=" abe-txtl ">模板编码</th>
+          <th>类型</th>
+          <th>题号</th>
+          <th>分数</th>
+          <th>要求类型</th>
+          <th class=" abe-txtl ">要求知识点</th>
+          <th class=" abe-txtl ">要求题型</th>
+          <th>套题小题数</th>
+          <th>套题小题号</th>
+          <th>抽取要求</th>
+          <th>创建时间</th>
+          <th>修改时间</th>
+          <th/>
+      </tr>
+      <?php foreach($list as $detail_key=>$detail): $detail_mod = ($di % 2 );++$di;?>
+      <tr <?php if(($detail_mod) == "1"): ?>class="even"<?php endif; if(($detail_mod) == "0"): ?>class="odd"<?php endif; ?>>
+        <td class="align=c"><?php echo $di."."; ?></td>
+        <td class=" abe-txtl "><a href="javascript:void(0);" class="vi-blue"  onclick="return _asr.openLink('<?php echo U("/Home/Templet/index?func=view&no=$detail[templet_no]"); ?>','<?php echo filterFuncId( U("/Home/Templet/index?func=view&no=$detail[templet_no]") ,"");?>', '组卷模板详情' ,0); " ><?php echo $detail["templet_no"]; ?></a></td>
+        <td><?php echo get_table_TempletDetail_type("$detail[type]","name","") ; ?></td>
+        <td><?php echo system_format("N3", $detail["seq"],1); ?></td>
+        <td><?php echo system_format("N3", $detail["score"],1); ?></td>
+        <td><?php echo get_table_TempletDetail_req_type("$detail[req_type]","name","") ; ?></td>
+        <td class=" abe-txtl "><?php echo $detail["req_category_name"]; ?></td>
+        <td class=" abe-txtl "><?php echo subcode_view('question:kind',$detail['req_kind']) ; ?></td>
+        <td><?php echo $detail["req_child_count"]; ?></td>
+        <td><?php echo get_table_TempletDetail_req_child_seq("$detail[req_child_seq]","name","") ; ?></td>
+        <td><?php echo get_table_TempletDetail_extract("$detail[extract]","name","") ; ?></td>
+        <td><?php echo system_format("DT", $detail["create_time"],1); ?></td>
+        <td><?php echo system_format("DT", $detail["modify_time"],1); ?></td>
+        <td/>
+     </tr>
+     <?php endforeach; ?>
+     </tbody>
+     </table>
+
+     </td>
+  </tr>
+
+

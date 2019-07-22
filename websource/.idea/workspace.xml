@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="349fefa6-e52d-47c8-a709-10d0d46bf7a9" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pcwebsource" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Summary/View/QuestionSummary/detailarea1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Question/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4692">
+              <caret line="204" column="53" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Question/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="48" column="117" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="117" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#li#7;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#li#7;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#li#8;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#li#9;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PopupController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14237">
+              <caret line="619" selection-start-line="619" selection-end-line="619" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Popup/QuestionCategoryTree.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleNodeSummary/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3105">
+              <caret line="135" column="103" selection-start-line="135" selection-start-column="103" selection-end-line="135" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+              <folding>
+                <element signature="e#63#99#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleSummary/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="178" column="97" selection-start-line="178" selection-end-line="179" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleUserSummary/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Role/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>卷面要求</find>
+      <find>标题</find>
+      <find>编辑题库信息</find>
+      <find>showview2</find>
+      <find>save</find>
+      <find>cattext</find>
+      <find>$model</find>
+      <find>设问</find>
+      <find>rolling-news</find>
+      <find>答案纸</find>
+      <find>答案纸预览</find>
+      <find>showanswer</find>
+      <find>showanalysis</find>
+      <find>answ</find>
+      <find>tab_an</find>
+      <find>tab_a</find>
+      <find>CheckDefine</find>
+      <find>转</find>
+      <find>选择上级</find>
+      <find>edit_base</find>
+      <find>edit</find>
+      <find>vieq</find>
+      <find>绑</find>
+      <find>view</find>
+      <find>转无效</find>
+      <find>知识点码</find>
+      <find>$colshow</find>
+      <find>与模板</find>
+      <find>用户</find>
+      <find>角色</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>companyid</replace>
+      <replace>company_user</replace>
+      <replace>company_id</replace>
+      <replace>user</replace>
+      <replace>selectUser</replace>
+      <replace>{$funcid}_user</replace>
+      <replace>{$funcid}_company</replace>
+      <replace>_pid</replace>
+      <replace>bollow_reason</replace>
+      <replace>-keyword-div</replace>
+      <replace>-keyword-search</replace>
+      <replace>_searchbutts</replace>
+      <replace>Trade</replace>
+      <replace>DayPrice</replace>
+      <replace>贸易链</replace>
+      <replace>物品</replace>
+      <replace>did</replace>
+      <replace>pbtxt-sm</replace>
+      <replace>pbtxt-60</replace>
+      <replace>f7d6d4e3</replace>
+      <replace>b6ebf7</replace>
+      <replace>]</replace>
+      <replace>[</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\webproject\maduo\pcwebsource\Application\Home</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Public/Home/style/reset.css" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/TempletDetailController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Conf/db_config.php" />
+        <option value="$PROJECT_DIR$/Application/Summary/Conf/db_config.php" />
+        <option value="$PROJECT_DIR$/ccc.php" />
+        <option value="$PROJECT_DIR$/hhh.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2_tk.html" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/User/add.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Templet/view.html" />
+        <option value="$PROJECT_DIR$/Public/css/admin/style/index1.css" />
+        <option value="$PROJECT_DIR$/Public/css/admin/style/index.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2_zw.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Role/add.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2_tk.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Role/view.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2_yd.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2_xz.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2_yd.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2_zw.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2_header.html" />
+        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2_header.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2_xz.html" />
+        <option value="$PROJECT_DIR$/Application/Common/Common/dropdown.php" />
+        <option value="$PROJECT_DIR$/haha.md" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ExamDetail/view2.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/add.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/import.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/view2.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/RoleNode/selectUser.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/RoleNode/edit.html" />
+        <option value="$PROJECT_DIR$/Public/css/Common/xindex.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Question/add.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/view.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ExamController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/view2_tk.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/view2.html" />
+        <option value="$PROJECT_DIR$/Public/css/Common/exam.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/tab_analysis.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/tab_answer.html" />
+        <option value="$PROJECT_DIR$/explain.md" />
+        <option value="$PROJECT_DIR$/digui.php" />
+        <option value="$PROJECT_DIR$/pp.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Exam/view2_header.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/QuestionCategoryController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Summary/View/QuestionCategorySummary/index.html" />
+        <option value="$PROJECT_DIR$/Application/Summary/View/RoleNodeSummary/index.html" />
+        <option value="$PROJECT_DIR$/Application/Summary/Controller/RoleNodeSummaryController.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="e061631b-16cb-4c7a-b26e-3fff3f995668" name="super" port="8080" />
+      <server host="PhpStorm 2019.1" id="3fff4a33-f604-457f-af9f-37bcc63fc57a" name="PhpStorm 2019.1" port="6142" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpXdebugProxy" ide_key="phpStorm " host="localhost " port="80" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Role" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Summary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="websource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websource" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Summary" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Public/css/admin/style" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\project\exploitproject\exploit1\websource\Public\css\admin\style" />
+      <recent name="C:\xampp\htdocs\project\exploitproject\exploit1\websource\Public\css\admin\js" />
+      <recent name="C:\xampp\htdocs\project\exploitproject\exploit1\websource\Public\javascript" />
+      <recent name="C:\xampp\htdocs\project\project2\websource\Application\Home\Widget" />
+      <recent name="D:\webproject\maduo\pcwebsource\Application\Home\View\Trade" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Web Page.Super">
+    <configuration name="ccc.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:50996/websource/ccc.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="cdd.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websource/cdd.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="digui.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:15038/websource/digui.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="hhh.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websource/hhh.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="pp.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:55335/websource/pp.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Super" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="super">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.ccc.php" />
+      <item itemvalue="JavaScript Debug.cdd.php" />
+      <item itemvalue="JavaScript Debug.hhh.php" />
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="JavaScript Debug.digui.php" />
+      <item itemvalue="JavaScript Debug.pp.php" />
+      <item itemvalue="PHP Web Page.Super" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.pp.php" />
+        <item itemvalue="JavaScript Debug.digui.php" />
+        <item itemvalue="JavaScript Debug.hhh.php" />
+        <item itemvalue="JavaScript Debug.cdd.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration useDefault="false">C:\Users\Super\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="349fefa6-e52d-47c8-a709-10d0d46bf7a9" name="Default" comment="" />
+      <created>1547728580783</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547728580783</updated>
+      <workItem from="1547728582106" duration="29622000" />
+      <workItem from="1548400057668" duration="1036000" />
+      <workItem from="1548672922233" duration="3963000" />
+      <workItem from="1548744381381" duration="3036000" />
+      <workItem from="1548831264329" duration="1242000" />
+      <workItem from="1548911622490" duration="11801000" />
+      <workItem from="1549015997521" duration="6600000" />
+      <workItem from="1549517049200" duration="14913000" />
+      <workItem from="1549888037063" duration="19718000" />
+      <workItem from="1550304828820" duration="4232000" />
+      <workItem from="1550381146410" duration="1543000" />
+      <workItem from="1550465947183" duration="13664000" />
+      <workItem from="1550819261725" duration="2778000" />
+      <workItem from="1550898149022" duration="1332000" />
+      <workItem from="1551085173953" duration="4164000" />
+      <workItem from="1551248696502" duration="29100000" />
+      <workItem from="1552023601965" duration="24366000" />
+      <workItem from="1552285571580" duration="9212000" />
+      <workItem from="1552362948325" duration="22000" />
+      <workItem from="1552366388156" duration="12861000" />
+      <workItem from="1552456814469" duration="11708000" />
+      <workItem from="1552627617477" duration="596000" />
+      <workItem from="1553322587972" duration="16000" />
+      <workItem from="1553322625625" duration="2692000" />
+      <workItem from="1553357024587" duration="18750000" />
+      <workItem from="1553485669902" duration="19437000" />
+      <workItem from="1553674189499" duration="13088000" />
+      <workItem from="1553694762779" duration="1332000" />
+      <workItem from="1553736069103" duration="32938000" />
+      <workItem from="1553822456898" duration="26547000" />
+      <workItem from="1553851191258" duration="43000" />
+      <workItem from="1553851252204" duration="8917000" />
+      <workItem from="1554026115627" duration="31195000" />
+      <workItem from="1554125616073" duration="1373000" />
+      <workItem from="1554128780303" duration="537000" />
+      <workItem from="1554167053441" duration="40593000" />
+      <workItem from="1554254776192" duration="34019000" />
+      <workItem from="1554291309278" duration="2293000" />
+      <workItem from="1554293620101" duration="57000" />
+      <workItem from="1554293693611" duration="76000" />
+      <workItem from="1554293795484" duration="4834000" />
+      <workItem from="1554341758212" duration="20989000" />
+      <workItem from="1554370448969" duration="1639000" />
+      <workItem from="1554372687637" duration="361000" />
+      <workItem from="1554373066642" duration="6279000" />
+      <workItem from="1554687786029" duration="29298000" />
+      <workItem from="1554731240079" duration="407000" />
+      <workItem from="1554773422021" duration="31162000" />
+      <workItem from="1554860375496" duration="30942000" />
+      <workItem from="1554906580061" duration="609000" />
+      <workItem from="1554945528944" duration="19000" />
+      <workItem from="1554945564442" duration="725000" />
+      <workItem from="1554946380541" duration="31600000" />
+      <workItem from="1555033133581" duration="20496000" />
+      <workItem from="1555291360409" duration="26117000" />
+      <workItem from="1555377320842" duration="6310000" />
+      <workItem from="1555393029098" duration="14371000" />
+      <workItem from="1555464409526" duration="29570000" />
+      <workItem from="1555497275144" duration="2481000" />
+      <workItem from="1555499844917" duration="248000" />
+      <workItem from="1555500112653" duration="393000" />
+      <workItem from="1555500525353" duration="576000" />
+      <workItem from="1555501121836" duration="703000" />
+      <workItem from="1555552194995" duration="10131000" />
+      <workItem from="1555569408093" duration="12680000" />
+      <workItem from="1555582452957" duration="225000" />
+      <workItem from="1555582692843" duration="4249000" />
+      <workItem from="1555637552367" duration="8864000" />
+      <workItem from="1555652411657" duration="7877000" />
+      <workItem from="1555663542083" duration="553000" />
+      <workItem from="1555664111791" duration="416000" />
+      <workItem from="1555664544876" duration="5337000" />
+      <workItem from="1555687350285" duration="567000" />
+      <workItem from="1555768297433" duration="84000" />
+      <workItem from="1555895599102" duration="25448000" />
+      <workItem from="1555983580744" duration="29272000" />
+      <workItem from="1556069799328" duration="55000" />
+      <workItem from="1556069869717" duration="527000" />
+      <workItem from="1556070412365" duration="13650000" />
+      <workItem from="1556155098083" duration="25109000" />
+      <workItem from="1556245066988" duration="8581000" />
+      <workItem from="1556415025773" duration="7840000" />
+      <workItem from="1556502491864" duration="15465000" />
+      <workItem from="1556588044433" duration="13458000" />
+      <workItem from="1557022605445" duration="7000" />
+      <workItem from="1557040009331" duration="5860000" />
+      <workItem from="1557105695311" duration="7817000" />
+      <workItem from="1557154854012" duration="642000" />
+      <workItem from="1557193424624" duration="1026000" />
+      <workItem from="1557198510160" duration="1394000" />
+      <workItem from="1557282368605" duration="2206000" />
+      <workItem from="1557391573523" duration="599000" />
+      <workItem from="1557453033882" duration="2075000" />
+      <workItem from="1557482584659" duration="667000" />
+      <workItem from="1557484003864" duration="243000" />
+      <workItem from="1558323265887" duration="821000" />
+      <workItem from="1558513824449" duration="1813000" />
+      <workItem from="1558590801361" duration="1528000" />
+      <workItem from="1558679693324" duration="2383000" />
+      <workItem from="1558684297662" duration="1745000" />
+      <workItem from="1558942375544" duration="2045000" />
+      <workItem from="1559116847392" duration="744000" />
+      <workItem from="1559202186602" duration="925000" />
+      <workItem from="1559203127015" duration="109000" />
+      <workItem from="1559203249487" duration="268000" />
+      <workItem from="1559203531095" duration="905000" />
+      <workItem from="1559204449332" duration="599000" />
+      <workItem from="1559699672837" duration="605000" />
+      <workItem from="1559715561762" duration="234000" />
+      <workItem from="1559720996370" duration="129000" />
+      <workItem from="1559728760524" duration="5572000" />
+      <workItem from="1559787534687" duration="8134000" />
+      <workItem from="1560158894662" duration="280000" />
+      <workItem from="1560245088915" duration="1639000" />
+      <workItem from="1560422076888" duration="2464000" />
+      <workItem from="1560476335616" duration="1850000" />
+      <workItem from="1560504665618" duration="2368000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="951625000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7677054" visible="true" weight="0.23458445" />
+      <window_info id="Structure" order="1" sideWeight="0.23229462" side_tool="true" visible="true" weight="0.23458445" />
+      <window_info id="Favorites" order="2" sideWeight="0.5552408" side_tool="true" weight="0.17024128" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3380481" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.1898017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="SmartIM" order="6" sideWeight="0.49932975" weight="0.43564355" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32956153" />
+      <window_info anchor="bottom" id="运行" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.4348442" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32956153" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="15" sideWeight="0.49932975" weight="0.32956153" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3297587" />
+      <window_info anchor="right" id="Key Promoter X" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/websource$ccc_php.dat" NAME="ccc.php Coverage Results" MODIFIED="1555497422769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/tab_answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/css/Common/exam.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ExamController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="1443" column="33" selection-start-line="1443" selection-start-column="33" selection-end-line="1443" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/RoleNode/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="98" column="15" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Question/import.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="136" column="42" lean-forward="true" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ExamDetail/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_dx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_img.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_xz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_yd.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_zw.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1255">
+          <caret line="294" column="17" selection-start-line="294" selection-start-column="17" selection-end-line="294" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_extra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_extra2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Exam/view2_tk.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/Controller/QuestionSummaryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digui.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/Controller/SubcodeSummaryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/TempletDetail/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/Controller/QuestionCategorySummaryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Controller.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/App.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Db/Driver.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="1137" column="5" lean-forward="true" selection-start-line="1137" selection-start-column="5" selection-end-line="1137" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Think.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="263" column="20" lean-forward="true" selection-start-line="263" selection-start-column="20" selection-end-line="263" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/BasicController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../exploit3/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/QuestionCategory/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/QuestionCategory/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="307" column="34" lean-forward="true" selection-start-line="307" selection-start-column="34" selection-end-line="307" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionCategoryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/QuestionSummary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/QuestionCategorySummary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2438">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/QuestionSummary/detailindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/Controller/RoleNodeSummaryController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/SystemParameterController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10028">
+          <caret line="437" selection-start-line="437" selection-end-line="437" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Lite/Controller.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/QuestionSummary/detailarea1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Question/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4692">
+          <caret line="204" column="53" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Question/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" column="117" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#li#7;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#li#7;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#li#8;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#li#9;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PopupController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14237">
+          <caret line="619" selection-start-line="619" selection-end-line="619" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Popup/QuestionCategoryTree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleNodeSummary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="135" column="103" selection-start-line="135" selection-start-column="103" selection-end-line="135" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/QuestionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#63#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleSummary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="178" column="97" selection-start-line="178" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Summary/View/RoleUserSummary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Role/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

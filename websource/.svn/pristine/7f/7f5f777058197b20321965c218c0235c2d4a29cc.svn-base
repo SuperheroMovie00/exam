@@ -1,0 +1,63 @@
+{__NOLAYOUT__}
+<div style="display:" detail="1" id="{$funcid}">
+  <div class="wnb-title"><span class="tit">题库</span></div>
+    <div class="table-box">
+      <div class="table-in">
+  <!-- 明细表 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table-in ta-tr-hover" style=" width:100%;">
+      <colgroup>
+        <col style="width: 40px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width: 100px ;">
+        <col style="width: 100px ;">
+        <col style="width: 100px ;">
+        <col style="width:auto" >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>序号</th>
+          <th>状态</th>
+          <th>类型</th>
+          <th class=" abe-txtl ">编码</th>
+          <th class=" abe-txtl ">知识点</th>
+          <th class=" abe-txtl ">题型</th>
+          <th class=" abe-txtl ">题干</th>
+          <th class=" abe-txtl ">设问</th>
+          <th class=" abe-txtl ">答案</th>
+          <th class=" abe-txtl ">解析</th>
+          <th/>
+      </tr>
+      <?php foreach($list as $detail_key=>$detail): $detail_mod = ($di % 2 );++$di;?>
+      <tr <?php if(($detail_mod) == "1"): ?>class="even"<?php endif; if(($detail_mod) == "0"): ?>class="odd"<?php endif; ?>>
+        <td class="align=c"><?php echo $di."."; ?></td>
+        <td><?php echo get_table_Question_status("$detail[status]","name","") ; ?></td>
+        <td><?php echo get_table_Question_type("$detail[type]","name","") ; ?></td>
+        <td class=" abe-txtl "><a href="javascript:void(0);" class="vi-blue"  onclick="return _asr.openLink('<?php echo U("/Home/Question/index?func=view&id=$detail[id]"); ?>','<?php echo filterFuncId( U("/Home/Question/index?func=view&id=$detail[id]") ,"");?>', '<?php echo tabTitle("题库","$detail[code]") ; ?>' ,0); " ><?php echo $detail["code"]; ?></a></td>
+        <td class=" abe-txtl "><?php echo $detail["category_name"]; ?></td>
+        <td class=" abe-txtl "><?php echo subcode_view('question:kind',$detail['kind']) ; ?></td>
+        <td class=" abe-txtl "><?php echo OverView($detail["stem"],100,"..."); ?></td>
+        <td class=" abe-txtl "><?php echo OverView($detail["quiz"],100,"..."); ?></td>
+        <td class=" abe-txtl "><?php echo OverView($detail["answer"],100,"..."); ?></td>
+        <td class=" abe-txtl "><?php echo OverView($detail["analysis"],100,"..."); ?></td>
+        <td/>
+     </tr>
+     <?php endforeach; ?>
+     </tbody>
+     </table>
+
+        </div>
+      </div>
+
+      <div class="data-oper" >
+          <?php echo $page; ?>
+      </div>
+
+  </div>
+</div>
+
+

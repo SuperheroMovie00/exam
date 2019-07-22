@@ -1,0 +1,10 @@
+<?php if(!$row['K']) { ?>
+<dt class="num"><b>{$row['seq']}.</b>{$row['question_stem']}</dt>
+<?php } else { ?>
+<dt class="num"><b>{$row['seq']}.</b></dt>
+<dd class="describe">
+    <div class="des-info">
+        {$row['question_stem']}
+    </div>
+</dd>
+<?php } ?>

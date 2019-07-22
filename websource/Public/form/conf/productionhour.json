@@ -1,0 +1,161 @@
+{
+  "id": {
+    "label": "生产工时单",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+"production_no": {
+    "label": "计划单号",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Production','ProductionAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty"]
+  },
+  "assign_no": {
+    "label": "计划分配号",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_customize_id|#table#,###,assign_no,#self_id#","maxLength|###,100"]
+  },
+  "department_code": {
+    "label": "生产部门代码",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Department','DepartmentAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "source_no": {
+    "label": "来源单据",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+ "work_type": {
+    "label": "用工类型",
+    "input": {
+      "type": "select",
+      "datasource": "",
+      "value": {
+        "": "请选择",
+        "1": "设备",
+        "0": "人员"
+      },
+      "default_value": "0"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "using_time": {
+    "label": "使用时间",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+  "act_hour": {
+    "label": "实际工时",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+  
+  "status": {
+    "label": "状态",
+    "input": {
+      "type": "select",
+      "datasource": "table_ProductionHour_status",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "order_no": {
+    "label": "工时单号",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+  
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+ }

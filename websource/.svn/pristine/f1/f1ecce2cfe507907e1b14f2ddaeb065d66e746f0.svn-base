@@ -1,0 +1,75 @@
+{
+  "id": {
+    "label": "参数",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "代码",
+    "require": false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "description": {
+    "label": "名称",
+    "require": false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "value": {
+    "label": "参数值",
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "remarks": {
+    "label": "说明",
+    "require": false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

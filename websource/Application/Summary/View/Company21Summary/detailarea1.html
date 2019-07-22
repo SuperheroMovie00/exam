@@ -1,0 +1,82 @@
+{__NOLAYOUT__}
+<div style="display:" detail="1" id="{$funcid}">
+  <div class="wnb-title"><span class="tit">公司用户</span></div>
+    <div class="table-box">
+      <div class="table-in">
+  <!-- 明细表 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table-in ta-tr-hover" style=" width:100%;">
+      <colgroup>
+        <col style="width: 40px ;">
+        <col style="width: 60px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width:auto" >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>序号</th>
+          <th>操作</th>
+          <th>status</th>
+          <th>公司</th>
+          <th>用户</th>
+          <th>部门</th>
+          <th>级别</th>
+          <th>操作</th>
+          <th/>
+      </tr>
+      <?php foreach($list as $detail_key=>$detail): $detail_mod = ($di % 2 );++$di;?>
+      <tr <?php if(($detail_mod) == "1"): ?>class="even"<?php endif; if(($detail_mod) == "0"): ?>class="odd"<?php endif; ?> onclick=" _asr.loadData('<?php echo "$pfuncid"; ?>_detailarea2','<?php echo U("/Home/user/index?func=view&id=$detail[user_id]") ; ?>','<?php echo "$pfuncid"; ?>_detailarea2'); return false;">
+        <td class="align=c"><?php echo $di."."; ?></td>
+        <td>
+          <?php if (isset($rights['master_unlock']) && $rights['master_unlock']): ?>
+          <?php if ($master['id']==1): ?>
+               <input type="button" value="解锁" class="btn btn-xs btn-blue " onclick="return _asr.confirm('确认操作', '请确认是否解锁?', '<?php echo "用户=$master[name]"; ?>', '<?php echo U("/Home/user/index?func=unlock&id=$master[user_id]") ; ?>','',''); " />
+          <?php endif; ?>
+          <?php endif; ?></td>
+        <td></td>
+        <td><?php echo get_table_Company_byID("$detail[company_id]","name","") ; ?></td>
+        <td><?php echo get_table_User_byID("$detail[user_id]","name","") ; ?>
+          <?php if (isset($rights['master_unlock']) && $rights['master_unlock']): ?>
+          <?php if ($master['id']==1): ?>
+               <input type="button" value="解锁" class="btn btn-xs btn-blue " onclick="return _asr.confirm('确认操作', '请确认是否解锁?', '<?php echo "用户=$master[name]"; ?>', '<?php echo U("/Home/user/index?func=unlock&id=$master[user_id]") ; ?>','',''); " />
+          <?php endif; ?>
+          <?php endif; ?></td>
+        <td><?php echo get_table_Department_byID("$detail[department_id]","name","") ; ?></td>
+        <td><?php echo get_table_CompanyUser_level("$detail[level]","name","0") ; ?></td>
+        <td><?php echo "xxxx"; ?>
+          <?php if (isset($rights['master_unlock']) && $rights['master_unlock']): ?>
+          <?php if ($master['id']==1): ?>
+               <input type="button" value="解锁" class="btn btn-xs btn-blue " onclick="return _asr.confirm('确认操作', '请确认是否解锁?', '<?php echo "用户=$master[name]"; ?>', '<?php echo U("/Home/user/index?func=unlock&id=$master[user_id]") ; ?>','',''); " />
+          <?php endif; ?>
+          <?php endif; ?></td>
+        <td/>
+     </tr>
+     <?php endforeach; ?>
+     </tbody>
+     </table>
+
+        </div>
+      </div>
+
+      <div class="data-oper" >
+          <?php echo $page; ?>
+      </div>
+
+  </div>
+</div>
+
+    <script>
+        /***************************************************************************************/
+        /* 页面初始化                                                                      */
+        /***************************************************************************************/
+        function <?php echo $funcid; ?>_init(_id){
+           if($("#<?php echo $funcid; ?>").find("tr").size() > 1) {
+            $("#<?php echo $funcid; ?>").find("tr").eq(1).trigger("click")
+           }
+        }
+    </script>
+

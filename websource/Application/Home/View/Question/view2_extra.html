@@ -1,0 +1,12 @@
+<dd>
+    <span class="show answer">
+        <?php if($row['answer']){ ?>     <!--判断解析存在的时候显示解析-->
+        <font color="red" size="4">答案：</font> <font size="4">{$row['answer']}</font><br>
+        <?php } ?>
+    </span>
+    <span class="show analysis">
+    <?php if($row['analysis']){ ?>     <!--判断解析存在的时候显示解析-->
+        <font color="red" size="4">解析：</font>  <font size="3">{$row['analysis']}</font>
+        <?php } ?>
+    </span>
+</dd>

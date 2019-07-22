@@ -1,0 +1,55 @@
+{__NOLAYOUT__}
+<div class="prompt-pop pop-style2" id="{$funcid}" style="z-index:{$zindex}">
+	<input type="hidden" name="selecttype" value="{$selecttype}" />
+  <div class="title"><span class="pop-name">选择生产计划信息</span><a href="javascript:void(0);" class="close iconfont" onclick="_asr.closePopup('{$funcid}');">&#xe60d;</a> </div>
+  <div class="pop-scroll">
+   <div class="table-box">
+    <div class="table-in">
+      <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+        <colgroup>
+        <col style="width:40px;"/>
+        <col style="width:150px;"/>
+        <col style="width:150px;"/>
+        <col style="width:150px;"/>
+        <col style="width:150px;"/>
+        <col style="width:150px;"/>
+        <col style="width:150px;"/>
+        </colgroup>
+        <tbody>
+          <tr class="odd">
+            <th>选择</th>
+            <th class="abe-txtl">生产计划单</th>
+            <th class="abe-txtl">生产计划名称</th>
+            <th class="abe-txtl">来源单据</th>
+            <th class="abe-txtl">商品编码</th>
+            <th class="abe-txtl">计划数量</th>
+            <th class="abe-txtl">计划工时</th>
+
+          </tr>
+          <volist name="popupdata" id="item" mod="2" >
+          <tr class="<if condition="$mod eq 0">even<else />odd</if>">
+            <td><input j='<?php echo json_encode($item); ?>' type="<if condition="strtolower($selecttype) eq 'multi'">checkbox<else />radio</if>" name="code[]" show="{$item['name']}" value="{$item['order_no']}"></td>
+            <td class="abe-txtl">{$item['order_no']}</td>
+            <td class="abe-txtl">{$item['name']}</td>
+            <td class="abe-txtl">{$item['source_no']}</td>
+            <td class="abe-txtl">{$item['goods_no']}</td>
+            <td class="abe-txtl">{$item['plan_qty']}</td>
+            <td class="abe-txtl">{$item['plan_hour']}</td>
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+    <div class="blank15"></div>
+    <?php echo $page; ?>
+    <div class="blank15"></div>
+    
+  </div>
+  </div>
+   <div class="pop-sub abe-txtc">
+    <input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+  <script>
+  </script>
+</div>  

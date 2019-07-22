@@ -1,0 +1,137 @@
+{
+  "id": {
+    "label": "设备",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },  
+  "code": {
+    "label": "设备代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "设备名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+     "update":true,
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,100"]
+  },  
+  "content": {
+    "label": "设备描述",
+    "require": false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "type": {
+    "label": "设备类型",
+    "require": true,
+    "input": {
+      "type": "select",
+      "value": {
+        "1": "生产",
+        "0": "其他"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },  
+  "last_time": {
+    "label": "上次保养",
+    "require":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":true,
+    "verify": []
+  },
+  "next_time": {
+    "label": "下次保养",
+    "require":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":true,
+    "verify": []
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

@@ -1,0 +1,18 @@
+<style>
+    p{
+        display:inline;
+    }
+</style>
+
+
+
+<?php $newid=$row["id"]; if(!$row['K']) { ?>
+<dt class="num"> <?php if($row['seq']!=0) { ?><font size="3"> {$row['seq']} :</font> <?php } ?>  {$row['stem']}
+    <input type="button" value="信息编辑"  class="btn btn-blue pdt_5 blank25" default-status="1" onclick="return _asr.popupFun('<?php echo U("/Home/Question/index?func=edit_base&id=$newid"); ?>', '<?php echo filterFuncId("/Home/Question/index?func=edit_base&id=$newid","");?>'); " /></dt>
+
+<?php } else { ?>
+{$row['question_stem']}
+<?php } ?>
+
+
+

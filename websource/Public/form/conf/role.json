@@ -1,0 +1,55 @@
+{
+  "id": {
+    "label": "角色",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "name": {
+    "label": "角色",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,20"]
+  },
+  "pid": {
+    "label": "父层",
+    "display":false,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Role','RoleAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "status": {
+    "label": "状态",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "remark": {
+    "label": "备注",
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  }
+}
+

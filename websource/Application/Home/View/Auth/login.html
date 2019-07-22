@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>登录</title>
+<link type="text/css" rel="stylesheet" href="/Public/css/Common/index.css">
+<link type="text/css" rel="stylesheet" href="/Public/css/Common/reset.css">
+
+<script type="text/javascript" src="/Public/javascript/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/Public/javascript/common.js"></script>
+<script type="text/javascript" src="/Public/javascript/Lucky.js"></script>
+<script type="text/javascript" src="/Public/form/js/basic.js"></script>
+<script type="text/javascript" src="/Public/javascript/foundation-datepicker.min.js"></script>
+</head>
+
+<body>
+<div class="prompt-pop oper-pop ok-pop error-pop" style="display:none;z-index:300000000" id="message">
+  <div class="title">
+    <span class="pop-name"></span>
+    <a href="javascript:void(0);" class="close iconfont confirm-cancel">&#xe60d;</a>
+  </div>
+  <div class="oper-info">
+    <div><i class="iconfont">&#xe614;</i><span></span></div>
+    <p></p>
+  </div>
+  <div class="oper-sub abe-txtc pdt_30">
+    <input type="button" value="确定" class="btn btn-org mrg_10 message-ok">
+  </div>
+</div>
+<div class="login-box">
+  <div class="login-pop">
+  <form action="__URL__/loginAct" id ="form_id" method="post">
+    <ul>
+      <li class="logo abe-txtc"><img src="/Public/css/images/logo-lg.png" alt=""></li>
+      <li><i class="iconfont">&#xe61a;</i>
+        <input name="username" type="text" class="txt" placeholder="请输入账号">
+      </li>
+      <li><i class="iconfont">&#xe61b;</i>
+        <input name="password" type="password" class="txt" placeholder="请输入密码">
+      </li>
+    <li><i class="iconfont">&#xe60c;</i><a href="javascript:void(0);"  class="login-code"><img alt="验证码" src="{:U('Home/Auth/verify_captcha')}" title="点击刷新" onclick="changeCaptcha(this);"></a>
+        <input name="captcha" type="text" class="txt" placeholder="请输入验证码">
+ 
+      <li class="keep abe-txtr"><input type="checkbox" class="mrg_10">记住用户名</li>
+      <?php if(!isset($download) || $download != 1) { ?>
+      <li >
+        <input type="submit" id="loginbutton" class="btn " onclick="return _asr.submit('', 'form_id', '__URL__/loginAct');" value="登录">
+      </li>
+      <?php } ?>
+
+      <!--      <li class="abe-txtc lg-faq"><a href="#">忘记密码？</a><a href="#">修改密码</a></li>
+      -->
+
+      <li class="keep abe-txtr" >
+      <a class="abe-gray3" href="/Public/help/createshortcut.html" >将网站添加到桌面方法</a>
+      </li >
+
+</ul>
+</form>
+
+  </div>
+  <div class="icp">版权所有  Copyright <em class="abe-space2">&copy;</em> 2010-2017 上海联朝网络科技有限公司
+   </div>
+</div>
+<?php if($download == 1) { ?>
+  <div class="prompt-pop error-pop browser-pop" style="">
+    <div class="title">
+      <span class="pop-name">重要提示</span>
+      <a href="javascript:void(0);" class="close iconfont confirm-cancel"></a>
+    </div>
+    <div class="oper-info pdt_50 pdb_50 mtg_15">
+      <div class=""><i class="iconfont"></i><span>当前浏览器非系统指定浏览器！</span></div>
+      <ul class="abe-ft18 abe-txtl pdt_50 pdl_30">
+        <li class="pdb_15">当前浏览器非系统指定浏览器，不同浏览器可能会由于版本高低而引发系统运行错误！<br>推荐使用谷歌浏览器运行, 您可以按以下方法进行安装：</li>
+        <li class="pdb_15">方法一：如果您的电脑上有"360软件管家"，您可以在软件管家的"浏览器"分组内，<br><span style="display: inline-block; width: 70px;"></span>选择安装“谷歌浏览器稳定版”, 此版本比较适合您的电脑系统。</li>
+        <li>方法二：您还可以通过下面的链接，安装低版本通用谷歌浏览器。</li>
+      </ul>
+    </div>
+    <div class="oper-sub abe-txtc pdb_50">
+      <a href="javascript:void(0);" class="close btn btn-org mrg_10 confirm-cancel">我去360软件管家内下载</a><span style="display: inline-block; width: 50px;"></span>
+      <a href="http://106.14.62.211:8192/Uploads/Chrome_Google_v49.0.2623.112.exe" class="btn btn-org mrg_10 message-ok">点击下载通用谷歌浏览器</a>
+    </div>
+  </div>
+<?php } ?>
+
+</body>
+
+<script>
+   function login_redirect(){
+       window.location.href="/index.php/Home/Index/index";
+   }
+
+    function changeCaptcha(o){
+        $(o).attr('src',"{:U('Home/Auth/verify_captcha')}"+'?m='+Math.random());
+    }
+
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $('.prompt-pop').each(function() {
+            var pop_width = -$(this).outerWidth()/2;
+            pop_height = -$(this).outerHeight()/2;
+            $(this).css({'margin-left':pop_width,'margin-top':pop_height});
+        });
+        //alert($('.prompt-pop').height())
+
+        // if($.browser.msie){
+        //     if($.browser.version<9){
+        //         $(".browser-pop").show();
+        //         _loginbutton = $("#loginbutton");
+        //         _loginbutton.unbind('click');
+        //     }
+        // }
+        $(".browser-pop .close").click(function(){
+            $(this).parents(".browser-pop").hide();
+        });
+
+    });
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+[ 2019-04-10T09:48:58+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-04-10T14:27:44+08:00 ] ::1 /Uploads/2019-04-09/5cac44f97727d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+ERR: 无法加载模块:Uploads
+
+[ 2019-04-10T14:27:48+08:00 ] ::1 /Uploads/2019-04-09/5cac3ac5ebdc5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+ERR: 无法加载模块:Uploads
+

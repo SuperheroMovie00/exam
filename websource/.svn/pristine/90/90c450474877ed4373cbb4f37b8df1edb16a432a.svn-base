@@ -1,0 +1,125 @@
+<?php
+namespace Home\Controller;
+use Common\Common\CURDTools;
+class RoleController extends BasicController {
+    public function load(){
+        $id=intval(I("get.id"));
+        $curd=new CURDTools();
+        $r=$curd->getToJSONDataQuick("role","id=$id");
+
+        echo $r;
+    }
+
+    public function save(){
+        $curd=new CURDTools();
+
+		$luckyId=I("post.lucky_form_id");
+        $data=array(
+		'status'  =>I("post.{$luckyId}_status"),
+		'remark'  =>I("post.{$luckyId}_remark"),
+		'pid'  =>I("post.{$luckyId}_pid"),
+		'id'  =>I("post.{$luckyId}_id"),
+		'name'  =>I("post.{$luckyId}_name"),
+
+        );
+
+
+
+
+        $curd->setToJSONDataQuick('role',$data,'',function(){
+        	S('Role',NULL);
+        });
+    }
+
+    public function view(){
+        $id=intval(I("get.id"));
+        $curd=new CURDTools();
+        $r=$curd->getToJSONDataQuick("role","id=$id");
+		
+		$r=json_decode($r);
+        
+        foreach ($r as $k=>$v) {
+            $v->readonly=true;
+        }
+
+		$r=json_encode($r);
+
+        echo $r;
+    }
+
+    public function saveRoleShop(){
+        $id=I("post.id");
+        $sid=I("post.shop_id");
+        $model=M('role_shop');
+        $model->startTrans();
+        $result=true;
+
+        $sid=trim($sid,',');
+        $sid=explode(',',$sid);
+
+        $rs=$model->where("role_id='%d'",array($id))->find();
+        if(!empty($rs))
+            $result = $result && $model->where("role_id='%d'",array($id))->delete();
+
+        if($result===0)
+            $result=true;
+
+        foreach ($sid as $v) {
+            $result = $result && $model->add(array('shop_id'=>$v,'role_id'=>$id));
+        }
+
+
+
+        if($result){
+            $model->commit();
+            echo json_encode(array('is_err'=>0,'msg'=>'保存成功'));
+
+        }else{
+            $model->rollback();
+            echo json_encode(array('is_err'=>1,'msg'=>'保存失败'));
+        }
+    }
+
+    public function saveRoleUser(){
+        $id=I("post.id");
+        $sid=I("post.user_id");
+        $model=M('role_user');
+        $model->startTrans();
+        $result=true;
+
+        $sid=trim($sid,',');
+        $sid=explode(',',$sid);
+
+        $rs=$model->where("role_id='%d'",array($id))->find();
+        if(!empty($rs))
+            $result = $result && $model->where("role_id='%d'",array($id))->delete();
+
+        if($result===0)
+            $result=true;
+
+        foreach ($sid as $v) {
+            $result = $result && $model->add(array('user_id'=>$v,'role_id'=>$id));
+        }
+
+
+
+        if($result){
+            $model->commit();
+            echo json_encode(array('is_err'=>0,'msg'=>'保存成功'));
+
+        }else{
+            $model->rollback();
+            echo json_encode(array('is_err'=>1,'msg'=>'保存失败'));
+        }
+    }
+
+    public function del(){
+        $id=intval(I("get.id"));
+        $curd=new CURDTools();
+        $r=$curd->del("role","id=$id");
+        S('Role',NULL);
+
+    }
+	
+
+}

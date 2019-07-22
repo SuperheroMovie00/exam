@@ -1,0 +1,196 @@
+{__NOLAYOUT__}
+<div toplayer="1" class="prompt-pop pop-style3" style="z-index:{$zindex};width:800px;" id="<?php echo $funcid;?>" url="<?php echo U('Department/index'); ?>">
+
+   <div class="title">
+       <span class="pop-name"><?php echo $search[id]?'编辑':'新增'; ?>部门信息信息</span>
+       <a href="javascript:void(0);" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" class="close iconfont">&#xe60d;</a>
+   </div>
+
+
+<div class="pop-scroll">
+   <div class="screening ">
+      <form action="<?php echo U('Department/index?func=save'); ?>" id="<?php echo "$funcid"; ?>-Search" method="get">
+          <input type="hidden" name="<?php echo "$funcid"; ?>-last-url" id="<?php echo "$funcid"; ?>-last-url" value="<?php echo $__last_url; ?>" />
+          <input type="hidden" name="funcid" value="<?php echo "$funcid"; ?>" />
+          <input type="hidden" name="pfuncid" value="<?php echo "$pfuncid"; ?>" />
+          <input type="hidden" name="id" value="<?php echo $search["id"]; ?>" />
+          <input type="hidden" name="_lastchanged" value="<?php echo $search["lastchanged"]; ?>" />
+          <ul class="form form-mod-new form-column2">
+
+             <li>
+                  <div class="unit-left"><span class="tit"> 选择公司<em class="abe-red mrg_5">*</em></span></div>
+                  <div class="unit-mid">
+                       <div class="dropdown" id="{$funcid}_company_id">
+                           <select class="pbsele dropdown0" name="company_id">
+                             <?php
+                                $keyvalue = table_Company();
+                                if(is_array($keyvalue)){
+                                    $i = 0; $__LIST__ = $keyvalue;  ?>
+                                    <?php foreach($__LIST__ as $key=>$item): ++$i; ?>
+                                 <option value="<?php echo $item['id']; ?>" <?php if($item['id'] == $search['company_id']): ?> selected="selected" <?php endif;?>><?php echo $item['name']; ?></option>
+                                    <?php endforeach; ?>
+                             <?php } ?>
+                           </select>
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 代码<em class="abe-red mrg_5">*</em></span></div>
+                  <div class="unit-mid">
+                       <div class="textbox">
+                            <input type="text" class="pbtxt txt0" name="code"  value="<?php echo $search['code']; ?>"  >
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 名称<em class="abe-red mrg_5">*</em></span></div>
+                  <div class="unit-mid">
+                       <div class="textbox">
+                            <input type="text" class="pbtxt txt0" name="name"  value="<?php echo $search['name']; ?>"  >
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 选择上级</span></div>
+                  <div class="unit-mid">
+                       <div class="dropdown" id="{$funcid}_parent_id">
+                           <select class="pbsele dropdown0" name="parent_id">
+                             <?php
+                                $keyvalue = table_Department();
+                                if(is_array($keyvalue)){
+                                    $i = 0; $__LIST__ = $keyvalue;  ?>
+                                    <?php foreach($__LIST__ as $key=>$item): ++$i; ?>
+                                 <option value="<?php echo $item['id']; ?>" <?php if($item['id'] == $search['parent_id']): ?> selected="selected" <?php endif;?>><?php echo $item['name']; ?></option>
+                                    <?php endforeach; ?>
+                             <?php } ?>
+                           </select>
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 层级</span></div>
+                  <div class="unit-mid">
+                       <div class="textbox">
+                            <input type="text" class="pbtxt txt0" name="level"  value="<?php echo $search['level']; ?>"  >
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 排序</span></div>
+                  <div class="unit-mid">
+                       <div class="textbox">
+                            <input type="text" class="pbtxt txt0" name="sort"  value="<?php echo $search['sort']; ?>"  >
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+             <li>
+                  <div class="unit-left"><span class="tit"> 选择状态<em class="abe-red mrg_5">*</em></span></div>
+                  <div class="unit-mid">
+                       <div class="dropdown" id="{$funcid}_status">
+                           <select class="pbsele dropdown0" name="status">
+                             <?php
+                                $keyvalue = table_Department_status();
+                                if(is_array($keyvalue)){
+                                    $i = 0; $__LIST__ = $keyvalue;  ?>
+                                    <?php foreach($__LIST__ as $key=>$item): ++$i; ?>
+                                 <option value="<?php echo $item['id']; ?>" <?php if($item['id'] == $search['status']): ?> selected="selected" <?php endif;?>><?php echo $item['name']; ?></option>
+                                    <?php endforeach; ?>
+                             <?php } ?>
+                           </select>
+                       </div>
+                      <div class="prompt" style="display:none">
+                          <div class="error"><i class="iconfont">&#xe616;</i></div>
+                      </div>
+                  </div>
+             </li>
+
+          </ul>
+       </form>
+    </div>
+ </div>
+    <div class="pop-sub abe-txtc" >
+               <input type="button" value="保存" class="btn btn-org mrg_10 " default-status="1" onclick="return _asr.submit('<?php echo "$funcid"; ?>', '<?php echo "$funcid"; ?>-Search', '<?php echo U("/Home/Department/index?func=save&id=$search[id]") ; ?>',''); " />
+               <input type="button" value="取消" class="btn btn-blue mrg_10 " onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" default-status="1" />
+    </div>
+
+</div>
+
+    <script>
+
+        function <?php echo $funcid; ?>_chooseDate(o) {
+            if($('.date').length>0)
+                pickmeup('.date').destroy();
+            $('.date').removeClass('date')
+            $(o).addClass('date');
+            pickmeup('.date', {
+                format  : 'Y-m-d',
+                date : $(o).val(),
+                hide_on_select : true,
+                locale : 'zh'
+            }).show();
+        }
+
+        $('.calendar0,.calendar1').on('click',function(){
+            <?php echo $funcid; ?>_chooseDate(this)
+        });
+
+
+        /***************************************************************************************/
+        /* 前台页面初始化                                                                      */
+        /***************************************************************************************/
+        function <?php echo $funcid; ?>_init(_id){
+            return ;
+        }
+
+        /***************************************************************************************/
+        /* 前台页面清除                                                                      */
+        /***************************************************************************************/
+        function <?php echo $funcid; ?>_clearsearch(_frm){
+
+            _asr.setvaluebyname(_frm,"company_id", "" );
+            _asr.setvaluebyname(_frm,"code", "" );
+            _asr.setvaluebyname(_frm,"name", "" );
+            _asr.setvaluebyname(_frm,"parent_id", "" );
+            _asr.setvaluebyname(_frm,"level", "" );
+            _asr.setvaluebyname(_frm,"sort", "" );
+            _asr.setvaluebyname(_frm,"status", "" );
+
+
+          $("#{$funcid}").find(".selebtn").each(function(){
+              $(this).find("a:eq(0)").click();
+            });
+
+          $("#{$funcid} .city-tags-new .sele-remove").click();
+        }
+
+   function <?php echo $funcid;?>_callback(param){
+        _asr.closePopup('{$funcid}');
+   }
+
+
+
+    {:W('Summary/javascript',array('Department'))}
+
+
+
+    </script>
+
+

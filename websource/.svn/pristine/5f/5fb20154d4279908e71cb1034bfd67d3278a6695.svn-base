@@ -1,0 +1,3 @@
+<dl class="que-item">
+    <dt class="num"><b>{$row['seq']}.</b>{$row['stem']}</dt>
+</dl>

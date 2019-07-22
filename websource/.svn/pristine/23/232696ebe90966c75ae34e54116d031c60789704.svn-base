@@ -1,0 +1,59 @@
+{__NOLAYOUT__}
+<div class="qmod-bd">
+    <div class="qmod">
+
+
+
+
+
+        <?php foreach($detail as $row) { ?>
+
+        <?php if($row['type']=='1'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h1 class="font-xst">
+                <?php if($row['subject'] != "") { ?>{$row['subject']}（标准答案）<?php } ?>
+            </h1>
+        </div>
+        <?php } ?>
+
+        <?php  if($row['type']=='2'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h2 class="font-ht">
+                <?php if($row['subject'] != "") { ?>{$row['subject']}<?php } ?>
+            </h2>
+        </div>
+        <?php } ?>
+
+        <?php   if($row['type']=='3'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h3 class="font-xst">
+                <?php if($row['subject'] != "") { ?>{$row['subject']}<?php } ?>
+            </h3>
+        </div>
+        <?php } ?>
+
+        <?php if($row['type']=='6'){ ?>
+        <div class="mod-num font-ht">
+            <?php if($row['subject'] != "") { ?>{$row['subject']}<?php } ?>
+        </div>
+        <?php } ?>
+
+
+        <?php if($row['type']=='7'){ ?>
+        <div class="qid">
+            <?php if($row['subject'] != "") { ?>{$row['subject']}<?php } ?>
+        </div>
+        <?php } ?>
+
+
+
+        <?php if($row['question_answer']) { ?>
+
+        <span>({$row['seq']}) {$row['question_answer']}</span>
+
+
+
+        <?php } ?>
+        <?php } ?>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+{__NOLAYOUT__}
+<div class="table-in" id="{$pfuncid}_question" style="height:300px">
+<include file="Question:view2" />
+</div>

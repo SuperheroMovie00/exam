@@ -1,0 +1,110 @@
+{__NOLAYOUT__}
+<div toplayer="1" class="wrap-box wrap-pb2" id="<?php echo $funcid;?>" summaryid="RoleNode" baseurl="<?php echo U('RoleNode/index'); ?>">
+    <div class="wrap-box-info">
+    <div class="wrap-title abe-ofl">
+        <div class="tit abe-fl">维护角色组权限 - <?php echo $role['name']; ?></div>
+        <div class="abe-fr">
+        </div>
+   </div>
+
+    <div class="table-box">
+        <div class="table-in">
+            <form action="<?php echo U('RoleNode/index?func=save'); ?>" id="<?php echo "$funcid"; ?>-Search" method="get">
+            <input type="hidden" name="<?php echo "$funcid"; ?>-last-url" id="<?php echo "$funcid"; ?>-last-url" value="<?php echo $__last_url; ?>" />
+            <input type="hidden" name="funcid" value="<?php echo "$funcid"; ?>" />
+            <input type="hidden" name="pfuncid" value="<?php echo "$pfuncid"; ?>" />
+            <input type="hidden" name="role_id" value="<?php echo $id; ?>" />
+            <table border="0" cellspacing="0" cellpadding="0" class="pub-table-set">
+                <thead>
+                <tr>
+                    <th>一级菜单</th><th>二级菜单</th><th>三级菜单</th><th>具体功能</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php $n1_last_title="";$n2_last_title=""; ?>
+                <?php foreach($n3 as $k3=>$v3){ ?>
+                <?php $n2=$n2_list[$v3['pid']]; $n1=$n1_list[$n2['pid']]; ?>
+                <tr class="<?php if($k3%2==0){ ?> odd <?php } ?>">
+                    <?php if(isset($n1)){ ?>
+                    <td>
+                        <?php if($n1_last_title!=$n1['id']){ ?>
+                        <?php  $n1_last_title=$n1['id']; ?>
+                        <input type="checkbox" name="node_id[]" <?php if(in_array($n1['id'],$node_id_list)){ ?> checked <?php } ?> data-parent="0" data-child="{:count($n2)}" onclick="<?php echo "$funcid"; ?>_chooseRole(this);"  value="{$n1['id']}" />{$n1['title']}
+                        <?php } ?>
+                    </td>
+                    <?php } ?>
+
+                    <?php if(isset($n2)){ ?>
+                    <td>
+                        <?php if($n2_last_title!=$n2['id']){ ?>
+                        <?php  $n2_last_title=$n2['id']; ?>
+                        <div>
+                            <input type="checkbox" name="node_id[]" <?php if(in_array($n2['id'],$node_id_list)){ ?> checked <?php } ?> data-parent="{$n2['pid']}" data-child="{:count($n3)}" value="{$n2['id']}" onclick="<?php echo "$funcid"; ?>_chooseRole(this);" />{$n2['title']}
+                        </div>
+                        <?php } ?>
+                    </td>
+                    <?php } ?>
+
+                    <td>
+                        <div ><input type="checkbox" <?php if(in_array($v3['id'],$node_id_list)){ ?> checked <?php } ?> name="node_id[]" data-parent="{$v3['pid']}" data-child="{:count($v4)}" value="{$v3['id']}" onclick="<?php echo "$funcid"; ?>_chooseRole(this);" />{$v3['title']}</div>
+                    </td>
+                    <td>
+                        <?php foreach($n4 as $k4=>$v4){ ?>
+                        <?php if($v4['pid']==$v3['id']){ ?>
+                        <div ><input type="checkbox" <?php if(in_array($v4['id'],$node_id_list)){ ?> checked <?php } ?> name="node_id[]" value="{$v4['id']}" data-parent="{$v4['pid']}" data-child="0" onclick="<?php echo "$funcid"; ?>_chooseRole(this);" />{$v4['title']}</div>
+                        <?php } ?>
+                        <?php } ?>
+                    </td>
+                </tr>
+                <?php } ?>
+
+                </tbody>
+            </table>
+            </form>
+            <div class="blank10"></div>
+        </div></div>
+    </div>
+    <div class="blank10"></div>
+    <div class="data-oper abe-txtc" >
+        <!-- 按钮权限检测 保存 --->
+        <?php if (isset($rights['save']) && $rights['save']): ?>
+        <input type="button" value="保存" class="btn btn-blue mrg_10" default-status="1" onclick="return _asr.submit('<?php echo "$funcid"; ?>', '<?php echo "$funcid"; ?>-Search', '<?php echo U("/Home/RoleNode/index?func=save&") ?>',''); " />
+        <?php endif; ?>
+        <em class="abe-space-sm"></em>
+        <input type="button" value="清除" class="btn btn-org mrg_10"  onclick="return clear('<?php echo "$funcid"; ?>-Search');" default-status="1" />
+        <input type="button" value="全选" class="btn btn-org mrg_10" onclick="" />
+    </div>
+</div>
+
+<script>
+    //@ sourceURL=dynamicScript.js
+
+    function parentUnChecked(node){
+        var parent=node.val();
+        if(parent!="0"){
+            $("[data-parent='"+parent+"']").each(function(i,e){
+                $(e).attr("checked",false);
+                parentUnChecked($(e))
+            });
+        }
+    }
+
+    function parentChecked(node){
+        var parent=node.attr("data-parent");
+        $("input[name='node_id[]'][value="+node.attr("data-parent")+"]").attr("checked",true)
+        if(parent!="0"){
+            parentChecked($("input[name='node_id[]'][value="+node.attr("data-parent")+"]"));
+        }
+    }
+
+    function <?php echo "$funcid"; ?>_chooseRole(o){
+        var node=$(o)
+        if(node.is(':checked')){
+            parentChecked(node);
+        }else{
+            parentUnChecked(node)
+        }
+    }
+
+
+</script>

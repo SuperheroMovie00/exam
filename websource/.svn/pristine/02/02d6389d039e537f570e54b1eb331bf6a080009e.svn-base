@@ -1,0 +1,10 @@
+{
+  "error": {
+    "label": "",
+    "input": {
+      "type": "html",
+      "default_value": ""
+    },
+    "verify": []
+  }
+}

@@ -1,0 +1,13 @@
+{$row['question_stem']}     <!--题干 -->
+{$row['question_description']}
+<?php if($row['question_kind']!='xz' && $row['question_kind']!='dx'){ ?><!--当题型不为选择或这多选的时候显示答案解析-->
+
+<span class="show" style="display: none">  <font color="red" size="4">答案：</font> <font size="4">{$row['question_answer']}</font><br></span>
+
+<span class="show" style="display: none">
+        <?php if($row['question_analysis']){ ?>     <!--判断解析存在的时候显示解析-->
+        <font color="red" size="4">解析：</font>  <font size="3">{$row['question_analysis']}</font>
+    <?php } ?>
+    </span>
+
+<?php } ?>

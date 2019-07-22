@@ -1,0 +1,25 @@
+{__NOLAYOUT__}
+<div class="qmod-bd">
+<div class="qmod qmod-mg0">
+    <?php foreach($items as $row) { ?>
+    <dl class="que-item">
+        <include file="Question:view2_header" />
+        <dd>
+            <?php if($row['kind'] == 'xz') { ?>
+            <include file="Question:view2_xz" />
+            <?php } elseif($row['kind'] == 'tk') { ?>
+            <include file="Question:view2_tk" />
+            <?php } elseif($row['kind'] == 'dx') { ?>
+            <include file="Question:view2_dx" />
+            <?php } elseif($row['kind'] == 'yd') { ?>
+            <include file="Question:view2_yd" />
+            <?php } elseif($row['kind'] == 'zw') { ?>
+            <include file="Question:view2_zw" />
+            <?php } ?>
+            <input type="button" value="信息编辑"  class="btn btn-blue pdt_5 blank25" default-status="1" onclick="return _asr.popupFun('<?php echo U("/Home/Question/index?func=edit_base&id=$row[id]"); ?>', '<?php echo filterFuncId("/Home/Question/index?func=edit_base&id=$row[id]","");?>'); " />
+        </dd>
+        <include file="Question:view2_extra"/>
+    </dl>
+    <?php } ?>
+</div>
+</div>

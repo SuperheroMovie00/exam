@@ -1,0 +1,43 @@
+{__NOLAYOUT__}
+<div class="prompt-pop pop-style2" id="{$funcid}" style="z-index:{$zindex}">
+	<input type="hidden" name="selecttype" value="{$selecttype}" />
+  <div class="title"><span class="pop-name">选择分组信息</span><a href="javascript:void(0);" class="close iconfont" onclick="_asr.closePopup('{$funcid}');">&#xe60d;</a> </div>
+  <div class="pop-scroll">
+   <div class="table-box">
+    <div class="table-in">
+      <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+        <colgroup>
+        <col style="width:40px;"/>
+        <col style="width:150px;"/>
+        </colgroup>
+        <tbody>
+          <tr class="odd">
+            <th>选择</th>
+            <th class="abe-txtl">分组代码</th>
+            <th class="abe-txtl">分组名称</th>
+
+          </tr>
+          <volist name="popupdata" id="item" mod="2" >
+          <tr class="<if condition="$mod eq 0">even<else />odd</if>">
+            <td><input j='<?php echo json_encode($item); ?>' type="<if condition="strtolower($selecttype) eq 'multi'">checkbox<else />radio</if>" name="code[]" value="{$item['code']}" show="{$item['name']}"></td>
+            <td class="abe-txtl">{$item['code']}</td>
+            <td class="abe-txtl">{$item['name']}</td>
+
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+    <div class="blank15"></div>
+    <?php echo $page; ?>
+    <div class="blank15"></div>
+    
+  </div>
+  </div>
+   <div class="pop-sub abe-txtc">
+    <input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+  <script>
+  </script>
+</div>  

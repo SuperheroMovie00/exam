@@ -1,0 +1,66 @@
+{__NOLAYOUT__}
+<div class="prompt-pop pop-style2" id="{$funcid}" style="z-index:{$zindex}">
+	<input type="hidden" name="selecttype" value="{$selecttype}" />
+  <div class="title"><span class="pop-name">选择规格(尺码)信息</span><a href="javascript:void(0);" class="close iconfont" onclick="_asr.closePopup('{$funcid}');">&#xe60d;</a> </div>
+  <div class="pop-scroll">
+    <div class="screening  mtg_10 pdl_20">
+        <form id="<?php echo "$funcid"; ?>-Style2-Select-Search" action="{:U('/Home/Popup/index?func=Style2')}" method="get">
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="zindex" value="{$zindex}" />
+        <input type="hidden" name="selecttype" value="{$selecttype}" />
+        <input type="hidden" name="value" value="<?php echo join(',',$value); ?>" />
+        <ul class="form form-mod-new">
+            <li class="per100">
+                <div class="unit-left"><span>输入搜索尺码</span></div>
+                <div class="item">
+                    <div class="txt-box abe-fl">
+                        <input type="text" name="code" value="{$code}" class="txt">
+                    </div>
+                    <input type="submit" value="搜索" class="btn btn-org btn-sm mlg_10 abe-fl" onclick="return _asr.submit('<?php echo $funcid;?>', this, '')">
+        	          <input type="button" value="清除" class="btn btn-blue btn-sm mlg_10 abe-fl" onclick="return <?php echo "$funcid"; ?>_clearsearch('<?php echo "$funcid"; ?>-Style2-Select-Search');">
+                </div>
+            </li>
+        </ul>
+        </form>
+    </div>
+   <div class="table-box">
+    <div class="table-in">
+      <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+        <colgroup>
+            <col style="width:50px;"/>
+            <col style="width:150px;"/>
+            <col style="width:auto;"/>
+        </colgroup>
+        <tbody>
+          <tr class="odd">
+            <th>选择</th>
+            <th class="abe-txtl">尺码代码</th>
+            <th class="abe-txtl">尺码名称</th>
+
+          </tr>
+          <volist name="popupdata" id="item" mod="2" >
+          <tr class="<if condition="$mod eq 0">even<else />odd</if>">
+            <td><input j='<?php echo json_encode($item); ?>' type="<if condition="strtolower($selecttype) eq 'multi'">checkbox<else />radio</if>" <if condition="in_array($item['id'],$value)">checked</if> name="code[]" value="{$item['code']}" show="{$item['name']}"></td>
+            <td class="abe-txtl">{$item['code']}</td>
+            <td class="abe-txtl">{$item['name']}</td>
+
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+    <div class="blank15"></div>
+    <?php echo $page; ?>
+    <div class="blank15"></div>
+  </div>
+  </div>
+   <div class="pop-sub abe-txtc">
+    <input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+  <script>
+  function <?php echo $funcid; ?>_clearsearch(_frm){
+	  _asr.setvaluebyname(_frm,"code", "" );
+  }  
+  </script>
+</div>  

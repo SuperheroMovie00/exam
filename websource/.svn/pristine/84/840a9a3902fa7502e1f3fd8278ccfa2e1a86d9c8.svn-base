@@ -1,0 +1,161 @@
+{__NOLAYOUT__}
+<div class="prompt-pop" data-type="detail_add" id="<?php echo $funcid ?>" style="z-index: {$zindex}" funcid="{$funcid}" >
+  <div class="title">
+  	<span class="pop-name">选择商品</span>
+  	<a href="javascript:void(0);" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" class="close iconfont">&#xe60d;</a>
+   </div>
+  <div class="trees-box">
+    <div> <!-- class="trees-info" -->
+      <div class="screening treesorder">
+      <form id="<?php echo "$funcid"; ?>-selectProduct-Search" action="{:U('/Home/Popup/index?func=SelectProduct&ordertype='.$ordertype)}" method="get">
+	      <input type="hidden" name="id" value="{$orderid}" />
+	      <input type="hidden" name="funcid" value="{$funcid}" />
+          <input type="hidden" name="zindex" value="{$zindex}" />
+          <input type="hidden" name="category_code" value="{$search['category_code']}">
+        <ul class="form form-style1">
+            <li> <span class="tit">商品编码</span>
+                <div class="item">
+                    <div class="txt-box">
+                        <input type="text" name="goods_no" value="{$search['goods_no']}" class="txt">
+                    </div>
+                </div>
+            </li>
+            <li> <span class="tit">商品条码</span>
+                <div class="item">
+                    <div class="txt-box">
+                        <input type="text" name="barcode" value="{$search['barcode']}" class="txt">
+                    </div>
+                </div>
+            </li>
+            <li><span class="tit">商品名称</span>
+                <div class="item">
+                    <div class="txt-box">
+                        <input type="text" name="name" value="{$search['name']}" class="txt">
+                        <button type="submit" class="txt-search"><i class="iconfont">&#xe60e;</i></button>
+                    </div>
+                </div>
+            </li>
+            <li><span class="tit">商品分类</span>
+                <div class="item">
+                    <div class="txt-box">
+                        <input type="text" name="category_code_name" value="{$search['category_code_name']}" class="txt">
+                        <button type="button" class="txt-search" onclick="return _asr.popup('Category','<?php echo "$funcid"; ?>','<?php echo "$funcid"; ?>-StockAdjust-selectProduct-Search','Single','category_code','category_code_name'); "><i class="iconfont">&#xe60e;</i></button>
+                        <button type="submit" class="txt-clear" onclick="_asr.setvaluebyname('<?php echo "$funcid"; ?>-StockAdjust-selectProduct-Search','category_code','');_asr.setvaluebyname('<?php echo "$funcid"; ?>-StockAdjust-selectProduct-Search','category_code_name','');return false;" <?php if($search['category_code_name']===""): ?> style="display:none"<?php endif; ?> ><i class="iconfont">&#xe616;</i></button>
+                    </div>
+                </div>
+            </li>
+            <li><span class="tit">仓库</span>
+                <div class="item">
+                  <div class="txt-box">
+                  	<input type="hidden" name="storage_code" value="{$search['storage_code']}" />
+                    <input  type="text" class="txt" name="storage_code_name" readonly="readonly" value="<?php echo $search['storage_code_name']; ?>">
+                    <button type="button" class="txt-search" onclick="return _asr.popup('Storage','<?php echo "$funcid"; ?>','<?php echo "$funcid"; ?>','Single','storage_code','storage_code_name'); "><i class="iconfont">&#xe60e;</i></button>
+                  </div>
+                </div>
+            </li>            
+        </ul>
+        <!--筛选表单-->
+        <div class="tress-sub abe-txtc">
+          <input type="submit" value="搜索" class="btn btn-org btn-sm mrg_10" onclick="return _asr.submit('<?php echo $funcid;?>', this, '')">
+          <input type="button" value="清除"  class="btn btn-blue btn-sm mrg_10" onclick="return <?php echo "$funcid"; ?>_clearsearch('<?php echo "$funcid"; ?>-selectProduct-Search');">
+        </div>
+        </form>
+      </div>
+      <div class="table-box">
+        <div class="table-in" style="height: 300px;">
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="p" value="{$p}" />
+            <input type="hidden" name="zindex" value="{$zindex}" />
+          <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+            <colgroup>
+            <col style="width:40px;">
+            <col style="width:80px;">
+            <col style="width:100px;">
+            <col style="width:100px;">
+            <col style="width:80px;">
+            <col style="width:100px;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>商品编码</th>
+                <th>商品名称</th>
+                <th>商品条码</th>
+                <th>商品分类</th>
+                <th>品牌</th>
+                <th>单价</th>
+                <th>库存</th>
+                <th>数量</th>
+				<th>单价</th>
+                  <if condition="(in_array($ordertype,array('stockadjust','stockin','stockout')))">
+                      <th>库位</th>
+                  </if>
+              </tr>
+              <volist name="list"  id="item" mod="2">
+              	<tr class="<eq name="mod" value="1">even<else/>odd</eq>">
+              		<td><input j  type="checkbox" name="id[]"  value="{$item["id"]}" <if condition="$item['detail_qty'] gt 0" > checked </if> /></td>
+              		<td><a href="<?php echo U("/Home/Goods/index?func=view&no=$item[goods_no]") ?>','<?php echo filterFuncId("/Home/Goods_view","no=$item[goods_no]");?>"  target="_blank" class="vi-blue"  >{$item["goods_no"]}</a></td>
+              		<td>
+                    <div class="newline">
+                        {$item["name"]}
+                    </div>              		
+              		</td>
+              		<td>
+              			{$item["barcode"]}
+              		</td>
+					<td>{$item['category_code']|get_table_Category="name"}</td>
+					<td>{$item['brand_code']|get_table_Brand="name"}</td>
+					<td>{$item["sell_price"]}<input type="hidden" class="pbtxt" name="price_{$item['id']}" value="{$item["sell_price"]}" /></td>
+					<td><span class="vi-org">{$item['cur_qty']}</span></td>
+					<td><div class="pro-num"><input type="text" class="pbtxt" name="qty_{$item['id']}" value="{$item['detail_qty']}"></div></td>					              		
+	                <td>
+	                <div class="pro-num">
+	                <input type="text" class="pbtxt"   value="{$item['detail_price']}" name="price_{$item['id']}">
+	                </div>
+                    <if condition="(in_array($ordertype,array('stockadjust','stockin','stockout')))">
+                        <td>
+                            <div class="pro-num">
+                                <select class="pbtxt" name="storage_location_{$item['id']}">
+                                    <foreach name="storage_location" item="sl">
+                                        <option <if condition="($item['location_code'] eq $sl['code'])">selected</if> value="{$sl['code']}">[{$sl['code']}]{$sl['name']}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </td>
+                    </if>
+	                </td>
+              	</tr> 
+              </volist>  
+            </tbody>
+          </table>
+        </div>
+          <div class="blank15"></div>
+          <?php echo $page; ?>
+          <div class="blank15"></div>
+      </div>
+    </div>
+  </div>
+  <div class="pop-sub abe-txtc">
+	<input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+</div>
+<script>
+	function <?php echo $funcid ?>_init() {
+		var _this = $("#<?php echo $funcid ?>");
+		var ppw = _this.width()/2;
+		_this.css({'margin-left':-ppw});
+	}
+	 function <?php echo $funcid; ?>_clearsearch(_frm){
+         _asr.setvaluebyname(_frm,"goods_no", "" );
+         _asr.setvaluebyname(_frm,"barcode", "" );
+         _asr.setvaluebyname(_frm,"category_code", "" );
+         _asr.setvaluebyname(_frm,"category_code_name", "" );
+         _asr.setvaluebyname(_frm,"storage_code", "" );
+         _asr.setvaluebyname(_frm,"storage_code_name", "" );
+        // _asr.clearCheck("{$funcid}_storage_code");		 
+	 }
+	function <?php echo $funcid ?>_refresh() {
+		_asr.submit('<?php echo $funcid;?>', $("#<?php echo $funcid ?>").find("form").eq(1), '');
+	}
+</script>

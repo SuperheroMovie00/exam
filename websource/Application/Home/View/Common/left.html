@@ -1,0 +1,84 @@
+
+  <nav class="nav"> <a href="javascript:void(0);" class="logo"></a>
+  	<ul class="par-menu">
+        <li class="active" id="menu">
+        	<a href="javascript:void(0);" class="show-nav"><div class="item"><i class="iconfont">&#xe60c;</i><em><?php if(count($f_menu) > 0) echo $f_menu[0]["title"]; else echo "菜单" ?></em></div></a>
+        	<i class="iconfont hidico" id="hid-btn">&#xe617;</i>
+            <ul>
+                <foreach name="f_menu" item="vo" >
+                    <?php if (!($vo['is_admin'] == 1 && session(C("USER_AUTH_KEY"))!='admin')){ ?>
+                    <li data-value="{$vo['id']}" ><a href="javascript:void(0);"><i class="iconfont">{$vo['ico']}</i><em>{$vo['title']}</em></a></li>
+                    <?php } ?>
+                </foreach>
+            </ul>
+        </li>
+    </ul>
+      <foreach name="f_menu" item="vo" >
+    <ul data-parent-value="{$vo['id']}" class="par-sub-menu"  style=" height:100%; overflow:auto;<?php if($key!=0){ ?>display:none;<?php } ?>"  >
+        <foreach name="s_menu" item="vo2" >
+            <if condition="($vo2['pid'] eq $vo['id'])">
+                <?php if (!($vo2['is_admin'] == 1 && session(C("USER_AUTH_KEY"))!='admin')){ ?>
+
+                <li>
+            <div class="item"><a href="javascript:void(0);"><i class="iconfont">&#xe618;</i><em>{$vo2['title']}</em></a></div>
+            <ul style="display:<?php echo $vo2['default_open']=='1'?'block':'none'; ?>" >
+                <foreach name="t_menu" item="vo3" >
+                    <if condition="($vo3['pid'] eq $vo2['id'])">
+                        <?php if ($vo3['name'] == "-" || $vo3['title'] == "-"){ ?>
+                        <li class="sep-line"/>
+                        <?php } else { ?>
+                        <?php if (!($vo3['is_admin'] == 1 && session(C("USER_AUTH_KEY"))!='admin')){ ?>
+                        <li><a href="<if condition="trim($vo3['module']) != ''"> {:U($vo3['module'])} </if>" data-type="{:trim($vo3['model']) == ''?'link':$vo3['model']}" data-value="{$vo3['name']}"><i class="iconfont">&#xe60c;</i><em>{$vo3['title']}</em></a></li>
+                        <?php } ?>
+                        <?php } ?>
+                    </if>
+                </foreach>
+            </ul>
+        </li>
+          <?php } ?>
+            </if>
+        </foreach>
+
+    </ul>
+      </foreach>
+      <?php if($notice_open && $notice_title) { ?>
+    <div class="rolling-news">
+         <a href="javascript:void(0);" onclick="return _asr.openLink('{:U("/Home/Notice/index?func=view")}', 'notice_show', '{$notice_title}', 0)">{$notice_title}</a>
+    </div>
+      <?php } ?>
+    <div class="icp">
+      版权所有  Copyright © 2010-2018 </div>
+  </nav>
+  <script>
+  function showpop(url)
+  {
+	    _asr.showMask();
+		_asr.loadData('', url, "", function(c) {
+			$(".prompt-pop").remove();
+			$(".pop-scroll-box").append(c);
+			$(".pop-scroll-box").show();
+			$(".prompt-pop").each(function(){
+				var ppw = $(this).width()/2;
+				$(this).css({'margin-left':-ppw});			
+			});
+		});
+  }
+  $(function(){
+      $(".par-sub-menu li:first").attr('data-visable',1).children("ul").show();
+      $(".par-sub-menu li").click(function(){
+          var status=parseInt($(this).attr('data-visable'));
+          if(!status){
+              $(this).attr('data-visable',1);
+              $(this).children("ul").slideDown();
+          }else{
+              $(this).attr('data-visable',0);
+              $(this).children("ul").slideUp();
+          }
+          $(".par-sub-menu li").removeClass("active");
+          $(this).addClass("active");
+
+      });
+
+
+  })
+  </script>

@@ -1,0 +1,183 @@
+{
+  "id": {
+    "label": "店铺",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "店铺代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "店铺名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,50"]
+  },
+  "full_name": {
+    "label": "店铺全称",
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,100"]
+  },
+  "platform_code": {
+    "label": "平台",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Platform','PlatformAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "deliver_code": {
+    "label": "配送方式",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Deliver','DeliverAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "allow_sync_stock": {
+    "label": "是否库存自动同步",
+    "input": {
+      "type": "select",
+      "value": {
+        "0": "否",
+        "1": "是"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty","isNumber"]
+  },
+  "deliver_days": {
+    "label": "承诺发货天数",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "0": "当天",
+        "1": "1天",
+        "2": "2天",
+        "3": "3天",
+        "4": "4天",
+        "5": "5天",
+        "6": "6天",
+        "7": "7天"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty","isNumber"]
+  },
+  "auth_status": {
+    "label": "授权状态",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "0": "无效",
+        "1": "待确认",
+        "2": "暂停",
+        "3": "有效"
+      },
+      "default_value": "3"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "auth_enddate": {
+    "label": "授权结束日期",
+    "input": {
+      "type": "date",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Shop_status",
+      "value": {
+        "": "请选择",
+        "0": "无效",
+        "1": "有效",
+        "9": "删除"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

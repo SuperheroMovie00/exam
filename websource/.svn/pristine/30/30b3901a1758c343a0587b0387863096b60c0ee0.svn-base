@@ -1,0 +1,102 @@
+{
+  "id": {
+    "label": "部门",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "部门代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "部门名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,50"]
+  },
+  "sort": {
+    "label": "排序",
+    "input": {
+      "type": "text",
+      "default_value": "9999"
+    },
+    "verify": ["nonEmpty","isNumber"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Department_status",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

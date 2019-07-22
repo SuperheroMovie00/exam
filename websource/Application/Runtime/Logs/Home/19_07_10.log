@@ -1,0 +1,72 @@
+[ 2019-07-10T18:58:52+08:00 ] ::1 /%e5%ad%a6%e5%ba%93/exploit1/websource/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2019-07-10T18:58:52+08:00 ] ::1 /%E5%AD%A6%E5%BA%93/exploit1/websource/index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2019-07-10T18:59:01+08:00 ] ::1 /%e5%ad%a6%e5%ba%93/exploit1/websource/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2019-07-10T18:59:01+08:00 ] ::1 /%E5%AD%A6%E5%BA%93/exploit1/websource/index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+

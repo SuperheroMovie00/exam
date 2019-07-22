@@ -1,0 +1,166 @@
+body{background:url(../images/bg.png) repeat-x 0 0 #3c8cc0; min-width:1366px; }
+.header{ width:100%; min-width:1366px; height:40px; margin:0 auto; background:url(../images/head_bg.png) repeat-x 0 0; position:absolute; left:0; top:0; z-index:11;}
+.header .icp{  line-height:40px; text-shadow: 0.5px 0.866px 1px #3a5b7a; color:#8ea9c7; padding-right:20px;}
+
+/*导航*/
+.main{ overflow:auto; position:relative; padding:40px 15px 0 100px;}
+.menu{ width:86px; height:100%; background:#393c41; position:absolute; left:0; top:0; z-index:10;}
+.menu ul{ display:block; padding:0 0 0 0; border-bottom:1px solid #57595d;}
+.menu ul li{ display:block; text-align:center; border-bottom:1px solid #1b1b1b; border-top:1px solid #57595d;}
+.menu ul li a{ display:block; color:#fff; padding:14px 0;}
+.menu ul li a i{ display:block; height:22px; width:22px; background:url(../images/menu_ico.png) no-repeat; margin:0 auto 5px auto;}
+.menu ul li a:hover{ color:#5ee6df; text-decoration:none; background:#051f1f; }
+.menu ul li.current a{color:#5ee6df; }
+
+.menu ul li a.home i{}
+.menu ul li a.home:hover i{ background-position:-56px 0;}
+.menu ul li.current a.home i{ background-position:-56px 0;}
+
+.menu ul li a.log i{ background-position:0 -45px;}
+.menu ul li a.log:hover i{ background-position:-56px -45px;}
+.menu ul li.current a.log i{ background-position:-56px -45px;}
+
+.menu ul li a.security i{ background-position:0 -86px;}
+.menu ul li a.security:hover i{ background-position:-56px -86px;}
+.menu ul li.current a.security i{ background-position:-56px -86px;}
+
+
+.menu ul li a.document i{ background-position:4px -128px; width:30px; height:26px;}
+.menu ul li a.document:hover i{ background-position:-52px -128px;}
+.menu ul li.current a.document i{ background-position:-52px -128px; }
+
+.menu ul li a.order i{ background-position:0 -171px; width:26px; height:26px;}
+.menu ul li a.order:hover i{ background-position:-56px -171px;}
+.menu ul li.current a.order i{ background-position:-56px -171px;}
+
+.menu ul li a.exit i{ background-position:0 -215px; width:26px; height:26px;}
+.menu ul li a.exit:hover i{ background-position:-56px -215px;}
+.menu ul li.current a.exit i{ background-position:-56px -215px;}
+/*导航结束*/
+
+
+.instrument{ width:880px; padding:15px;}
+.chartbox{ background:#fff; height:400px;}
+.dashboard{ height:290px; background:#609fcc; border:1px solid #a5c9e0; overflow:hidden;}
+.content_6{position:relative; overflow:auto;  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+/*图表样式*/
+#chart1{ width:40%; height:320px; margin-top:50px;}
+#chart2{ width:60%; height:320px; margin-top:50px;}
+.dashb{ width:290px; height:290px; float:left;}
+
+
+.list_module{ width:262px; padding:15px 15px 0 0;}
+.list_module .lmbox{ background:#fff; min-height:160px;}
+.list_module .lmbox .title{ height:36px; background:#9caec7; line-height:36px; text-indent:12px; color:#fff; font-size:14px;}
+
+.user .user_head{ width:74px; height:74px; display:block; margin:0 10px;}
+.user .user_head img{ width:74px; height:74px; display:block;}
+.user div.fl span{ display:block; line-height:19px;}
+
+.gonglist{ margin:0 auto; background:#ccc; font:"宋体" Arial, Helvetica, sans-serif;}
+.gonglist th{ font-weight:100; background:#81abc9; padding:6px 0 5px 0; color:#fff;}
+.gonglist td{ padding:8px 0 7px 0; line-height:16px; color:#8e8e8e;}
+.gonglist td em{ display:block; font-weight:bold;}
+.gonglist td i{ display:block;}
+.gonglist td a.dingyue{ display:block; background:#ff8000; color:#fff; width:46px; padding:3px 0 2px 0; text-align:center; margin:0 auto;}
+td.pl10{ padding-left:10px;}
+
+
+/*列表*/
+.list_box { background:#fff; width:100%;  height:726px; margin:15px 15px 0 0;}
+
+.list_box .title{ height:38px; background:#9caec7;}
+.list_box .title span.tit{font-size:16px; padding-left:20px; color:#fff; line-height:38px;}
+.list_box .title .tab a{ font-size:16px; display:block; line-height:38px; padding:0 20px; text-align:center; float:left; background:#7e91b0; margin-right:1px; color:#fff; text-decoration:none;}
+.list_box .title .tab a:hover{ color:#424242; background:#fff;}
+.list_box .title .tab a.current{ color:#424242; background:#fff;}
+.list_box .title .search{ width:200px; height:26px; position:relative; margin:6px 15px 0 0;}
+.list_box .title .search input[type="text"]{ width:200px; height:26px; background:#fff; border:0; text-indent:10px; line-height:26px; border-radius:2px;}
+.list_box .title .search input[type="button"]{ width:17px; height:19px; background:url(../images/search_btn.png) no-repeat; position:absolute; top:3px; right:8px; z-index:1; border:0; cursor:pointer;}
+.list_box .title .search input[type="submit"]{ width:17px; height:19px; background:url(../images/search_btn.png) no-repeat; position:absolute; top:3px; right:8px; z-index:1; border:0; cursor:pointer;}
+
+/*登录*/
+
+.login{ width:600px; height:320px; background:#fff; position:absolute; top:50%; margin-top:-160px; left:50%; margin-left:-300px;}
+.login .title{  height:40px; margin:0 auto; background:url(../images/head_bg.png) repeat-x 0 0;}
+.login .title a{ display:block; height:48px; line-height:48px; float:left; width:80px; margin:0 10px 0 30px; text-align:center; text-decoration:none;}
+.login .title a.current{border-bottom:3px solid #d50000; height:45px; color:#d50000;}
+.login .title span{ line-height:48px; display:block; overflow:hidden; padding-left:20px; font-size:20px;}
+.login .form{ display:block; overflow:hidden; margin:0 0 0 0; padding:40px 0 0 280px; background:url(../images/lg_login.png) no-repeat 20px 85px;}
+.login .form li{ display:block; overflow:hidden; padding-bottom:20px;}
+.login .form li input{ border:1px solid #b9b8b8; width:278px; height:34px; line-height:34px; text-indent:34px; font-size:14px; color:#999;}
+.login .form li input[type="text"]{ background:url(../images/user_bg.png) no-repeat 10px center;}
+.login .form li input[type="password"]{ background:url(../images/pass_bg.png) no-repeat 10px center;}
+.login .form li input[type="button"]{ text-indent:0; text-align:center; background:url(../images/lg_bg.png) repeat-x; width:126px; height:34px; line-height:33px; cursor:pointer; border:1px solid #f6ae09; font-size:18px; text-shadow: 0px 0px 1px #cf9718; color:#fff; font-family: "Microsoft YaHei"; margin-right:30px;}
+.login .form li input[type="submit"]{ text-indent:0; text-align:center; background:url(../images/lg_bg.png) repeat-x; width:126px; height:34px; line-height:33px; cursor:pointer; border:1px solid #f6ae09; font-size:18px; text-shadow: 0px 0px 1px #cf9718; color:#fff; font-family: "Microsoft YaHei"; margin-right:30px;}
+.login .form li .yzm{ height:34px; width:100px; background:#e1e1e1; display:block; border:1px solid #b9b8b8;}
+.login .form li .yzm img{height:34px; width:100px;}
+
+
+.billing_chart01{ height:300px; width:80%;}
+.billing_title{ font-size:16px; padding:20px 0 0 50px;}
+
+.newfit{ overflow:hidden; padding:20px 0 0 20px;}
+.newfit_text{ width:420px; height:30px; border:1px solid #ccc;}
+.newfit_btn{ text-indent:0; text-align:center; background:url(../images/lg_bg.png) repeat-x; width:126px; height:34px; line-height:33px; cursor:pointer; border:1px solid #f6ae09; font-size:18px; text-shadow: 0px 0px 1px #cf9718; color:#fff; font-family: "Microsoft YaHei"; margin-left:80px;}
+.newfit span{ width:80px; padding-right:0px; line-height:32px;}
+
+
+/*表单*/
+.issuing-form { width: 360px; margin-left:50px;  }
+.issuing-form ul li { position: relative; }
+.issuing-form ul li:after { content: ""; display: block; clear: both; height: 1px; }
+.issuing-form ul li .tit { font-size: 15px; line-height: 23px; color: #666; padding: 10px 0 5px 0; }
+.issuing-form ul li .txt { width: 334px; height: 34px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 34px; font-size: 15px; }
+.issuing-form ul li .sele { width: 100%; height: 36px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 34px; font-size: 15px; }
+.issuing-form ul li.even-col .txt-box { width: 47%; }
+.issuing-form ul li.even-col .txt { width: 100%; height: 36px; box-sizing: border-box; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 34px; font-size: 15px; }
+.issuing-form ul li.sub .btn { width: 100%; }
+.btn-org, .btn-green { display: inline-block; min-width: 120px; height: 48px; text-align: center; line-height: 48px; color: #fff; font-size: 18px; border-radius: 3px; border: 0; font-family:"Microsoft Yahei"; padding:0 10px;  }
+.btn-org { background: #f98522; }
+.btn-green { background: #26a1a6; }
+
+/*分页*/
+.abe-pagination { padding-left: 0; margin: 0; list-style: none; color: #999; text-align:center; }
+.abe-pagination:before, .abe-pagination:after { content: " "; display: table }
+.abe-pagination:after { clear: both }
+.abe-pagination>li { display: inline-block; *display:inline;}
+.abe-pagination>li>a, .abe-pagination>li>span { position: relative; display: block; padding: .5em .6em; text-decoration: none; line-height:0.8; background-color: #fff; border: 1px solid #ddd; border-radius: 0; margin-bottom: 5px; margin-right: 5px; max-width: 30px; *display:inline; font-size:15px;}
+.abe-pagination>li:last-child>a, .abe-pagination>li:last-child>span { margin-right: 0 }
+.abe-pagination>li>a:hover, .abe-pagination>li>span:hover, .abe-pagination>li>a:focus, .abe-pagination>li>span:focus { background-color: #eee }
+.abe-pagination>.abe-active>a, .abe-pagination>.abe-active>span, .abe-pagination>.abe-active>a:hover, .abe-pagination>.abe-active>span:hover, .abe-pagination>.abe-active>a:focus, .abe-pagination>.abe-active>span:focus { z-index: 2; color: #000; background-color: #25c0ca; border-color: #25c0ca; cursor: default; color:#fff; }
+.abe-pagination>.abe-disabled>span, .abe-pagination>.abe-disabled>span:hover, .abe-pagination>.abe-disabled>span:focus, .abe-pagination>.abe-disabled>a, .abe-pagination>.abe-disabled>a:hover, .abe-pagination>.abe-disabled>a:focus { color: #999; background-color: #fff; border-color: #ddd; cursor: not-allowed; pointer-events: none }
+.abe-pagination .abe-pagination-prev { float: left }
+.abe-pagination .abe-pagination-prev a { border-radius: 0 }
+.abe-pagination .abe-pagination-next { float: right }
+.abe-pagination .abe-pagination-next a { border-radius: 0 }
+.abe-pagination-centered { text-align: center }
+.abe-pagination-right { text-align: right }
+
+.page{ padding:15px 0; text-align:center;}
+.page a,.page span{position: relative; display: inline-block; height:30px; line-height:30px; min-width:30px; width:30px; text-align:center; text-decoration: none; background: #fff; border: 1px solid #ddd; font-size:15px; margin:0 3px;}
+.page span.current{ background:#f98522; border-color:#f98522; color:#fff;}
+.page a:hover{ text-decoration:none; background:#f98522; color:#fff; border-color:#f98522;}
+
+.form-table td,.form-table th{ padding:5px; font-size:15px; font-weight:normal;}
+.form-table th{ text-align:right;}
+.form-table input[type="text"] { width: 334px; height: 34px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 34px; font-size: 15px; }
+.form-table input[type="password"] { width: 334px; height: 34px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 34px; font-size: 15px; }
+.form-table select { width: 358px; height: 36px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; line-height: 34px; font-size: 15px; }
+
+.form-table textarea { width: 520px; height: 100px; border: 2px solid #c0c2c3; background: #fff; border-radius: 3px; padding: 0 10px; line-height: 24px; font-size: 15px; }
+
+/*图标字体*/
+.iconfont { font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased;/* -webkit-text-stroke-width: 0.2px;*/ -moz-osx-font-smoothing: grayscale; }
+.list-faq{ height:38px; line-height:38px; padding-right:20px; color:#fff; font-size:15px;}
+.list-faq a{ margin-right:20px; color:#fff;}
+.list-faq a i{ margin-right:5px;}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1471951555_9235964.eot'); /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1471951555_9235964.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1471951555_9235964.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1471951555_9235964.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1471951555_9235964.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+

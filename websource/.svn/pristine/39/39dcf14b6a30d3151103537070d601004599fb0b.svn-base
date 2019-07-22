@@ -1,0 +1,95 @@
+.qid{font-size: 16px; font-weight: bold; margin-bottom: 5px;}
+.qidseven{font-size: 11px; font-weight: bold; margin-bottom: 5px; font-family:"方正兰亭中黑_GBK"}
+
+.que-item{padding:0 0 5px 24px;}
+
+.que-item dt{ line-height: 24px;}
+.que-item dt.num{padding-left: 22px; position: relative; margin-bottom:6px;}
+.que-item dt.num b{ width: 22px; display: inline-block; height: 24px; line-height: 24px; position: absolute; left: 0; top:0;}
+.que-item dd{padding-left: 22px; box-sizing: border-box; margin-bottom:6px;}
+.que-item dd:after{content: ''; display: block; clear: both;}
+.que-item dd.describe{font-family: "楷体"; font-weight: bold; padding-left: 16px; overflow: hidden;}
+.que-item dd.describe .des-info{ border: 1px #333 solid; padding: 3px 10px; font-size: 15px; overflow: hidden; box-sizing: border-box;}
+.que-item dd.describe .des-info p{text-indent: 28px;}
+.que-item dd.describe .des-tit{font-family: "新宋体"; font-weight: normal; padding-bottom: 5px;}
+.que-item dd.desc-img .des-info{ float: left; width: 68%;}
+.que-item dd.desc-img .imgstyle{ float: right; margin: 0; width:220px; font-family: "楷体"}
+.que-item dd.desc-img .imgstyle img{display: block; width: 100%; padding: 2px; border: 1px #333 solid; box-sizing: border-box;}
+.que-item dd .imgstyle-100p{ margin: 0; width:100%; font-family: "楷体"; text-align: center; display: block;}
+.que-item dd .imgstyle-100p img{display: block; width: 100%; padding: 2px; border: 1px #333 solid; box-sizing: border-box;}
+
+.que-item dd.reading{ padding-left: 0;}
+.que-item dd.reading .des-info{border: 0; padding-left: 0; padding-right: 0;}
+.que-item dd.reading .des-tit{padding-left: 8px;}
+.que-item dd.reading .art-tit{ text-align: center; font-size: 18px;}
+.que-item dd .options{}
+.que-item dd .options li{ position: relative; padding-left: 20px; line-height: 24px; box-sizing: border-box;}
+.que-item dd .options:after{content: ''; display: block; clear: both;}
+.que-item dd .options li em{display: inline-block; width: 20px; height: 24px; line-height: 24px; position: absolute; left: 0; top: 0; font-size: 16px;}
+.que-item dd .sq50p li{float: left; width: 50%;}
+.que-item dd .sq25p li{float: left; width: 25%;}
+/*着重号*/
+.bull-i {position: relative;}
+.bull-i:before {content: ''; position: absolute; width: 2px; height: 2px; background: #000; bottom: -4px; left:42%;}
+.triangle{ display: inline-block; width: 0; height: 0; border-right: solid 8px transparent; border-left: solid 8px transparent; border-bottom: solid 10px #000; margin-right: 5px;}
+
+.que-item span.txtbox{border-bottom: 1px #333 solid; display: inline-block; min-width: 120px; margin: 0 3px; box-sizing: border-box;}
+.que-item span.t10p:after,.que-item span.t20p:after,.que-item span.t100p:after{display: none; content: ''; min-height: 24px;}
+.que-item span.t10p{border-bottom: 1px #333 solid; display: inline-block; margin: 0 3px; box-sizing: border-box; width:120px; margin: 0;}
+.que-item span.t20p{border-bottom: 1px #333 solid; display: inline-block; margin: 0 3px; box-sizing: border-box; width:240px; margin: 0;}
+.que-item span.t100p{border-bottom: 1px #333 solid; display: inline-block; min-width: 120px; margin: 0 3px; box-sizing: border-box; width: 96%; margin: 0;}
+.que-item .imgstyle{  margin: 5px; width: 220px; text-align: center; font-family: "楷体"; font-weight: bold; display: block;}
+.que-item .imgstyle img{display: block; width: 100%; padding: 2px; border: 1px #333 solid; box-sizing: border-box;}
+/*填空bug*/
+.que-item span.t10p,.que-item span.t20p,.que-item span.t100p{min-height: 24px; line-height: 24px; vertical-align: middle;}
+
+.imgc{ margin: 0px auto!important;}
+.img100p{}
+
+/*.font-kt{font-family:"楷体";}
+.font-st{font-family:"宋体";}
+.font-ht{font-family:"黑体";}
+.font-xst{font-family:"仿宋";}
+.font-s12{font-size: 12px;}
+.font-s14{font-size: 14px;}
+.font-s16{font-size: 16px;}
+.font-s24{font-size: 24px;}
+
+.paper-title-info{ padding: 20px 0;}
+.paper-title-info h1{font-size: 20px; font-weight: normal;}
+.paper-title-info h2{padding:12px 0 8px 0; font-size: 24px;}
+.paper-title-info h3{ font-size: 20px; padding-bottom: 10px;}
+.mod-num{text-align: center; font-size: 20px; font-weight: bold;}*/
+
+.font-kt{font-family:"楷体";}
+.font-st{font-family:"宋体";}
+.font-ht{font-family:"方正小标宋_GBK";}
+.font-xst{font-family:"新宋体";}
+.font-xster{font-family:"方正兰亭中黑_GBK";} /*新增*/
+
+.font-lifive{font-family:"方正楷体_GBK";}
+
+
+.font-s11{font-size: 11px;}
+.font-s12{font-size: 12px;}
+.font-s14{font-size: 14px;}
+.font-s16{font-size: 16px;}
+.font-s24{font-size: 24px;}
+
+.paper-title-info{ padding: 20px 0;}
+.paper-title-info h1{font-size: 17px; font-weight: normal;}
+.paper-title-info h2{padding:12px 0 8px 0; font-size: 18px;}
+.paper-title-info h3{ font-size: 19px; padding-bottom: 10px;}
+.mod-num{text-align: center; font-size: 20px; font-weight: bold;}
+
+.mod-numsix{text-align: center; font-size: 12px; font-weight: bold;} /*新增*/
+
+
+
+
+
+.qmod-bd{ margin: 0px 10px; border:1px solid #d5f4fb; box-sizing: border-box; padding: 10px; font-family:"宋体";}
+.qmod{font-family:"宋体"; width:643px; margin:0 auto;}
+.qmod-mg0 {margin:0;}
+.que-item dt .des-info{ border: 1px #333 solid; padding: 3px 10px; font-size: 15px; overflow: hidden; box-sizing: border-box;}
+.que-item dt .des-info p{text-indent: 28px;}

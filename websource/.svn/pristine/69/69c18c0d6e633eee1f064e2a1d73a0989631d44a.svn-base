@@ -1,0 +1,133 @@
+{
+  "id": {
+    "label": "挂起标签",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "挂起代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "挂起名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,100"]
+  },
+  "description": {
+    "label": "描述",
+    "input": {
+      "type": "textarea",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "cancel_time": {
+    "label": "解挂时间(小时)",
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","isNumber"]
+  },
+  "is_system": {
+    "label": "系统内置",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_HangupTag_is_system",
+      "value": {
+        "": "请选择",
+        "1": "是",
+        "0": "否"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "sort": {
+    "label": "排序",
+    "input": {
+      "type": "text",
+      "default_value": "9999"
+    },
+    "verify": ["nonEmpty","isNumber"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_HangupTag_status",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

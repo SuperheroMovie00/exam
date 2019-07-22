@@ -1,0 +1,39 @@
+{__NOLAYOUT__}
+<tr style="display:" detail="1" id="{$funcid}-detail">
+  <td colspan="99" style="padding:0;">
+  <!-- 明细表 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table-in ta-tr-hover" style=" width:100%;">
+      <colgroup>
+        <col style="width: 40px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width:auto" >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>序号</th>
+          <th class=" abe-txtl ">测试编码</th>
+          <th>类型A</th>
+          <th class=" abe-txtl ">编码A</th>
+          <th class=" abe-txtl ">名称A</th>
+          <th/>
+      </tr>
+      <?php foreach($list as $detail_key=>$detail): $detail_mod = ($di % 2 );++$di;?>
+      <tr <?php if(($detail_mod) == "1"): ?>class="even"<?php endif; if(($detail_mod) == "0"): ?>class="odd"<?php endif; ?>>
+        <td class="align=c"><?php echo $di."."; ?></td>
+        <td class=" abe-txtl "><a href="javascript:void(0);" class="vi-blue"  onclick="return _asr.openLink('<?php echo U("/Home/Test/index?func=view&no=$detail[test_no]"); ?>','<?php echo filterFuncId( U("/Home/Test/index?func=view&no=$detail[test_no]") ,"");?>', '测试详情' ,0); " ><?php echo $detail["test_no"]; ?></a></td>
+        <td><?php echo get_table_TestDetail_typea("$detail[typea]","name","") ; ?></td>
+        <td class=" abe-txtl "><a href="javascript:void(0);" class="vi-blue"  onclick="return _asr.openLink('<?php echo U("/Home/Question/index?func=view&no=$detail[codea]"); ?>','<?php echo filterFuncId( U("/Home/Question/index?func=view&no=$detail[codea]") ,"");?>', '题库详情' ,0); " ><?php echo $detail["codea"]; ?></a></td>
+        <td class=" abe-txtl "><?php echo $detail["namea"]; ?></td>
+        <td/>
+     </tr>
+     <?php endforeach; ?>
+     </tbody>
+     </table>
+
+     </td>
+  </tr>
+
+

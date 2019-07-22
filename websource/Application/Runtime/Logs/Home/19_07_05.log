@@ -1,0 +1,749 @@
+[ 2019-07-05T09:56:27+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2019-07-05T09:56:27+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2019-07-05T19:05:13+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2019-07-05T19:05:13+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2019-07-05T19:05:14+08:00 ] ::1 /index.php/Home/Auth/loginAct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `erp_user` WHERE ( code='admin' ) LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\AuthController.class.php 第 58 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\AuthController.class.php 第 70 行.
+SQL: UPDATE `erp_user` SET `errpwd_count`='0' WHERE ( id=1 ) [ RunTime:0.0009s ]
+
+[ 2019-07-05T19:05:15+08:00 ] ::1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0014s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select node.id,node.name,node.module from erp_role as role,erp_role_user as user,erp_role_node as access ,erp_node as node where user.user_id='1' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id  and node.status=1 [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: APP C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 124 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0015s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='1' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT title,`name`,`pid`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='2' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`pid`,a.module,a.btn_name,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='3' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_open' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_title' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2019-07-05T19:05:19+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2002&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0015s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0004s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2019-07-05T19:05:22+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: update erp_question_category set full_path=replace(full_path,'//标准c/','//标准/') where code!='01' and code like '01%' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准',`full_path`='/标准',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:05:22.7' WHERE ( id = 1 ) [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0010s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:05:22','admin','变更知识点分类','[名称:标准];') [ RunTime:0.0025s ]
+
+[ 2019-07-05T19:05:32+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/edit/id/2.html?funcid=f_19b41d3cdf1034b95920ab3286045cb7&zindex=2004&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0015s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `full_path`,`code` FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2019-07-05T19:06:00+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/edit/id/2.html?funcid=f_19b41d3cdf1034b95920ab3286045cb7&zindex=2006&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `full_path`,`code` FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2019-07-05T19:06:10+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2008&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0012s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2019-07-05T19:06:12+08:00 ] ::1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0009s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准c' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: update erp_question_category set full_path=replace(full_path,'//标准/','//标准c/') where code!='01' and code like '01%' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准c',`full_path`='/标准c',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:06:12.7' WHERE ( id = 1 ) [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0009s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:06:12','admin','变更知识点分类','[名称:标准c];') [ RunTime:0.0009s ]
+
+[ 2019-07-05T19:06:33+08:00 ] 127.0.0.1 /?XDEBUG_SESSION_START=12378
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2019-07-05T19:06:34+08:00 ] 127.0.0.1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003054s ]
+
+[ 2019-07-05T19:06:34+08:00 ] 127.0.0.1 /index.php/Home/Index/index?_op_=http%3A%2F%2F127.0.0.1%3A9090%2F%3FXDEBUG_SESSION_START%3D12378
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select node.id,node.name,node.module from erp_role as role,erp_role_user as user,erp_role_node as access ,erp_node as node where user.user_id='1' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id  and node.status=1 [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: APP C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 124 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0011s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='1' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT title,`name`,`pid`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='2' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`pid`,a.module,a.btn_name,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='3' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_open' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_title' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001932s ]
+
+[ 2019-07-05T19:06:59+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2002&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0011s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2019-07-05T19:07:45+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0152s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0015s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准cc' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: update erp_question_category set full_path=replace(full_path,'//标准c/','//标准cc/') where code!='01' and code like '01%' [ RunTime:0.0013s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准cc',`full_path`='/标准cc',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:07:04.7' WHERE ( id = 1 ) [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0015s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:07:44','admin','变更知识点分类','[名称:标准cc];') [ RunTime:0.0010s ]
+
+[ 2019-07-05T19:08:00+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2004&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0012s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0013s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0004s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2019-07-05T19:08:07+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: update erp_question_category set full_path=replace(full_path,'/标准cc/','/标准/') where code!='01' and code like '01%' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准',`full_path`='/标准',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:08:04.7' WHERE ( id = 1 ) [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0015s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:08:07','admin','变更知识点分类','[名称:标准];') [ RunTime:0.0013s ]
+
+[ 2019-07-05T19:08:34+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2006&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2019-07-05T19:09:36+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0022s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准c' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: update erp_question_category set full_path=replace(full_path,'/标准/','/标准c/') where code!='01' and code like '01%' [ RunTime:0.0021s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准c',`full_path`='/标准c',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:08:39.7' WHERE ( id = 1 ) [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0019s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:09:36','admin','变更知识点分类','[名称:标准c];') [ RunTime:0.0012s ]
+
+[ 2019-07-05T19:09:42+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/edit/id/1.html?funcid=f_612125014c8ef64efb7e761a3b2ae154&zindex=2008&pfuncid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0008s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [2] Use of undefined constant question_category - assumed 'question_category' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [2] Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 5 行.
+NOTIC: [8] Undefined index: parent_id_name C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 23 行.
+NOTIC: [8] Undefined index: parent_id_code C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\d0982f7d8a1ec16abe67cc93527b690e.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001931s ]
+
+[ 2019-07-05T19:09:47+08:00 ] 127.0.0.1 /index.php/Home/QuestionCategory/index/func/save/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0036s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0012s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Home/QuestionCategory' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategory' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_question_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id!=1 and name='标准cc' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `erp_question_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: update erp_question_category set full_path=replace(full_path,'/标准c/','/标准cc/') where code!='01' and code like '01%' [ RunTime:0.0054s ]
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `erp_question_category` SET `name`='标准cc',`full_path`='/标准cc',`level`='1',`modify_user`='admin',`modify_time`='2019-07-05 19:09:45.7' WHERE ( id = 1 ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: parent_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\QuestionCategoryController.class.php 第 268 行.
+SQL: SELECT * FROM `erp_question_category` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `erp_log_common` [ RunTime:0.0025s ]
+SQL: INSERT INTO `erp_log_common` (`type`,`data_id`,`data_code`,`status`,`create_time`,`create_user`,`subject`,`content`) VALUES ('question_category','1','01','1','2019-07-05 19:09:47','admin','变更知识点分类','[名称:标准cc];') [ RunTime:0.0016s ]
+
+[ 2019-07-05T19:11:28+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2019-07-05T19:11:28+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2019-07-05T20:27:35+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2019-07-05T20:27:35+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+

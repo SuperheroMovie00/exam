@@ -1,0 +1,40 @@
+{__NOLAYOUT__}
+<div class="prompt-pop" id="{$funcid}" style="z-index:{$zindex}">
+	<input type="hidden" name="selecttype" value="{$selecttype}" />
+  <div class="title"><span class="pop-name">选择地区信息</span><a href="javascript:void(0);" class="close iconfont" onclick="_asr.closePopup('{$funcid}');">&#xe60d;</a> </div>
+  <div class="table-box">
+    <div class="table-in">
+      <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+        <colgroup>
+        <col style="width:40px;"/>
+        <col style="width:200px;"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th></th>
+            <th>地区代码</th>
+            <th>地区名称</th>
+
+          </tr>
+          <foreach name="popupdata" item="item" mod="mod" >
+          <tr class="<if condition="$mod % 2 eq 0">even<else />odd</if>">
+            <td><input j='<?php echo json_encode($item); ?>' type="<if condition="strtolower($selecttype) eq 'multi'">checkbox<else />radio</if>" name="code[]" value="{$item['code']}" show="{$item['name']}"></td>
+            <td>{$item['code']}</td>
+            <td>{$item['name']}</td>
+
+          </tr>
+          </foreach>
+        </tbody>
+      </table>
+    </div>
+    <div class="blank15"></div>
+    <?php echo $page; ?>
+    <div class="blank70"></div>
+  </div>
+  <div class="pop-sub abe-txtc">
+    <input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+  <script>
+  </script>
+</div>  

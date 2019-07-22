@@ -1,0 +1,33 @@
+{__NOLAYOUT__}
+<div class="wrap-box" id="<?php echo $funcid;?>" summaryid="SystemParameter" baseurl="<?php echo U('Home/SystemParameter/index'); ?>">
+<input type="hidden" id="{$funcid}-last-url" value="{$__last_url}" />
+       <div class="wrap-title abe-ofl">
+        <div class="tit abe-fl"> 自动参数列表 </div>
+        <div class="abe-fr">
+        	<a href="javascript:void(0);" class="vi-blue abe-ft14" onclick="_asr.openLink('','<?php echo $funcid;?>','刷新', 1);"><i class="iconfont">&#xe611;</i>刷新</a>
+        </div>
+      </div>
+      <div class="table-box">
+        <div class="table-in">
+          <table border="0" cellspacing="0" cellpadding="0" class="pub-table-set">
+            <thead>
+              <tr>
+                <th>参数名称</th><th>参数说明</th><th>设置</th>
+              </tr>
+            </thead>
+            <tbody>
+            	<volist name="list" id="item" mod="2">
+              <tr class="<if condition='$mod eq 0'>odd<else />even</if>">
+                <td>{$item['code']}</td>
+                <td>{$item['description']}</td>
+                <td>
+                	<a href="javascript:void(0);" class="btn <if condition="$item['status'] eq 1">btn-blue</if> btn-xs" <if condition="$item['status'] neq 1">onclick="_asr.loadData('{$funcid}', '{:U("Home/SystemParameter/index?func=update&status=open&id=".$item["id"])}');"</if>>已启用</a>
+                	<a href="javascript:void(0);" class="btn <if condition="$item['status'] eq 0">btn-blue</if> btn-xs" <if condition="$item['status'] neq 0">onclick="_asr.loadData('{$funcid}', '{:U("Home/SystemParameter/index?func=update&status=close&id=".$item["id"])}');"</if>>未启用</a>
+                </td>
+              </tr>
+              </volist>
+            </tbody>
+          </table>
+          <div class="blank10"></div>
+          </div></div>
+    </div>

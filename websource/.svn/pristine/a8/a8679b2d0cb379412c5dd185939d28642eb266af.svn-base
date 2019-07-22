@@ -1,0 +1,98 @@
+{__NOLAYOUT__}
+<div class="prompt-pop pop-style2" id="{$funcid}" style="z-index:{$zindex}">
+	<input type="hidden" name="selecttype" value="{$selecttype}" />
+  <div class="title"><span class="pop-name">选择客户信息</span><a href="javascript:void(0);" class="close iconfont" onclick="_asr.closePopup('{$funcid}');">&#xe60d;</a> </div>
+  <div class="pop-scroll">
+   <div class="table-box">
+       <div class="screening treesorder">
+           <form id="<?php echo "$funcid"; ?>-selectCustoemer-Search" action="{:U('/Home/Popup/index?func=Customer')}" method="get">
+           <input type="hidden" name="funcid" value="{$funcid}" />
+           <input type="hidden" name="zindex" value="{$zindex}" />
+           <input type="hidden" name="category_code" value="{$search['category_code']}">
+           <ul class="form form-style1">
+               <li> <span class="tit">拼音缩写</span>
+                   <div class="item">
+                       <div class="txt-box">
+                           <input type="text" name="prefix" value="{$search['prefix']}" class="txt">
+                       </div>
+                   </div>
+               </li>
+               <li> <span class="tit">客户代码</span>
+                   <div class="item">
+                       <div class="txt-box">
+                           <input type="text" name="code" value="{$search['code']}" class="txt">
+                       </div>
+                   </div>
+               </li>
+               <li> <span class="tit">客户名称</span>
+                   <div class="item">
+                       <div class="txt-box">
+                           <input type="text" name="short_name" value="{$search['short_name']}" class="txt">
+                       </div>
+                   </div>
+               </li>
+           </ul>
+           <!--筛选表单-->
+           <div class="tress-sub abe-txtc">
+               <input type="submit" value="搜索" class="btn btn-org btn-sm mrg_10" onclick="return _asr.submit('<?php echo $funcid;?>', this, '')">
+               <input type="button" value="清除"  class="btn btn-blue btn-sm mrg_10" onclick="return <?php echo "$funcid"; ?>_clearsearch('<?php echo "$funcid"; ?>-selectCustoemer-Search');">
+           </div>
+           </form>
+       </div>
+
+    <div class="table-in">
+      <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+        <colgroup>
+        <col style="width:40px;"/>
+            <col style="width:100px;"/>
+        <col style="width:80px;"/>
+        <col style="width:120px;"/>
+        <col style="width:120px;"/>
+        <col style="width:80px;"/>
+        <col style="width:60px;"/>
+        </colgroup>
+        <tbody>
+          <tr class="odd">
+            <th>选择</th>
+              <th class="abe-txtl">上级</th>
+            <th class="abe-txtl">编码</th>
+            <th class="abe-txtl">名称</th>
+              <th class="abe-txtl">缩写</th>
+            <th class="abe-txtl">电话</th>
+            <th class="abe-txtl">状态</th>
+
+          </tr>
+          <volist name="popupdata" id="item" mod="2" >
+          <tr class="<if condition="$mod eq 0">even<else />odd</if>">
+            <td><input j='<?php echo json_encode($item); ?>' type="<if condition="strtolower($selecttype) eq 'multi'">checkbox<else />radio</if>" name="code[]" show="{$item['short_name']}" value="{$item['id']}"></td>
+              <td class="abe-txtl">{$item['pname']}</td>
+            <td class="abe-txtl">{$item['code']}</td>
+            <td class="abe-txtl">{$item['short_name']}</td>
+            <td class="abe-txtl">{$item['prefix']}</td>
+            <td class="abe-txtl">{$item['phone']}</td>
+            <td class="abe-txtl"><?php echo get_table_Customer_status($item['status'],'name'); ?></td>
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+       <div class="blank15"></div>
+       <?php echo $page; ?>
+       <div class="blank15"></div>
+  </div>
+  </div>
+   <div class="pop-sub abe-txtc">
+    <input type="submit" value="选择" class="btn btn-org mrg_10" onclick="_asr.returnPopup('{$funcid}');">
+    <input type="submit" value="取消" class="btn" onclick="_asr.closePopup('{$funcid}');">
+  </div>
+  <script>
+
+      function <?php echo $funcid; ?>_clearsearch(_frm){
+          _asr.setvaluebyname(_frm,"prefix", "" );
+          _asr.setvaluebyname(_frm,"code", "" );
+          _asr.setvaluebyname(_frm,"short_name", "" );
+          // _asr.clearCheck("{$funcid}_storage_code");
+      }
+
+  </script>
+</div>  

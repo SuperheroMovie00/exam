@@ -1,0 +1,6 @@
+<?php if(!$row['K']) { ?>
+<dt class="num"><?php if($row['seq']) { ?><b>{$row['seq']}.</b><?php } ?>{$row['stem']}</dt>
+<?php } else { ?>
+<?php if($row['seq']) { ?><dt class="num"><b>{$row['seq']}.</b></dt><?php } ?>
+{$row['stem']}
+<?php } ?>

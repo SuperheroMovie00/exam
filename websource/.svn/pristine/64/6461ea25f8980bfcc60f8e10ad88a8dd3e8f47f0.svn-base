@@ -1,0 +1,17 @@
+<div class="qmod-bd">
+    <div class="qmod">
+        <?php foreach($detail as $row) { ?>
+        <?php if($row['question_analysis']) { ?>
+        <dl class="que-item">
+            <dt class="num">{$row['seq']}</b></dt>
+            <dd>
+                <span class="show"><font color="red" size="4">答案：</font><font size="4">{$row['question_answer']}</font><br></span>
+                <span class="show">
+                    <font color="red" size="4">解析：</font<font size="3"><p>{$row['question_analysis']}</p></font>
+                </span>
+            </dd>
+        </dl>
+        <?php } ?>
+        <?php } ?>
+    </div>
+</div>

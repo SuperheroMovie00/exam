@@ -1,0 +1,49 @@
+{__NOLAYOUT__}
+<div toplayer="1" class="wrap-box wrap-pb2" id="<?php echo $funcid;?>" summaryid="RoleNode" baseurl="<?php echo U('RoleNode/index'); ?>">
+    <div class="wrap-box-info">
+    <div class="wrap-title abe-ofl">
+        <div class="tit abe-fl">维护角色组成员 - <?php echo $role['name']; ?></div>
+        <div class="abe-fr">
+        </div>
+    </div>
+
+    <div class="table-box">
+        <div class="table-in">
+            <form action="<?php echo U('RoleNode/index?func=saveSelectUser'); ?>" id="<?php echo "$funcid"; ?>-Search" method="get">
+            <input type="hidden" name="<?php echo "$funcid"; ?>-last-url" id="<?php echo "$funcid"; ?>-last-url" value="<?php echo $__last_url; ?>" />
+            <input type="hidden" name="funcid" value="<?php echo "$funcid"; ?>" />
+            <input type="hidden" name="pfuncid" value="<?php echo "$pfuncid"; ?>" />
+            <input type="hidden" name="role_id" value="<?php echo $id; ?>" />
+            <table border="0" cellspacing="0" cellpadding="0" class="pub-table-set">
+                <thead>
+                <tr>
+                    <th>选择</th><th>部门</th><th>用户</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach($user as $k=>$v){ ?>
+                <tr class="odd">
+                    <td>
+                        <input type="checkbox" name="user_id[]" <?php if(in_array($v['id'],$role_user_list)){ ?> checked <?php } ?> value="{$v['id']}" />
+                    </td>
+                    <td><?php echo get_table_Department("$v[department_code]","name"); ?></td>
+                    <td>{$v['name']}</td>
+                </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+            </form>
+            <div class="blank10"></div>
+        </div></div>
+    </div>
+    <div class="blank10"></div>
+    <div class="data-oper data-oper-in abe-txtc" >
+        <!-- 按钮权限检测 保存 --->
+        <?php if (isset($rights['selectUser']) && $rights['selectUser']): ?>
+        <input type="button" value="保存" class="btn btn-blue mrg_10" default-status="1" onclick="return _asr.submit('<?php echo "$funcid"; ?>', '<?php echo "$funcid"; ?>-Search', '<?php echo U("/Home/RoleNode/index?func=saveSelectUser&") ?>',''); " />
+        <?php endif; ?>
+        <em class="abe-space-sm"></em>
+        <input type="button" value="清除" class="btn btn-org mrg_10"  onclick="return clear('<?php echo "$funcid"; ?>-Search');" default-status="1" />
+    </div>
+
+</div>

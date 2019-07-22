@@ -1,0 +1,894 @@
+[ 2019-07-11T17:26:34+08:00 ] ::1 /index.php/Summary/QuestionCategorySummary/index/func/search.html?funcid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0011s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0011s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionCategorySummary' )  [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionCategorySummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategorySummary' ) ORDER BY sort  [ RunTime:0.0058s ]
+SQL: select count(*) as cnt from erp_question_category    where 1=1  [ RunTime:0.0059s ]
+SQL: select  erp_question_category.status , erp_question_category.id , erp_question_category.code , erp_question_category.name , erp_question_category.full_path , erp_question_category.level , erp_question_category.sort , erp_question_category.create_time , erp_question_category.modify_time  from erp_question_category   Where 1=1   order by code LIMIT 0, 1000 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined variable: singlepage C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001631s ]
+
+[ 2019-07-11T17:26:36+08:00 ] ::1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0004s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0019s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  AND (erp_question.type!='2') [ RunTime:0.0101s ]
+SQL: select  erp_question.status , erp_question.code , erp_question.category_name , erp_question.kind , erp_question.stem , erp_question.using , erp_question.type , erp_question.childs , erp_question.id  from erp_question   Where 1=1  AND (erp_question.type!='2')  order by erp_question.code LIMIT 0, 10 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2019-07-11T17:26:37+08:00 ] ::1 /index.php/Summary/TempletSummary/index/func/search.html?funcid=X100310&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0013s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/TempletSummary' )  [ RunTime:0.0007s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/TempletSummary' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='TempletSummary' ) ORDER BY sort  [ RunTime:0.0008s ]
+SQL: select count(*) as cnt from erp_templet    where 1=1  [ RunTime:0.0050s ]
+SQL: select  erp_templet.status , erp_templet.id , erp_templet.templet_no , erp_templet.type , erp_templet.subject , erp_templet.count , erp_templet.score , erp_templet.req_time , erp_templet.using , erp_templet.create_time , erp_templet.modify_time  from erp_templet   Where 1=1   LIMIT 0, 10 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 258 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 258 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 258 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 258 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2019-07-11T17:26:37+08:00 ] ::1 /index.php/Summary/ExamSummary/index/func/search.html?funcid=X100405&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0014s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/ExamSummary' )  [ RunTime:0.0004s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/ExamSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='ExamSummary' ) ORDER BY sort  [ RunTime:0.0004s ]
+SQL: select count(*) as cnt from erp_exam    where 1=1  [ RunTime:0.0163s ]
+SQL: select  erp_exam.status , erp_exam.id , erp_exam.exam_no , erp_exam.templet_no , erp_exam.type , erp_exam.subject , erp_exam.count , erp_exam.score , erp_exam.req_time , erp_exam.create_time , erp_exam.modify_time  from erp_exam   Where 1=1   LIMIT 0, 10 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 244 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2019-07-11T17:26:54+08:00 ] ::1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0009s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0004s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0008s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  AND (erp_question.type!='2') [ RunTime:0.0024s ]
+SQL: select  erp_question.status , erp_question.code , erp_question.category_name , erp_question.kind , erp_question.stem , erp_question.using , erp_question.type , erp_question.childs , erp_question.id  from erp_question   Where 1=1  AND (erp_question.type!='2')  order by erp_question.code LIMIT 0, 10 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2019-07-11T17:26:55+08:00 ] ::1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0015s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0004s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  AND (erp_question.type!='2') [ RunTime:0.0006s ]
+SQL: select  erp_question.status , erp_question.code , erp_question.category_name , erp_question.kind , erp_question.stem , erp_question.using , erp_question.type , erp_question.childs , erp_question.id  from erp_question   Where 1=1  AND (erp_question.type!='2')  order by erp_question.code LIMIT 0, 10 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 102 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 247 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='xz' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2019-07-11T17:26:57+08:00 ] ::1 /index.php/Summary/QuestionCategorySummary/index/func/search.html?funcid=X100210&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0011s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0022s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionCategorySummary' )  [ RunTime:0.0014s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionCategorySummary' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionCategorySummary' ) ORDER BY sort  [ RunTime:0.0005s ]
+SQL: select count(*) as cnt from erp_question_category    where 1=1  [ RunTime:0.0009s ]
+SQL: select  erp_question_category.status , erp_question_category.id , erp_question_category.code , erp_question_category.name , erp_question_category.full_path , erp_question_category.level , erp_question_category.sort , erp_question_category.create_time , erp_question_category.modify_time  from erp_question_category   Where 1=1   order by code LIMIT 0, 1000 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [2] Use of undefined constant status - assumed 'status' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 188 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined variable: singlepage C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Summary\ca3226bdfc95de6aae640492abd95be3.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001608s ]
+

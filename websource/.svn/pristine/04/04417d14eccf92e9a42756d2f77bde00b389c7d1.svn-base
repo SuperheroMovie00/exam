@@ -1,0 +1,192 @@
+{__NOLAYOUT__}
+<div class="prompt-pop" data-type="grid" id="<?php echo $funcid ?>" style="z-index: {$zindex};" funcid="{$funcid}" last-url="{$__last_url}">
+  <div class="title">
+      <span class="pop-name">编辑测试 - <?php echo $search['test_no']; ?> / <?php echo $search['name']; ?></span>
+      <a href="javascript:void(0);" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" class="close iconfont">&#xe60d;</a>
+  </div>
+  <div class="trees-box" style="padding-bottom: 82px">
+    <div> <!-- class="trees-info" -->
+      <div class="screening new-filter">
+        <form action="<?php echo U('Test/index?func=detail_edit'); ?>" id="<?php echo $funcid;?>-Search-Form" method="get" verify="1">
+          <input type="hidden" name="id" value="{$id}" />
+          <input type="hidden" name="funcid" value="{$funcid}" />
+          <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+          <input type="hidden" name="zindex" value="{$zindex}" />
+          <input type="hidden" name="loaddetail" value="{$search['loaddetail']}" />
+          <ul class="nf-ul form form-mod-new abe-fl">
+            <li> <span class="tit">搜索关键字</span>
+              <div class="item">
+                <div class="txt-box">
+                  <input type="text" name="_keyword" autocomplete="off" value="{$search['_keyword']}" class="txt" verify="empty?1" tips="至少输入一个搜索项" onKeyDown="{$funcid}_keydown(this);">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nf-tsub abe-fl clearfix">
+             <input type="submit" value="搜索信息"   class="btn btn-org abe-fl" id="{$funcid}_goods"   onclick="$('#<?php echo $funcid; ?>-Search-Form').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '<?php echo U('Test/index?func=detail_edit&type=0'); ?>')">
+             <a href="#" class="nf-faqbtn mlg_10">操作帮助<i class="iconfont mlg_5">&#xe62a;</i></a>
+             <input type="submit" value="保存输入信息，我要继续添加" class="btn btn-blue abe-fr" id="{$funcid}_save"   onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Result-Form', '<?php echo U('Test/index?func=detail_save'); ?>');">
+          </div>
+        </form>
+      </div>
+      <div class="nf-faqtip">
+        1. 输入搜索关键字后按回车执行"搜索信息"，定位在首个搜到记录上，按tab键进行选择，输入数据后按回车可以提交保存，提交成功后回关键字输入<br>
+        2. 将已提交的信息中输入数量改为0，保存后会从当前保存信息中删除此记录<br>
+        <span class="abe-red">3. 在当前页上完成所要商品输入/修改数量，必须先提交保存后才能翻页或再次搜索，否则输入信息丢失</span>
+      </div>
+      <div class="table-box">
+        <div class="table-in" style="height: 350px;">
+          <form action="<?php echo U('Test/index?func=detail_save'); ?>" method="post" id="<?php echo $funcid;?>-Result-Form">
+             <input type="hidden" name="id" value="{$id}" />
+             <input type="hidden" name="funcid" value="{$funcid}" />
+             <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+             <input type="hidden" name="p" value="{$p}" />
+             <input type="hidden" name="zindex" value="{$zindex}" />
+
+             <table border="0" cellspacing="0" cellpadding="0" class="pub-table-par pub-t-faq">
+               <colgroup>
+                 <col style="width:40px; xdisplay: none ">
+                 <col style="width:40px;">
+                 <col style="width: 80px ;">
+                 <col style="width: 80px ;">
+                 <col style="width: 100px ;">
+                 <col style="width: 80px ;">
+                 <col style="width: auto" >
+               </colgroup>
+               <tbody>
+                 <tr>
+                   <th style="xdisplay:none"></th>
+                   <th>#<?php if($existdetail): ?><input type="checkbox">删除<?php endif; ?></th>
+                   <th>类型A</th>
+                   <th class="abe-txtl">编码A</th>
+                   <th class="abe-txtl">名称A</th>
+                   <th>更改时间</th>
+               <th></th >
+                 </tr>
+          <?php if(is_array($list)):
+             $i = 0;
+             $__LIST__ = $list;
+             if( count($__LIST__) == 0) :
+                echo "";
+             else:
+               foreach($__LIST__ as $key=>$master): $mod = ($i % 2 );++$i; ?>
+                 <tr class="<?php echo($key%2==0)?"even":"odd";?><?php echo ($master['_did'])?"highline":($master[status]=='2'?"redline":""); ?>">
+                   <td style="xdisplay:none">
+                       <input type="checkbox" name="_id[]"  value="{$master["id"]}" <if condition="$master['_did'] gt 0" > checked </if> />
+                   </td>
+                   <td><?php echo $key +1+ ($page_size * ($p - 1)); ?><input type="hidden" name="_did_{$master['id']}" value="{$master["_did"]}" />
+                       <if condition="$master['_did'] gt 0" ><input type="checkbox" name="del[]"  value="{$master["_did"]}" /></if>
+                       </td>
+                   <td   tag="typea">
+                       <div class="dropdown" id="{$funcid}_typea">
+                           <select class="pbsele dropdown" name="typea_{$master['id']}" onblur="return <?php echo $funcid ?>_check(this);">
+                              <option value="" <?php if($search['typea'] == ''): ?> selected="selected" <?php endif;?> ></option>
+                             <?php
+                                $keyvalue = table_TestDetail_typea();
+                                if(is_array($keyvalue)){
+                                    $i = 0; $__LIST__ = $keyvalue;  ?>
+                                    <?php foreach($__LIST__ as $key=>$item): ++$i; ?>
+                                 <option value="<?php echo $item['id']; ?>" <?php if($item['id'] == $master['typea']): ?> selected="selected" <?php endif;?>><?php echo $item['name']; ?></option>
+                                    <?php endforeach; ?>
+                             <?php } ?>
+                           </select>
+                       </div></td>
+                   <td  class=" abe-txtl " tag="codea">
+                       <div class="textbox">
+                         <input type="text" class="pbtxt pbtxt-sm abe-txtc " name="codea_{$master['id']}" value="<?php echo $master['codea'] ; ?>" onblur="return <?php echo $funcid ?>_check(this);" >
+                       </div></td>
+                   <td  class=" abe-txtl " tag="namea">
+                       <div class="textbox">
+                         <input type="text" class="pbtxt pbtxt-sm abe-txtc " name="namea_{$master['id']}" value="<?php echo $master['namea'] ; ?>" onblur="return <?php echo $funcid ?>_check(this);" >
+                       </div></td>
+                   <td   tag="lastchanged">
+                       <div class="textbox">
+                         <input type="text" class="pbtxt pbtxt-sm abe-txtc " name="lastchanged_{$master['id']}" value="<?php echo $master['lastchanged'] ; ?>" onblur="return <?php echo $funcid ?>_check(this);" >
+                       </div></td>
+                   <td></td>
+                 </tr>
+         <?php endforeach; ?>
+         <?php
+             endif;
+           else:
+             echo "";
+           endif; ?>
+                </tbody>
+             </table>
+          </form>
+        </div>
+        <div class="blank15"></div>
+        <?php echo $page; ?>
+      </div>
+    </div>
+  </div>
+  <div class="pop-sub ">
+    <div class="nf-sdata">
+      <!-- 暂时关闭条件  <if condition="$statinfo"></if>   -->
+      <?php if($existdetail): ?>
+      <input type="submit" value="删除选择记录" class="btn btn-blue mrg_10 " onclick="return _asr.confirm('确认操作', '请确认是否删除选择的记录信息?', '', '<?php echo U("Test/index?func=detail_del") ; ?>','','<?php echo "$funcid"; ?>-Result-Form'); " >
+      <?php endif; ?>
+          <div class="abe-fl">已添加：<em class="abe-space-sm">{$statinfo.details}</em>类   <em class="abe-space-sm">{$statinfo.qty|system_format="N3",###,0}</em>件   <em class="abe-space-sm">{$statinfo.amount|system_format="F32",###,0}</em>元</span></div>
+      <input type="submit" value="显示已下单商品"  class="btn btn-org abe-fl "  id="{$funcid}_order"   onclick="$('#<?php echo $funcid; ?>-Search-Form').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('Test/index?func=detail_edit&type=1')}')">
+    </div>
+    <div class="abe-fr pdr_40 ">
+        <input type="submit" value="输入完成，保存退出" class="btn btn-blue mrg_10" onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Result-Form', '<?php echo U('Test/index?func=detail_save&close=1'); ?>');">
+        <input type="submit" value="取消" class="btn btn-org" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');">
+    </div>
+  </div>
+</div>
+
+<script>
+      function <?php echo $funcid ?>_init(){
+          var _this = $("#<?php echo $funcid ?>");
+          var ppw = _this.width()/2;
+          _this.css({'margin-left':-ppw});
+      }
+
+      function <?php echo $funcid ?>_refresh() {
+          _asr.submit('<?php echo $funcid;?>', $("#<?php echo $funcid ?>").find("form").eq(1), '');
+      }
+
+      function <?php echo $funcid ?>_check(o) {
+        var _val = $(o).val();
+
+/* 判断是否输入的数值
+          var dval = parseFloat($(o).val());
+          if(isNaN(dval)) return false;
+*/
+        $(o).parents("tr").find("input[type=checkbox]").prop("checked", _val!='');
+
+/* 是否存在页面，输入后自动计算的，如输入数量计算金额
+          var purchase_price, packing_qty;
+        purchase_price = $(o).parents("tr").find("td[tag=purchase_price]").html();
+        packing_qty = $(o).parents("tr").find("td[tag=packing_qty]").html();
+        purchase_price = parseFloat(purchase_price);
+        if(isNaN(purchase_price)) purchase_price = 0.0;
+        packing_qty = parseFloat(packing_qty);
+        if(isNaN(packing_qty) || packing_qty == 0)  packing_qty = 1.0;
+
+        $(o).parents("tr").find("td[tag=purchase_qty]").html((qty * packing_qty).toFixed(0));
+        $(o).parents("tr").find("td[tag=purchase_amount]").html((qty * packing_qty * purchase_price).toFixed(2));
+*/
+    }
+
+    function <?php echo $funcid ?>_clear() {
+        $("#<?php echo $funcid;?>-Result-Form").find("tr").not(":first").remove();
+        var _form = $("#<?php echo $funcid; ?>-Search-Form");
+        _form.find("input[name=_keyword]").val("");
+        _form.find("input[name=goods_no]").val("");
+        _form.find("input[name=name]").val("");
+        _form.find("button.txt-clear").trigger("click");
+        _form.find("input[name=_keyword]").focus();
+    }
+
+    function <?php echo $funcid ?>_show(qty,amount,count) {
+        $("#{$funcid}_show_num").html('已添加：<em class="abe-space-sm">'+ count +'</em>类   <em class="abe-space-sm">'+ qty +'</em>件   <em class="abe-space-sm">'+ amount +'</em>元');
+    }
+
+    function <?php echo $funcid ?>_focus()
+    {
+        var isfind=false;
+    }
+
+</script>

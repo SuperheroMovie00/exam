@@ -1,0 +1,117 @@
+{
+  "id": {
+    "label": "库位",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },  
+  "storage_code": {
+    "label": "仓库代码",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Storage",
+      "value": {
+      },
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty"]
+  },
+  "code": {
+    "label": "库位代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "库位名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+     "update":true,
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,100"]
+  },  
+  "remark": {
+    "label": "库位备注",
+    "require": false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Storage_status",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },  
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

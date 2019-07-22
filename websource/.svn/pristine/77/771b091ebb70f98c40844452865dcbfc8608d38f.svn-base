@@ -1,0 +1,842 @@
+<?php
+namespace Home\Controller;
+
+//
+//注释: TempletDetail - 组卷模板明细信息
+//
+use Home\Controller\BasicController;
+use Think\Log;
+class TempletDetailController extends BasicController {
+
+    public function _init() {
+        $funcs = $this->getUserRoleList($this->user,array( 'TempletDetail', '/Home/TempletDetail', ));
+        if ($funcs)
+            $this->assign("rights",  $funcs);
+        else{
+            $funcs = array(
+                         array("key"=>"refresh","func"=>"TempletDetail","Action"=>"refresh") ,
+                         array("key"=>"search","func"=>"/Home/TempletDetail","Action"=>"view") ,
+                         array("key"=>"detail_import","func"=>"/Home/TempletDetail","Action"=>"detail_import") ,
+                         array("key"=>"detail_select","func"=>"/Home/TempletDetail","Action"=>"select_product") ,
+                         array("key"=>"tabcaozuorizhi","func"=>"/Home/TempletDetail","Action"=>"tabcaozuorizhi") ,
+                         array("key"=>"edit_base","func"=>"/Home/TempletDetail","Action"=>"edit_base") ,
+                         array("key"=>"order_edit","func"=>"/Home/TempletDetail","Action"=>"edit_base") ,
+                         array("key"=>"order_delete","func"=>"/Home/TempletDetail","Action"=>"delete")
+             );
+            $this->assign("rights",  $this->GetUserRights($this->user["id"],$funcs ));
+        }
+        $this->assign("colshow", $this->GetUserColumnDefine($this->user["id"],"TempletDetail"));
+    }
+
+    public function index() {
+      $data["pfuncid"] = I("request.pfuncid");
+      $data["funcid"] = I("request.funcid");
+      $data["zindex"] = I("request.zindex/d");
+      if(empty($data["funcid"])) $data["funcid"] = "TempletDetail";
+      $this->GetLastUrl($data["funcid"]);
+
+      $func = I("request.func");
+      if($func != "saveSelectProduct" && $func != "save") {
+        $this->GetLastUrl($data["funcid"]);
+      }
+
+      switch ($func) {
+
+//// case for add ////
+        case "edit":
+        case "edit_base":
+        case "add":
+          $this->add($data);
+          break;
+        case "save":
+          $this->save($data);
+          break;
+//// case for import ////
+        case "import":
+          $this->import($data);
+          break;
+        case "import_save":
+          $this->import_save($data);
+          break;
+//##combine_for_add_switch_case##
+
+//// case for view ////
+        case "view":
+          $this->view($data);
+          break;
+        case "delete":
+          $this->order_delete($data);
+          break;
+        case "detail_delete":
+          $this->detail_delete($data);
+          break;
+        case "detail_add":
+          $this->selectProduct($data);
+          break;
+        case "saveSelectProduct":
+          $this->saveSelectProduct($data);
+          break;
+        default :
+          $this->ajax_refresh($data ['funcid']);
+          break;
+
+      }
+    }
+
+//// source for add - begin ////
+    private function add($data) {
+       $id = I("request.id/d");
+       if(!$id){
+          //读接入参数
+           $t = I("request.t/d",0);
+           $templet_id = I("request.tid/d");
+           $parent_id = I("request.pid/d");
+          $type = I("request.type");
+          $templet_no = I("request.templet_no");
+          $subject = I("request.subject");
+          $seq = I("request.seq/d",0);
+          $score = I("request.score/d",0);
+          $req_type = I("request.req_type");
+          $req_category_code = I("request.req_category_code");
+          $req_kind = I("request.req_kind");
+          $req_child_count = I("request.req_child_count");
+          $req_child_seq = I("request.req_child_seq");
+          $extract = I("request.extract");
+          //赋初值
+           $data["t"] =$t;  //第一个选项
+          $search["type"] = $type?$type:"0";  //第一个选项
+          $search["templet_no"] = $templet_no?$templet_no:"";
+          $search["subject"] = $subject?$subject:"";
+          $search["seq"] = $seq?$seq:"";
+          $search["score"] = $score?$score:"";
+          $search["req_type"] = $req_type?$req_type:"0";  //第一个选项
+          $search["req_category_code"] = $req_category_code?$req_category_code:"";
+          $search["req_kind"] = $req_kind?$req_kind:"1";  //第一个选项
+          $search["req_child_count"] = $req_child_count?$req_child_count:"1";  //第一个选项
+          $search["req_child_seq"] = $req_child_seq?$req_child_seq:"0";  //第一个选项
+          $search["extract"] = $extract?$extract:"0";  //第一个选项
+           $search["templet_id"] = $templet_id?$templet_id:"0";  //第一个选项
+           $search["parent_id"] = $parent_id?$parent_id:"0";  //第一个选项
+       } else {
+          $search = M(templet_detail)->find($id);
+          if(!$search){
+              $this->ajaxResult("组卷模板明细数据不存在" );
+          }
+          $data["id"] = $search["id"];
+          $data["t"]=($search["type"]==0?0:1);
+       }
+       $data["search"] = $search;
+       //检查popup返回name
+       if($data['search']['req_category_code']){
+          $ret=M( "question_category" )
+               ->field("name")
+               ->where("code='".$data['search']['req_category_code']."'")
+               ->find();
+          if($ret){
+               $data["search"]["req_category_code_name"] = $ret["name"];
+          }
+       }
+       //检查绑定赋值
+       $data["search"]["req_category_code_name"] = $data["search"]["req_category_name"];
+       foreach($data as $key=>$val) {
+           $this->assign($key, $val);
+       }
+       $html = $this->fetch("TempletDetail:add");
+       echo $html;
+    }
+    private function save($data) {
+       $id=I("request.id/d" );
+       //读取页面输入数据
+       $type = I("request.type");
+       $templet_id = I("request.templet_id");
+       $parent_id = I("request.parent_id");
+       $subject = I("request.subject");
+       $seq = I("request.seq/d",0);
+       $score = I("request.score/d",0);
+       $req_type = I("request.req_type");
+       $req_category_code_name = I("request.req_category_code_name");
+       $req_category_code = I("request.req_category_code");
+       $req_kind = I("request.req_kind");
+       $req_child_count = I("request.req_child_count");
+       $req_child_seq = I("request.req_child_seq");
+       $extract = I("request.extract");
+       //非页面输入字段
+       $input = array();
+       //数据有效性校验，非空/数值负数，范围/日期与今日比较
+       //数据校验 - 必输项不能为空
+       if(!verify_value($type,"empty","","")) $this->ajaxError("类型 不能为空");
+       // "标题" 长度超200位，没有生成非空检测
+       if($type==0)
+       {
+           if(!verify_value($seq,"nagitive","","")) $this->ajaxError("题号 不能为负数");
+           if ($seq <=0) $this->ajaxError("题号必须大于0");
+           if(!verify_value($score,"nagitive","","")) $this->ajaxError("分数 不能为负数");
+           if ($score<=0) $this->ajaxError("分数必须大于0");
+
+           if($req_category_code){
+               $ret = M("question_category")
+                   ->field("id,code,name,status")
+                   ->where(" code='$req_category_code' ")->find();
+               if(!$ret)  $this->ajaxError("知识点码不存在");
+               if($ret['status']==0 || $ret['status']==8)   $this->ajaxError("知识点码非有效状态");
+           }
+       }
+       $model=M("templet");
+       $templet_info=$model->where(array("id"=>$templet_id))->find();
+       if(!$templet_info)
+       {
+           $this->ajaxError("模板信息不存在");
+       }
+
+       $model = M("templet_detail");
+       //页面输入字段
+       $input["type"] = $type;
+        $input["templet_id"] = $templet_id;
+        $input["parent_id"] = $parent_id;
+       $input["templet_no"] = $templet_info["templet_no"];
+       $input["subject"] = $subject;
+       $input["seq"] = $seq;
+       $input["score"] = $score;
+       $input["req_type"] = $req_type;
+       $input["req_category_code_name"] = $req_category_code_name;
+       $input["req_category_code"] = $req_category_code;
+       $input["req_kind"] = $req_kind;
+       $input["req_child_count"] = $req_child_count;
+       $input["req_child_seq"] = $req_child_seq;
+       $input["extract"] = $extract;
+       $input["req_category_name"] = $req_category_code_name;
+       $input["modify_user"] = session(C("USER_AUTH_KEY"));
+       $input["modify_time"] =  date('Y-m-d H:i:s.n');
+       $model->startTrans();
+       $result=false;
+       //需要存入日志的字段
+       $needSave=array(
+            'type'=>'类型',
+            'templet_no'=>'模板编码',
+            'seq'=>'题号',
+            'score'=>'分数',
+            'req_type'=>'要求类型',
+            'req_category_code'=>'知识点码',
+            'req_kind'=>'要求题型',
+            'req_child_count'=>'套题小题数',
+            'req_child_seq'=>'套题小题号',
+            'extract'=>'抽取要求',
+       );
+       if(!$id) {
+          //新增  建号操作
+          $input["create_user"] = session(C("USER_AUTH_KEY"));
+          $input["create_time"] = date('Y-m-d H:i:s.n');
+          //新增数据 保存数据库
+          $result = $id = $model->add($input);
+          //建立操作日志
+          //$result = $result && createLogOrder('templet_detail',$id,'新增组卷模板明细','',"*",'');
+       } else {
+          //id存在时判断数据库内数据是否存在
+          $orig=$model->where("id='%d'",array($id))->find();
+          if(empty($orig)) {
+               $this->ajaxError("组卷模板明细数据不存在");
+          }
+          //按主键更新数据
+          $result = $model->where("id = $id")->save($input);
+          $isSaveLog=false;
+          foreach ($needSave as $key=>$v) {
+              if($orig[$key]!=$input[$key]) {
+                  $isSaveLog=true;
+                  break;
+              }
+          }
+          if($isSaveLog){
+            //建立操作日志
+            //$result = $result && createLogOrder('templet_detail',$id,'变更组卷模板明细',$orig,'','','',$needSave);
+          }
+       }
+       if($result){
+           $model->commit();
+       }else{
+           $model->rollback();
+           echo json_encode(array("msg"=>message("组卷模板明细保存发生错误")));
+           die;
+       }
+
+        $cur_html="";
+        if($input["type"]!=0 && $input["req_type"]==1)
+        {
+            if($input["req_child_seq"]==1)
+            {
+                if($input["req_child_count"]>0)
+                {
+                    $score_avg=intval($input["score"]/$input["req_child_count"]);
+                    $score_left=$input["score"]%$input["req_child_count"];
+                    $cur_html.="<div><ul>";
+                    for ($i=0;$i<$input["req_child_count"];$i++)
+                    {
+                        $cur_seq=$input["seq"]+$i;
+                        $score=$score_avg;
+                        if($score_left>0)
+                        {
+                            $score++;
+                            $score_left--;
+                        }
+                        $cur_html.="<li><a>套题子题".($i+1)."(第".$cur_seq."题,".$score."分)</a></li>";
+                    }
+                    $cur_html.="</ul></div>";
+                }
+                $input["child_html"]=$cur_html;
+            }
+        }else
+        {
+            $input["child_html"]="";
+        }
+
+        $this->ajax_closePopup($data ['funcid']);
+        $input["id"]=$id;
+        $this->ajax_func($data ['pfuncid']."_detail_add_callback",json_encode($input));
+        $this->ajaxResult();
+
+       //完成后跳转
+       //$this->ajaxReturn($data ['pfuncid'],$data ['funcid'],"refresh", "","closepopup", 1 );
+       //转到view页面
+       //$this->ajaxReturn("","",U("TempletDetail/index?func=view&id=$id&pfuncid=".$data ['pfuncid']), '信息查看' );
+       die;
+    }
+//// source for add - end ////
+//// source for import - begin ////
+    private function import($data){
+      $data['orderid'] = I("get.id");
+      foreach($data as $key=>$val) {
+        $this->assign($key, $val);
+      }
+      $html = $this->fetch("TempletDetail:import");
+      echo $html;
+    }
+    private function cattext($string, $txt)
+    {
+        if($string)$string.=",";
+        return $string.$txt;
+    }
+    private function import_save($data)
+    {
+        $orderid = I("request.orderid/d");
+        $file = $_FILES;
+        /* ========================================== */
+        /* 上传文件 - 判断文件类型csv读取内容         */
+        /* ========================================== */
+        if (empty($file)) {
+            $this->ajaxResult("导入失败:请上传csv文件");
+        }
+        if (isset($file["import"]) && $file["import"]["error"] == 0) {
+            if (is_uploaded_file($file['import']['tmp_name'])) {
+                if (substr($file['import']['name'], -4) != ".csv") {
+                    $this->ajaxResult("导入失败:请上传csv文件");
+                }
+            }
+        }
+        /* ==================================================== */
+        /* 上传文件 - 标题行列内容、列数、标题行、数据起始行    */
+        /* ==================================================== */
+        $header = array(
+            "type" => "类型",
+            "templet_no" => "模板编码",
+            "subject" => "标题",
+            "seq" => "题号",
+            "score" => "分数",
+            "req_type" => "要求类型",
+            "req_category_code" => "知识点码",
+            "req_kind" => "要求题型",
+            "req_child_count" => "套题小题数",
+            "req_child_seq" => "套题小题号",
+            "extract" => "抽取要求",
+                       );
+        $row_header = 1;
+        $row_data = 2;
+        $field = array_keys($header);
+        $field_count = count($field);
+        /* =========================== */
+        /* 上传文件 - 读取内容         */
+        /* =========================== */
+        $h = fopen($file['import']['tmp_name'], 'r');
+        $importdatas = array();
+        $n = 1;
+        while ($row = fgetcsv($h)) {
+            if ($n < $row_header) {
+                $n++;
+                continue;
+            }
+            $num = count($row);
+            if ($n == $row_header) {
+                if ($field_count != $num) $this->ajaxResult("导入失败:标题列数与模板不一致");
+            } else if ($num > $field_count) {
+                $num = $field_count;
+            }
+            for ($i = 0; $i < $num; $i++) {
+                if ($n == 1) continue;
+                $importdatas[$n][$field[$i]] = mb_convert_encoding($row[$i], 'utf-8', 'gbk');
+            }
+            $n++;
+        }
+        fclose($h);
+        if ($n < $row_data) $this->ajaxResult("导入失败:文件内没有数据");
+        /* =========================== */
+        /* 上传文件 - 标题校验         */
+        /* =========================== */
+        $err = "";
+        foreach ($importdatas[$row_header] as $key => $value) {
+            if ($header[$key] != $value) $err = $this->cattext($err, $value);
+        }
+        if ($err) $this->ajaxResult("导入失败:标题列[$err]与模板定义不一致");
+        /* =========================== */
+        /* 上传文件 - 数据校验         */
+        /* =========================== */
+        $i = 0;
+        foreach ($importdatas as $k => $row) {
+            if ($k >= $row_data) {
+               $err_type = "";
+               $err_empty = "";
+               $err_exist = "";
+               if(!verify_value($row["type"],"empty","","")) $err_empty=$this->cattext($err_empty, $header["type"]);
+               if (strlen($row["type"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["type"], "num"))
+                      $err_type = $this->cattext($err_type, $header["type"]);
+                  else
+                      if ($row["type"] < 0) $err_exist = $this->cattext($err_exist, $header["type"] . "是负数");
+               }
+               if (strlen($row["seq"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["seq"], "num"))
+                      $err_type = $this->cattext($err_type, $header["seq"]);
+                  else
+                      if ($row["seq"] < 0) $err_exist = $this->cattext($err_exist, $header["seq"] . "是负数");
+               }
+               if (strlen($row["score"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["score"], "num"))
+                      $err_type = $this->cattext($err_type, $header["score"]);
+                  else
+                      if ($row["score"] < 0) $err_exist = $this->cattext($err_exist, $header["score"] . "是负数");
+               }
+               if (strlen($row["req_type"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["req_type"], "num"))
+                      $err_type = $this->cattext($err_type, $header["req_type"]);
+                  else
+                      if ($row["req_type"] < 0) $err_exist = $this->cattext($err_exist, $header["req_type"] . "是负数");
+               }
+               if (strlen($row["req_child_count"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["req_child_count"], "num"))
+                      $err_type = $this->cattext($err_type, $header["req_child_count"]);
+                  else
+                      if ($row["req_child_count"] < 0) $err_exist = $this->cattext($err_exist, $header["req_child_count"] . "是负数");
+               }
+               if (strlen($row["req_child_seq"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["req_child_seq"], "num"))
+                      $err_type = $this->cattext($err_type, $header["req_child_seq"]);
+                  else
+                      if ($row["req_child_seq"] < 0) $err_exist = $this->cattext($err_exist, $header["req_child_seq"] . "是负数");
+               }
+               if (strlen($row["extract"])>0) {
+               //数值类型校验
+                  if (!verify_value($row["extract"], "num"))
+                      $err_type = $this->cattext($err_type, $header["extract"]);
+                  else
+                      if ($row["extract"] < 0) $err_exist = $this->cattext($err_exist, $header["extract"] . "是负数");
+               }
+               if(strlen($row["req_category_code"])>0){
+                   $ret = M("question_category")
+                          ->field("id,code,name,status")
+                          ->where(" code='".$row["req_category_code"]."' ")->find();
+                   if(!$ret)  $err_exist = $this->cattext($err_exist, $header["req_category_code"]."不存在");
+                   if($ret['status']==0 || $ret['status']>=7) $this->cattext($err_exist, $header["req_category_code"]."非有效状态");
+               }
+               if ($err_empty || $err_exist || $err_type) {
+                   $err .= "第 " . ($i + $row_data) . " 行校验失败\n";
+                   if ($err_empty) $err .= "    数据为空: " . $err_empty . "\n";
+                   if ($err_exist) $err .= "    数据非法：" . $err_exist . "\n";
+                   if ($err_type) $err .= "    类型非法: " . $err_type . "\n";
+               }
+           }
+           $i++;
+       }
+       if ($err) {
+           $this->ajaxResult("数据重复:\n" . $err);
+       }
+       $model = M("templet_detail");
+       //关键字重复导入覆盖方式
+       $overwrite=true;
+       if(!$overwrite){ //非覆盖方式检查是否重复
+          if ($err) {
+              $this->ajaxResult("数据存在:\n" . $err);
+          }
+       }
+       /* =========================== */
+       /* 上传文件 - 数据存储         */
+       /* =========================== */
+        $model->startTrans();
+        $total=0;
+        $new=0;
+        $edit=0;
+        foreach ($importdatas as $row) {
+            $input = array();
+            $id = 0;
+            $m = array();
+            //非导入字段-赋初值
+            //导入字段
+            $input["type"] = $row["type"];
+            $input["templet_no"] = $row["templet_no"];
+            $input["subject"] = $row["subject"];
+            $input["seq"] = $row["seq"];
+            $input["score"] = $row["score"];
+            $input["req_type"] = $row["req_type"];
+            $input["req_category_code"] = $row["req_category_code"];
+            $input["req_kind"] = $row["req_kind"];
+            $input["req_child_count"] = $row["req_child_count"];
+            $input["req_child_seq"] = $row["req_child_seq"];
+            $input["extract"] = $row["extract"];
+            $input["req_category_name"] = $row["req_category_code_name"];
+            //modify_user/time字段
+            $input["modify_user"] = session(C("USER_AUTH_KEY"));
+            $input["modify_time"] =  date('Y-m-d H:i:s.n');
+            //检查是否存在
+            //样例 $m = $model->where("code='".$row["code"]."'")->find();
+            if (!$orig) {
+                  //新增
+                $input["create_user"] = session(C("USER_AUTH_KEY"));
+                $input["create_time"] =  date('Y-m-d H:i:s.n');
+                $result = $id = $model->add($input);
+                $new++;
+                //建立操作日志
+                    $result = $result && createLogOrder('templet_detail', $id, '数据导入(新增)',$orig,'','','',$header);
+            } else {
+                  //覆盖
+                $id = $orig['id'];
+                $result = $model->where("id=$id")->save($input);
+                $edit++;
+                //建立操作日志
+                $result = $result && createLogOrder('templet_detail',$id,'数据导入(覆盖)',$orig,'','','',$header);
+            }
+            if (!$result) {
+                break;
+            }
+            $total++;
+        }
+        if ($result) {
+            $model->commit();
+        } else {
+            $model->rollback();
+        }
+        $this->ajax_hideConfirm();
+        $this->ajax_closePopup($data ['funcid']);
+        $this->ajax_refresh($data ['pfuncid']);
+        $this->ajaxResult("本次导入 $total 条, 新增 $new 条, 覆盖 $edit 条");
+        die;
+        //$this->ajaxReturn($data ['pfuncid'], $data ['funcid'], "refresh", "", "closepopup");
+    }
+//// source for import - end ////
+//##combine_for_add_source##
+
+//// source for status confirm ////
+
+//// source for status view ////
+    private function view($data) {
+        $data["p"] = I("request.p/d");
+        $data["pagesize"] = I("request.pagesize/d");
+
+        $data["id"] = I("request.id/d");
+        $data["no"] = I("request.no");
+        if(!$data["id"] && !$data["no"]) {
+           $this->ajaxError("组卷模板明细信息查询参数非法");
+        }
+
+        //condition
+        $condition="";
+        $joinsql="";
+        //select search fields
+        $selectmasterfields="@templet_detail.*";
+
+
+
+        $sql = table("select #selectfields# from @templet_detail  #join# Where #viewkey# #condition# #orderby#");
+        if($data["id"])
+           $viewkey=table("@templet_detail.id=$data[id]");
+        else
+           $viewkey=table("@templet_detail.id='$data[no]'");
+        $sql = str_replace("#selectfields#",table($selectmasterfields),$sql);
+        $sql = str_replace("#join#",$joinsql,$sql);
+        $sql = str_replace("#viewkey#",$viewkey,$sql);
+        $sql = str_replace("#condition#",$condition,$sql);
+        $sql = str_replace("#orderby#","",$sql);
+        $search = M()->query($sql);
+        if(!$search){
+           $this->ajaxError("组卷模板明细信息信息不存在");
+        }
+        $data["search"] = current($search);
+
+
+        //按tabsheet - 开始
+        $data["id"] = $data["search"]["id"];
+        $data["search"]["_tab"] = $this->tabsheet_check(I("request._tab"));
+        $page_size=$data["pagesize"] ;//session("TempletDetail-".$data["search"]["_tab"]."-PageSize");
+        switch($data["search"]["_tab"])
+        {
+
+          case "shijuanmingxi":
+               $data = $this->tab_shijuanmingxi_exam_detail($page_size,$data);
+               break;
+          case "caozuorizhi":
+               $data = $this->tab_caozuorizhi_log_order($page_size,$data);
+               break;
+
+        }
+        $data["search"]["_tab_".$data["search"]["_tab"]."_p"]=$data["p"];
+        $data["search"]["_tab_".$data["search"]["_tab"]."_psize"]=$data["page_size"];
+        //session("TempletDetail-".$data["search"]["_tab"]."-PageSize", $data["page_size"]);
+        //按tabsheet - 结束
+
+        foreach($data as $key=>$val) {
+            $this->assign($key, $val);
+        }
+        $html = $this->fetch("TempletDetail:view");
+        echo $html;
+    }
+
+    //按tabsheet子程序 - 开始
+
+    private function tab_shijuanmingxi_exam_detail($tab_pagesize,$data)
+    {
+        $orderby="";
+        $joinsql="";
+
+
+        $condition = "" ;
+
+
+        //select detail fields
+        $selectfields="@exam_detail.id ";
+        $selectfields.=",@exam_detail.exam_no ";
+        $selectfields.=",@exam_detail.type ";
+        $selectfields.=",@exam_detail.subject ";
+        $selectfields.=",@exam_detail.seq ";
+        $selectfields.=",@exam_detail.score ";
+        $selectfields.=",@exam_detail.question_type ";
+        $selectfields.=",@exam_detail.question_code ";
+        $selectfields.=",@exam_detail.question_name ";
+        $selectfields.=",@exam_detail.question_category_code ";
+        $selectfields.=",@exam_detail.question_category_name ";
+        $selectfields.=",@exam_detail.question_kind ";
+        $selectfields.=",@exam_detail.question_stem ";
+        $selectfields.=",@exam_detail.question_quiz ";
+        $selectfields.=",@exam_detail.question_answer ";
+        $selectfields.=",@exam_detail.question_img ";
+        $selectfields.=",@exam_detail.extract_count ";
+        $selectfields.=",@exam_detail.create_time ";
+        $selectfields.=",@exam_detail.modify_time ";
+
+        $viewkey="@exam_detail.templet_detail_id='".$data["search"]["id"]."'";
+     if(!$viewkey)
+           $this->ajaxError("查询参数非法");
+     //      die;
+
+        $page_size = $tab_pagesize;
+        if (!$page_size) {
+            $page_size = 10;
+        }
+
+        $count_sql = table("select count(*) as cnt from @exam_detail  #join# where #viewkey# #condition#");
+        $search_sql = table("select #selectfields# from @exam_detail  #join# Where #viewkey# #condition# #orderby#");
+
+        $viewkey = table($viewkey);
+        $condition = table($condition);
+        $orderby= table($orderby);
+        $selectfields= table($selectfields);
+
+        $count_sql = str_replace("#condition#",$condition,$count_sql);
+        $count_sql = str_replace("#viewkey#",$viewkey,$count_sql);
+        $count_sql = str_replace("#join#",$joinsql,$count_sql);
+
+        $count = M()->query($count_sql);
+        $count = $count[0]["cnt"];
+
+        if($count < $page_size)
+            $tmp = 1;
+        else {
+            $tmp = intval($count / $page_size);
+            if($count % $page_size != 0) {
+                $tmp++;
+            }
+        }
+        if(!$data["p"]) {
+            $data["p"] = 1;
+        }
+        if($data["p"] > $tmp) {
+            $data["p"] = $tmp;
+        }
+
+        $sql = str_replace("#selectfields#",$selectfields,$search_sql);
+        $sql = str_replace("#join#",$joinsql,$sql);
+        $sql = str_replace("#viewkey#",$viewkey,$sql);
+        $sql = str_replace("#condition#",$condition,$sql);
+        $sql = str_replace("#orderby#",$orderby,$sql);
+        $sql .= " LIMIT ". (($data["p"] - 1) * $page_size). ", $page_size";
+        $data["list"] = M()->query($sql);
+        $pageClass = new \Think\Page($count,$page_size);
+        $pageClass->rollPage = 8;
+        $data["page"] = $pageClass->show_drp($data["funcid"],"");
+        $data["page_size"] = $page_size;
+
+        return $data;
+    }
+
+    private function tab_caozuorizhi_log_order($tab_pagesize,$data)
+    {
+        $orderby="";
+        $joinsql="";
+
+
+        $condition = "" ;
+
+
+        //select detail fields
+        $selectfields="@log_order.status ";
+        $selectfields.=",@log_order.id ";
+        $selectfields.=",@log_order.create_time ";
+        $selectfields.=",@log_order.order_id ";
+        $selectfields.=",@log_order.order_no ";
+        $selectfields.=",@log_order.subject ";
+        $selectfields.=",@log_order.details ";
+        $selectfields.=",@log_order.qty ";
+        $selectfields.=",@log_order.amount ";
+        $selectfields.=",@log_order.content ";
+
+        $viewkey="@log_order.order_id='".$data["search"]["id"]."'";
+        $viewkey.=" and @log_order.type='templet_detail'";
+     if(!$viewkey)
+           $this->ajaxError("查询参数非法");
+     //      die;
+
+        $page_size = $tab_pagesize;
+        if (!$page_size) {
+            $page_size = 10;
+        }
+
+        $count_sql = table("select count(*) as cnt from @log_order  #join# where #viewkey# #condition#");
+        $search_sql = table("select #selectfields# from @log_order  #join# Where #viewkey# #condition# #orderby#");
+        $orderby="order by @log_order.id desc";
+
+        $viewkey = table($viewkey);
+        $condition = table($condition);
+        $orderby= table($orderby);
+        $selectfields= table($selectfields);
+
+        $count_sql = str_replace("#condition#",$condition,$count_sql);
+        $count_sql = str_replace("#viewkey#",$viewkey,$count_sql);
+        $count_sql = str_replace("#join#",$joinsql,$count_sql);
+
+        $count = M()->query($count_sql);
+        $count = $count[0]["cnt"];
+
+        if($count < $page_size)
+            $tmp = 1;
+        else {
+            $tmp = intval($count / $page_size);
+            if($count % $page_size != 0) {
+                $tmp++;
+            }
+        }
+        if(!$data["p"]) {
+            $data["p"] = 1;
+        }
+        if($data["p"] > $tmp) {
+            $data["p"] = $tmp;
+        }
+
+        $sql = str_replace("#selectfields#",$selectfields,$search_sql);
+        $sql = str_replace("#join#",$joinsql,$sql);
+        $sql = str_replace("#viewkey#",$viewkey,$sql);
+        $sql = str_replace("#condition#",$condition,$sql);
+        $sql = str_replace("#orderby#",$orderby,$sql);
+        $sql .= " LIMIT ". (($data["p"] - 1) * $page_size). ", $page_size";
+        $data["list"] = M()->query($sql);
+        $pageClass = new \Think\Page($count,$page_size);
+        $pageClass->rollPage = 8;
+        $data["page"] = $pageClass->show_drp($data["funcid"],"");
+        $data["page_size"] = $page_size;
+
+        return $data;
+    }
+
+
+
+    private function tabsheet_check($itab)
+    {
+        $idefault="shijuanmingxi";
+        switch($itab)
+        {
+
+          case "shijuanmingxi":
+          case "caozuorizhi":
+
+              break;
+          default:
+              $itab=$idefault;
+              break;
+         }
+        return $itab;
+    }
+    //按tabsheet子程序 - 结束
+
+    private function deleteProcess($id) {
+        $type=1;
+        $smo=M('templet_detail')->where("id='%d'",array($id))->find();
+        if(empty($smo)) {
+            $this->ajaxResult("组卷模板明细信息数据不存在");
+        }
+        if($smo['status']!=0){
+            $this->ajaxResult("组卷模板明细信息状态不能删除");
+        }
+
+        $result=true;
+        //$result = $result && createLogOrder('templet_detail',$id,($smo['status']?'取消信息':'删除记录'),'');
+        //if($smo['status']!=0){
+        //    $result = $result && M('templet_detail')->where("id='%d'",array($id))->save(array('status'=>8,'cancel_time'=>date('Y-m-d H:i:s'),'cancel_status'=>1));
+        //}else{
+            $result = $result && M('templet_detail')->where("id='%d'",array($id))->delete();
+        //}
+        return $result;
+    }
+
+    private function order_delete($data) {
+
+        $id=I("request.id/d" );
+        $type=I("request.type/d" );
+        if(!$id) {
+             $this->ajaxResult("组卷模板明细信息参数不存在");
+        }
+
+        $m=M();
+        $m->startTrans();
+        $info=M("TempletDetail")->where(array("id"=>$id))->find();
+        $r=$this->deleteProcess($id);
+        if($r){
+            $m->commit();
+        }else{
+            $m->rollback();
+        }
+
+
+        $this->ajax_hideConfirm();
+        $this->ajax_func($data ['funcid']."_category_delete_callback",json_encode($info));
+        $this->ajaxResult();
+
+//        $this->ajax_hideConfirm();
+//        if(!$type){
+//            $this->ajax_closeTab($data ['funcid']);
+//        }
+//        $this->ajax_refresh($data ['pfuncid']);
+//        $this->ajaxResult();
+        die;
+    }
+
+
+}

@@ -1,0 +1,88 @@
+{__NOLAYOUT__}
+<div class="qmod-bd">
+    <div class="qmod">
+        <?php foreach($detail as $item) { ?>
+
+
+        <!--一类标题-->
+        <?php if($item['type']=='1'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h1 class="font-xst">
+                <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>
+            </h1>
+        </div>
+        <?php } ?>
+
+        <?php  if($item['type']=='2'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h2 class="font-ht">
+                <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>
+            </h2>
+        </div>
+        <?php } ?>
+
+        <?php   if($item['type']=='3'){ ?>
+        <div class="paper-title-info abe-txtc" style="padding: 0px">
+            <h3 class="font-xst">
+                <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>
+            </h3>
+        </div>
+        <?php } ?>
+
+        <ul class="abe-txtl">
+        <?php if($item['type']=='4'){ ?>
+        <li class="abe-fb"><?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?></li>
+        <?php } ?>
+
+
+        <?php if($item['type']=='5'){ ?>
+        <li><?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?></li>
+        <?php } ?>
+        </ul>
+
+        <?php if($item['type']=='6'){ ?>
+        <div class="mod-num font-ht">
+            <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>
+        </div>
+        <?php } ?>
+
+
+        <?php if($item['type']=='7'){ ?>
+        <div class="qid">
+            <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>({$item['score']}分)
+        </div>
+        <?php } ?>
+
+
+        <?php if($item['type']=='8'){ ?>
+        <div class="describe">
+            <div class="des-tit" style="padding: 0px 0px 0px 20px">
+                <em class="triangle"></em>
+                <?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>
+            </div>
+        </div>
+        <?php } ?>
+
+
+        <?php foreach($item['questions'] as $questions) { ?>
+        <?php foreach($questions as $row) { ?>
+        <dl class="que-item">
+            <include file="ExamDetail:view2_header"/>
+            <?php if($row['question_kind'] == 'xz') { ?>
+            <include file="ExamDetail:view2_xz"/>
+            <?php } elseif($row['question_kind'] == 'tk') { ?>
+            <include file="ExamDetail:view2_tk"/>
+            <?php } elseif($row['question_kind'] == 'dx') { ?>
+            <include file="ExamDetail:view2_dx"/>
+            <?php } elseif($row['question_kind'] == 'yd') { ?>
+
+            <?php } elseif($row['question_kind'] == 'zw') { ?>
+
+            <?php } ?>
+        </dl>
+        <?php } ?>
+        <?php } ?>
+
+        <?php } ?>
+    </div>
+</div>

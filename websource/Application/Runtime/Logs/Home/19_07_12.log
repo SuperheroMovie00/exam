@@ -1,0 +1,101 @@
+[ 2019-07-12T13:52:48+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: download C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2019-07-12T13:52:48+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2019-07-12T13:52:48+08:00 ] ::1 /index.php/Home/Auth/verify_captcha.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+NOTIC: [2] imagettftext(): Could not find/open font C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\ThinkPHP\Library\Think\Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2019-07-12T13:52:50+08:00 ] ::1 /index.php/Home/Auth/loginAct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `erp_user` WHERE ( code='admin' ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\AuthController.class.php 第 58 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\AuthController.class.php 第 70 行.
+SQL: UPDATE `erp_user` SET `errpwd_count`='0' WHERE ( id=1 ) [ RunTime:0.0005s ]
+
+[ 2019-07-12T13:52:50+08:00 ] ::1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0012s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: select node.id,node.name,node.module from erp_role as role,erp_role_user as user,erp_role_node as access ,erp_node as node where user.user_id='1' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id  and node.status=1 [ RunTime:0.0079s ]
+NOTIC: [8] Undefined index: APP C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\BasicController.class.php 第 124 行.
+NOTIC: [8] Undefined index: customer_id C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0012s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='1' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT title,`name`,`pid`,`id`,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='2' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT title,`name`,`id`,`pid`,a.module,a.btn_name,`is_admin`,`model`,`sort`,`ico`,`default_open` FROM erp_node as a WHERE (  a.level='3' AND status='1' and side='0' ) ORDER BY sort ASC,id ASC  [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_open' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code='notice_title' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+

@@ -1,0 +1,5 @@
+<ul class="options">
+    <?php foreach($row['quiz_item'] as $subKey=>$subItem) { ?>
+    <li><em><?php echo chr(65 + $subKey); ?>.</em>{$subItem}</li>
+    <?php } ?>
+</ul>

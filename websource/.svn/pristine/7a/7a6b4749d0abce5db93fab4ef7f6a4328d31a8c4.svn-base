@@ -1,0 +1,125 @@
+{
+  "id": {
+    "label": "id",
+    "display":false,
+    "input": {
+      "type": "hidden",
+      "default_value": "0"
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "平台代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty"]
+  },
+  "name": {
+    "label": "平台名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "description": {
+    "label": "描述",
+    "input": {
+      "type": "textarea",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "select_type": {
+    "label": "选择类型",
+    "require": true,
+    "input": {
+      "type": "select",
+      "value": {
+        "0": "请选择",
+        "1": "是",
+        "2": "否"
+      },
+      "default_value": "0"
+    },
+    "verify": []
+  },
+  "is_system": {
+    "label": "是否系统",
+    "require": true,
+    "input": {
+      "type": "select",
+      "value": {
+        "0": "请选择",
+        "1": "是",
+        "2": "否"
+      },
+      "default_value": "0"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "value": {
+        "0": "无效",
+        "1": "有效"
+      },
+      "default_value": "0"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "sort": {
+    "label": "排序",
+    "input": {
+      "type": "text",
+      "default_value": "99"
+    },
+    "verify": ["isNumber"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user_id": {
+    "label": "创建人",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user_id": {
+    "label": "修改人",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  }
+}

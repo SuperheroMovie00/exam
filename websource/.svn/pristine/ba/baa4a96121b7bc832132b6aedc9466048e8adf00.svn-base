@@ -1,0 +1,27 @@
+<dd>
+    <ul class="options">
+        <?php foreach($row['question_quiz_item'] as $subKey=>$subItem) { ?>
+        <li><em><?php echo chr(65 + $subKey); ?>.</em>{$subItem}</li>
+        <?php } ?>
+
+    </ul>
+
+    <span class="show" style="display: none">  <font color="red" size="4">答案：</font> <font size="4">{$row['question_answer']}</font></span> <br>
+    <span class="show" style="display: none">
+        <?php if($row['question_analysis']){ ?>     <!--判断解析存在的时候显示解析-->
+        <font color="red" size="4">解析：</font>  <font size="3">{$row['question_analysis']}</font>
+        <?php } ?>
+    </span>
+
+
+
+</dd>
+
+<script>
+
+    //点击显示答案解析时候将隐藏的改为显示
+    $("#showanswer").click(function () {
+        $(".show").show();
+    })
+
+</script>

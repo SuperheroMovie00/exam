@@ -1,0 +1,769 @@
+[ 2019-03-26T11:29:34+08:00 ] 127.0.0.1 /index.php/Summary/TempletSummary/index/func/search.html?funcid=X100310&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0007s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0009s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/TempletSummary' )  [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/TempletSummary' )  [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='TempletSummary' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: select count(*) as cnt from erp_templet    where 1=1  [ RunTime:0.0293s ]
+SQL: select  erp_templet.status , erp_templet.id , erp_templet.templet_no , erp_templet.type , erp_templet.subject , erp_templet.count , erp_templet.score , erp_templet.req_time , erp_templet.using , erp_templet.create_time , erp_templet.modify_time  from erp_templet   Where 1=1   LIMIT 0, 10 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 60 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 90 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\bd716f8b4e0b75655dd387c553a44988.php 第 258 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2019-03-26T11:29:35+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0007s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  [ RunTime:0.0003s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2019-03-26T11:29:58+08:00 ] 127.0.0.1 /index.php/Summary/ExamSummary/index/func/search.html?funcid=X100405&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001965s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0006s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/ExamSummary' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/ExamSummary' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='ExamSummary' ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: select count(*) as cnt from erp_exam    where 1=1  [ RunTime:0.0003s ]
+SQL: select  erp_exam.status , erp_exam.id , erp_exam.exam_no , erp_exam.templet_no , erp_exam.type , erp_exam.subject , erp_exam.count , erp_exam.score , erp_exam.req_time , erp_exam.create_time , erp_exam.modify_time  from erp_exam   Where 1=1   LIMIT 0, 10 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 48 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 89 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\6eb5b218b549795f702b64cc8c347e11.php 第 235 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001517s ]
+
+[ 2019-03-26T11:29:59+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0108s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  [ RunTime:0.0003s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2019-03-26T11:41:16+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index.html?func=search&funcid=X100205&__ajax=1&__refresh=1&__ajax=1&pfuncid=X100205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0007s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0002s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  [ RunTime:0.0002s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001690s ]
+
+[ 2019-03-26T11:41:52+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index.html?func=search&funcid=X100205&__ajax=1&__refresh=1&pfuncid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0003s ]
+SQL: select count(*) as cnt from erp_question    where 1=1  [ RunTime:0.0002s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 145 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 294 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2019-03-26T13:12:03+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index/func/search.html?funcid=X100205&__ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0010s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0007s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: condition_a D:\webproject\examination\websource\Application\Summary\Controller\QuestionSummaryController.class.php 第 258 行.
+SQL: select count(*) as cnt from erp_question LEFT JOIN erp_question a ON a.id=erp_question.parent_id    where 1=1  [ RunTime:0.0067s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , a.code question_code , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question LEFT JOIN erp_question a ON a.id=erp_question.parent_id   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 10 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2019-03-26T13:12:10+08:00 ] 127.0.0.1 /index.php/Summary/QuestionSummary/index/func/search/funcid/X100205/__ajax/1.html?pagesize=100&__ajax=1&pfuncid=X100205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+SQL: SHOW COLUMNS FROM `erp_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `erp_user` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 83 行.
+NOTIC: [8] Undefined index: customer_id D:\webproject\examination\websource\Application\Home\Controller\BasicController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `erp_system_parameter` [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_open' AND status = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `erp_system_parameter` WHERE ( code = 'notice_title' AND status = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `erp_node` [ RunTime:0.0005s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0002s ]
+SQL: SELECT name as `key` FROM `erp_node` WHERE ( level = 3 AND module = '/Summary/QuestionSummary' )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `erp_user_summary_column` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `erp_user_summary_column` WHERE ( user_code='admin' AND summary='QuestionSummary' ) ORDER BY sort  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condition_a D:\webproject\examination\websource\Application\Summary\Controller\QuestionSummaryController.class.php 第 258 行.
+SQL: select count(*) as cnt from erp_question LEFT JOIN erp_question a ON a.id=erp_question.parent_id    where 1=1  [ RunTime:0.0054s ]
+SQL: select  erp_question.status , erp_question.id , erp_question.type , a.code question_code , erp_question.code , erp_question.name , erp_question.category_name , erp_question.kind , erp_question.childs , erp_question.img , erp_question.using , erp_question.import_time , erp_question.import_user , erp_question.create_time , erp_question.modify_time  from erp_question LEFT JOIN erp_question a ON a.id=erp_question.parent_id   Where 1=1   order by erp_question.category_code,erp_question.name LIMIT 0, 100 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 80 行.
+SQL: SHOW COLUMNS FROM `erp_subcode` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`code`,`name` FROM `erp_subcode` WHERE ( status=1 and type='question:kind' ) ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined index: level D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 157 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='tk' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' D:\webproject\examination\websource\Application\Runtime\Cache\Summary\3d522cd5bc2bd2aceef31c8b44c41bdd.php 第 308 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+SQL: SELECT `name` FROM `erp_subcode` WHERE ( type='question:kind' and code='dx' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\webproject\examination\websource\Application\Common\Common\function.php 第 520 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002116s ]
+

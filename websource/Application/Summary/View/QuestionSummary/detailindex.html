@@ -1,0 +1,69 @@
+{__NOLAYOUT__}
+<tr style="display:" detail="1" id="{$funcid}-detail">
+  <td colspan="99" style="padding:0;">
+  <!-- 明细表 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table-in ta-tr-hover" style=" width:100%;">
+      <colgroup>
+        <col style="width: 40px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width: 100px ;">
+        <col style="width: 100px ;">
+        <col style="width: 80px ;">
+        <col style="width: 80px ;">
+        <col style="width: 100px ;">
+        <col style="width: 80px ;">
+        <col style="width: 150px ;">
+        <col style="width: 80px ;">
+        <col style="width: 150px ;">
+        <col style="width: 150px ;">
+        <col style="width:auto" >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>序号</th>
+          <th>状态</th>
+          <th>类型</th>
+          <th class=" abe-txtl ">编码</th>
+          <th class=" abe-txtl ">名称</th>
+          <th class=" abe-txtl ">知识点</th>
+          <th class=" abe-txtl ">标签</th>
+          <th class=" abe-txtl ">题型</th>
+          <th>小题数</th>
+          <th class=" abe-txtl ">图像</th>
+          <th>使用</th>
+          <th>导入时间</th>
+          <th>导入人员</th>
+          <th>创建时间</th>
+          <th>修改时间</th>
+          <th/>
+      </tr>
+      <?php foreach($list as $detail_key=>$detail): $detail_mod = ($di % 2 );++$di;?>
+      <tr <?php if(($detail_mod) == "1"): ?>class="even"<?php endif; if(($detail_mod) == "0"): ?>class="odd"<?php endif; ?>>
+        <td class="align=c"><?php echo $di."."; ?></td>
+        <td><?php echo get_table_Question_status("$detail[status]","name","") ; ?></td>
+        <td><?php echo get_table_Question_type("$detail[type]","name","") ; ?></td>
+        <td class=" abe-txtl "><a href="javascript:void(0);" class="vi-blue"  onclick="return _asr.openLink('<?php echo U("/Home/Question/index?func=view&id=$detail[id]"); ?>','<?php echo filterFuncId( U("/Home/Question/index?func=view&id=$detail[id]") ,"");?>', '<?php echo tabTitle("题库","$detail[code]") ; ?>' ,0); " ><?php echo $detail["code"]; ?></a></td>
+        <td class=" abe-txtl "><?php echo $detail["name"]; ?></td>
+        <td class=" abe-txtl "><?php echo $detail["category_name"]; ?></td>
+        <td class=" abe-txtl "><?php echo $detail["label"]; ?></td>
+        <td class=" abe-txtl "><?php echo subcode_view('question:kind',$detail['kind']) ; ?></td>
+        <td><?php echo system_format("N3", $detail["childs"],1); ?></td>
+        <td class=" abe-txtl "><?php if($detail["img"]): ?><a href="<?php echo $detail["img"] ;?>" target="_blank" class="vi-blue"   >图像</a><?php endif; ?></td>
+        <td><?php echo system_format("N3", $detail["using"],1); ?></td>
+        <td><?php echo system_format("DT", $detail["import_time"],1); ?></td>
+        <td><?php echo $detail["import_user"]; ?></td>
+        <td><?php echo system_format("DT", $detail["create_time"],1); ?></td>
+        <td><?php echo system_format("DT", $detail["modify_time"],1); ?></td>
+        <td/>
+     </tr>
+     <?php endforeach; ?>
+     </tbody>
+     </table>
+
+     </td>
+  </tr>
+
+

@@ -1,0 +1,120 @@
+[ 2019-07-01T09:33:53+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-07-01T10:15:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Favicon
+
+[ 2019-07-01T11:44:27+08:00 ] ::1 /yy-face/v1/image-group?timestamp=1561952667797&nonce=1561952667797&token=297e325a66f62bae0166f631b0b20002&sign=BC6490822755A2A762A975F3F7F0D19D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:45:14+08:00 ] ::1 /yy-face/v1/image-group?timestamp=1561952714367&nonce=1561952714367&token=297e325a66f62bae0166f631b0b20002&sign=DC74FE855104EB872D1D230EA6FB63B2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:29+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953029673&nonce=1561953029673&token=297e325a66f62bae0166f631b0b20002&sign=6A42F930D510ADC221A65983C4CD0C2D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:32+08:00 ] 127.0.0.1 /yy-face/v1/statistical/week?timestamp=1561953032661&nonce=1561953032661&token=297e325a66f62bae0166f631b0b20002&sign=743A98EDA7F7952624350000410172B7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:33+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953033827&nonce=1561953033827&token=297e325a66f62bae0166f631b0b20002&sign=8A432642566E76C0B50E1C0610B266E5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:34+08:00 ] 127.0.0.1 /yy-face/v1/statistical/genderCount?timestamp=1561953034632&nonce=1561953034632&token=297e325a66f62bae0166f631b0b20002&sign=0A28D2295041E7689568FD4397306DA4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:35+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953035232&nonce=1561953035232&token=297e325a66f62bae0166f631b0b20002&sign=0A7F3BB255E77C7C45ECE96091B92A7A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:35+08:00 ] 127.0.0.1 /yy-face/v1/statistical/genderCount?timestamp=1561953035698&nonce=1561953035698&token=297e325a66f62bae0166f631b0b20002&sign=F8EE0BD2A30F745D8293FAED954F8E13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:36+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953036075&nonce=1561953036075&token=297e325a66f62bae0166f631b0b20002&sign=17DD6B9B2465E27FBB480490C0FA8F8F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:36+08:00 ] 127.0.0.1 /yy-face/v1/statistical/week?timestamp=1561953036482&nonce=1561953036482&token=297e325a66f62bae0166f631b0b20002&sign=A0522FF2D649627DBB68913E0FE38E5A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:36+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953036810&nonce=1561953036810&token=297e325a66f62bae0166f631b0b20002&sign=18EA17CCB70AE6369D5772A76CFBFAAD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:37+08:00 ] 127.0.0.1 /yy-face/v1/statistical/genderCount?timestamp=1561953037241&nonce=1561953037241&token=297e325a66f62bae0166f631b0b20002&sign=536C065F79E9A26BF27085D5CB8E273E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:37+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953037442&nonce=1561953037442&token=297e325a66f62bae0166f631b0b20002&sign=84EC3FE3602766815CFBE272EBA968F4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:37+08:00 ] 127.0.0.1 /yy-face/v1/statistical/week?timestamp=1561953037831&nonce=1561953037831&token=297e325a66f62bae0166f631b0b20002&sign=652725A899F94A00D1E680773850314A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:38+08:00 ] 127.0.0.1 /yy-face/v1/statistical/age?timestamp=1561953038184&nonce=1561953038184&token=297e325a66f62bae0166f631b0b20002&sign=7BAF3932E6E378A3AD48DE3855A13313
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T11:50:38+08:00 ] 127.0.0.1 /yy-face/v1/statistical/genderCount?timestamp=1561953038363&nonce=1561953038363&token=297e325a66f62bae0166f631b0b20002&sign=98434573C4113597BFF1A20AB9814B05
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T13:54:08+08:00 ] ::1 /yy-face/v1/customer/ids?timestamp=1561960448154&nonce=1561960448154&token=297e325a66f62bae0166f631b0b20002&ids=5&sign=BE16ECA3662BE5F6CD7AE3F1600C5780
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+ERR: 无法加载模块:Yy-face
+
+[ 2019-07-01T18:47:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Favicon
+

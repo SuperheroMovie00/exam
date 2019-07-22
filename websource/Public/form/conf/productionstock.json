@@ -1,0 +1,149 @@
+{
+  "id": {
+    "label": "生产领料单",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "production_no": {
+    "label": "计划单号",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Production','ProductionAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty"]
+  },
+  "assign_no": {
+    "label": "计划分配号",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_customize_id|#table#,###,assign_no,#self_id#","maxLength|###,100"]
+  },
+  "department_code": {
+    "label": "部门",
+    "require": true,
+    "input": {
+      "type": "search",
+      "value":{
+        "show":"",
+        "callback":" _asr.popup('Department','DepartmentAdd#add','#form_id#','Single','#show_id#','#show_name#' );"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "source_no": {
+    "label": "来源单据",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+  "order_no": {
+    "label": "领料单号",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","maxLength|###,100"]
+  },
+  "storage_code": {
+    "label": "仓库代码",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Storage",
+      "value": {
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "remark": {
+    "label": "备注",
+    "require": false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  
+  "status": {
+    "label": "状态",
+    "input": {
+      "type": "select",
+      "datasource": "table_ProductionStock_status",
+      "value": {
+        "": "请选择",
+        "1": "有效",
+        "0": "无效"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+ }

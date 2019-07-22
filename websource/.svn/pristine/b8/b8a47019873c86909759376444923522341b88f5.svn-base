@@ -1,0 +1,8 @@
+<dd class="describe reading">
+    <div class="des-info">
+        <p>
+            {$row['question_stem']}
+        </p>
+
+    </div>
+</dd>

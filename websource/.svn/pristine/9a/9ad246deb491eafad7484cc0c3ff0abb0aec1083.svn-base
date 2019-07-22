@@ -1,0 +1,8 @@
+{__NOLAYOUT__}
+<div class="table-in" id="{$pfuncid}_examview">
+<include file="Exam:view2" />
+</div>
+<script>
+    $("#{$pfuncid}_detailarea2 order-det-ptab a").removeClass("current");
+    $("#{$pfuncid}_detailarea2 order-det-ptab a:eq(0)").addClass("current");
+</script>

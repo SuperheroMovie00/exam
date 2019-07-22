@@ -1,0 +1,24 @@
+{__NOLAYOUT__}
+<?php foreach($detail as $item) { ?>
+<div class="qmod">
+    <div class="qid"><?php if($item['subject'] != "") { ?>{$item['subject']}<?php } ?>({$item['score']}分)</div>
+    <?php foreach($item['questions'] as $questions) { ?>
+    <?php foreach($questions as $row) { ?>
+    <dl class="que-item">
+        <include file="ExamDetail:view2_header" />
+        <?php if($row['question_kind'] == 'xz') { ?>
+        <include file="ExamDetail:view2_xz" />
+        <?php } elseif($row['question_kind'] == 'tk') { ?>
+        <include file="ExamDetail:view2_tk" />
+        <?php } elseif($row['question_kind'] == 'dx') { ?>
+        <include file="ExamDetail:view2_dx" />
+        <?php } elseif($row['question_kind'] == 'yd') { ?>
+
+        <?php } elseif($row['question_kind'] == 'zw') { ?>
+
+        <?php } ?>
+    </dl>
+    <?php } ?>
+    <?php } ?>
+</div>
+<?php } ?>

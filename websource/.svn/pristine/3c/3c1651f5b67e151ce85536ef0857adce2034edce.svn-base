@@ -1,0 +1,19 @@
+{__NOLAYOUT__}
+<div class="qmod">
+    <?php foreach($items as $row) { ?>
+    <dl class="que-item">
+        <include file="Question:view2_header" />
+        <?php if($row['kind'] == 'xz') { ?>
+        <include file="Question:view2_xz" />
+        <?php } elseif($row['kind'] == 'tk') { ?>
+        <include file="Question:view2_tk" />
+        <?php } elseif($row['kind'] == 'dx') { ?>
+        <include file="Question:view2_dx" />
+        <?php } elseif($row['kind'] == 'yd') { ?>
+
+        <?php } elseif($row['kind'] == 'zw') { ?>
+
+        <?php } ?>
+    </dl>
+    <?php } ?>
+</div>

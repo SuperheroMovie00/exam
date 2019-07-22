@@ -1,0 +1,254 @@
+{__NOLAYOUT__}
+<div class="prompt-pop" data-type="detail_add" id="<?php echo $funcid ?>" style="z-index: {$zindex};" funcid="{$funcid}" last-url="{$__last_url}">
+  <div class="title">
+  	<span class="pop-name">编辑公司用户</span>
+  	<a href="javascript:void(0);" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" class="close iconfont">&#xe60d;</a>
+   </div>
+  <div class="trees-box" style="padding-bottom: 82px">
+    <div class="trees-nav" style="display: none;">
+    <form action="{:U('Company/index?func=detail_add')}" method="get">
+        <input type="hidden" name="id" value="{$_pid}" />
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+        <input type="hidden" name="zindex" value="{$zindex}" />
+      </form>
+    </div>
+    <div> <!-- class="trees-info" -->
+      <div class="screening treesorder">
+      <form id="<?php echo "$funcid"; ?>-Company-selectUser-Search" action="{:U('/Home/Company/index?func=detail_add')}" method="get" verify="1">
+        <input type="hidden" name="id" value="{$_pid}" />
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+        <input type="hidden" name="zindex" value="{$zindex}" />
+        <input type="hidden" name="loaddata" value="{$search['loaddata']}" />
+        <ul class="form form-style1">
+          <li> <span class="tit">搜关键字</span>
+            <div class="item">
+              <div class="txt-box">
+                <input type="text" name="_keyword" autocomplete="off" value="{$search['_keyword']}" class="txt" verify="empty?1" tips="至少输入一个搜索项" onKeyDown="{$funcid}_keydown(this);">
+              </div>
+            </div>
+          </li>
+          <input type="submit" value="搜索用户"  class="btn btn-org  mrg_10"  id="{$funcid}_user"   onclick="$('#<?php echo $funcid; ?>-Company-selectUser-Search').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('/Home/Company/index?func=selectUser&type=0')}')">
+        </ul>
+        <!--筛选表单-->
+        <div class="tress-sub abe-ofl"  style="display: none">
+          <div class="abe-fl">
+            <em class="abe-red mrg_50"></em>
+            <input type="submit" value="搜索用户"  class="btn btn-org  mrg_10"  id="{$funcid}_user"   onclick="$('#<?php echo $funcid; ?>-Company-selectUser-Search').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('/Home/Company/index?func=selectUser&type=0')}')">
+            <input type="submit" value="显示公司用户"  class="btn btn-org  mlg_30"  id="{$funcid}_company"   onclick="$('#<?php echo $funcid; ?>-Company-selectUser-Search').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('/Home/Company/index?func=detail_add&type=1')}')">
+          </div>
+          <if condition="$statinfo">
+          <div class="abe-fl abe-ft16 pdl_30 abe-red" style="line-height: 33px;" id="{$funcid}_show_num">
+            用户数：<em class="abe-space-sm">{$statinfo.details}</em>位
+          </div>
+          </if>
+          <div class="abe-fr">
+            <input type="submit" id="{$funcid}_save" value="保存输入信息, 我要继续添加"  class="btn btn-blue  mrg_10"      onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Select-User-Form', '{:U('/Home/Company/index?func=saveSelectProduct')}');"><em class="abe-red mrg_50"></em>
+          </div>
+        </div>
+
+        </form>
+      </div>
+      <div class="table-box">
+        <div class="table-in" style="height: 350px;">
+        <form action="{:U('Home/Company/index?func=saveSelectUser')}" method="post" id="<?php echo $funcid;?>-Select-User-Form">
+        <input type="hidden" name="_pid" value="{$_pid}" />
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+        <input type="hidden" name="p" value="{$p}" />
+            <input type="hidden" name="zindex" value="{$zindex}" />
+          <table border="0" cellspacing="0" cellpadding="0" class="pub-table ta-tr-hover">
+            <colgroup>
+              <col style="width:40px;">
+              <col style="width:60px;">
+              <col style="width:100px;">
+              <col style="width:100px;">
+              <col style="width:100px;">
+              <col style="width:80px;">
+              <col style="width:80px;">
+              <col style="width:80px;">
+              <col style="width:80px;">
+              <col style="width: auto ;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th style=""><input type="checkbox"></th>
+                <th>#</th>
+                <th class="abe-txtl">类型</th>
+                <th class="abe-txtl">用户</th>
+                <th class="abe-txtl">姓名</th>
+                <th class="abe-txtl">状态</th>
+                <th>所在部门</th>
+                <th>审核级别</th>
+                <th>操作</th>
+                <th> </th>
+              </tr>
+              <foreach name="list" item="item">
+              <tr class="<?php if($key%2==0){ ?> even <?php }else{ ?> odd <?php } ?><if condition="$item[status] eq 0 or $item[status] eq 2">redline<else/><if condition="$item['_did'] gt 0"></if>
+              </if>">
+                <td ><input type="checkbox" name="id[]"  value="{$item["id"]}" <if condition="$item['_did'] gt 0" > checked </if> /></td>
+                <td><?php echo $key +1+ ($page_size * ($p - 1)); ?></td>
+                <td class="abe-txtl"><?php echo get_table_User_type($item["type"]); ?></td>
+                <td class="abe-txtl">{$item["code"]}</td>
+                <td class="abe-txtl">{$item["name"]}</td>
+                <td class="abe-txtl"><?php echo get_table_User_status($item["status"]);?></td>
+                <td><div>
+                    <select class="pbsele-sm " name="department_id_{$item['id']}">
+                      <option value="" <?php if($item['department_id'] == ''): ?> selected="selected" <?php endif;?> ></option>
+                      <?php
+                          $keyvalue = table_Department();
+                          if(is_array($keyvalue)){
+                              $i = 0; $__LIST__ = $keyvalue;  ?>
+                      <?php foreach($__LIST__ as $key=>$v): ++$i; ?>
+                      <option value="<?php echo $v['id']; ?>" <?php if($v['id'] == $item['department_id']): ?> selected="selected" <?php endif;?>><?php echo $v['name']; ?></option>
+                      <?php endforeach; ?>
+                      <?php } ?>
+                    </select>
+                  <!--
+                  <if condition="$item[status] eq 1">
+                  </if>
+                  <if condition="$item[status] eq 0">无效</if>
+                  -->
+                </div>
+                </td>
+                  <!-- condition="$item['qty'] gt 0 or ($item[status] eq 1 and $item['qty'] elt 0)" -->
+                <td><div>
+                     <select class="pbsele-sm  " name="level_{$item['id']}">
+                        <option value="" <?php if($item['level'] == ''): ?> selected="selected" <?php endif;?> ></option>
+                       <?php
+                          $keyvalue = table_CompanyUser_level();
+                          if(is_array($keyvalue)){
+                              $i = 0; $__LIST__ = $keyvalue;  ?>
+                              <?php foreach($__LIST__ as $key=>$v): ++$i; ?>
+                           <option value="<?php echo $v['id']; ?>" <?php if($v['id'] == $item['level']): ?> selected="selected" <?php endif;?>><?php echo $v['name']; ?></option>
+                              <?php endforeach; ?>
+                       <?php } ?>
+                     </select>
+<!--
+                  <if condition="$item[status] eq 1">
+                  </if>
+                  <if condition="$item[status] eq 0"></if>
+-->
+                </div>
+                </td>
+                <td><div>
+                  <select class="pbsele-sm " name="action_{$item['id']}">
+                    <option value=""  ></option>
+                    <option value="1" >删除</option>
+                  </select>
+                </div>
+                </td>
+                <td></td>
+              </tr>
+              </foreach>
+            </tbody>
+          </table>
+          </form>
+        </div>
+          <div class="blank15"></div>
+          <?php echo $page; ?>
+      </div>
+    </div>
+  </div>
+    <div class="pop-sub ">
+      <div class="abe-fr pdr_40 pdt_10 ">
+        <input type="submit" value="输入完成，保存退出" class="btn btn-blue mrg_10" onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Select-User-Form', '{:U('/Home/Company/index?func=saveSelectUser&close=1')}');">
+        <input type="submit" value="取消" class="btn" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');">
+      </div>
+    </div>
+</div>
+<script>
+
+	function <?php echo $funcid ?>_init(){
+		var _this = $("#<?php echo $funcid ?>");
+		var ppw = _this.width()/2;
+		_this.css({'margin-left':-ppw});
+		if($("#{$funcid}-Select-User-Form table tr").length>1)
+        {
+            $("#{$funcid}-Select-User-Form table tr:eq(1)").find("input[name*='qty_']").focus();
+        }
+	}
+
+    function <?php echo $funcid ?>_focus()
+    {
+        var isfind=false;
+        $("#{$funcid}-Select-User-Form table tr").each(function(){
+            var cur_qty=$(this).find("input[name*='qty_']").val();
+            if(cur_qty!=undefined && cur_qty!="")
+            {
+                $(this).find("input[name*='qty_']").focus();
+                isfind=true;
+                return false;
+            }
+        });
+        if(!isfind)
+        {
+            if($("#{$funcid}-Select-User-Form table tr").length>1)
+            {
+                $("#{$funcid}-Select-User-Form table tr:eq(1)").find("input[name*='qty_']").focus();
+            }
+        }
+    }
+
+	function <?php echo $funcid ?>_refresh() {
+		_asr.submit('<?php echo $funcid;?>', $("#<?php echo $funcid ?>").find("form").eq(1), '');
+	}
+
+	function <?php echo $funcid ?>_check(o) {
+        var _qty = $(o).val();
+	    var qty = parseFloat($(o).val());
+	    if(isNaN(qty)) {
+	        return false;
+        }
+
+        $(o).parents("tr").find("input[type=checkbox]").prop("checked", _qty!='');
+	    var purchase_price, packing_qty;
+        purchase_price = $(o).parents("tr").find("td[tag=purchase_price]").html();
+        packing_qty = $(o).parents("tr").find("td[tag=packing_qty]").html();
+        purchase_price = parseFloat(purchase_price);
+        if(isNaN(purchase_price)) {
+            purchase_price = 0.0;
+        }
+        packing_qty = parseFloat(packing_qty);
+        if(isNaN(packing_qty) || packing_qty == 0) {
+            packing_qty = 1.0;
+        }
+
+        $(o).parents("tr").find("td[tag=purchase_qty]").html((qty * packing_qty).toFixed(0));
+        $(o).parents("tr").find("td[tag=purchase_amount]").html((qty * packing_qty * purchase_price).toFixed(2));
+    }
+
+    function <?php echo $funcid ?>_clear() {
+	    $("#<?php echo $funcid;?>-Select-User-Form").find("tr").not(":first").remove();
+	    var _form = $("#<?php echo $funcid; ?>-Company-selectUser-Search");
+        _form.find("input[name=_keyword]").val("");
+        _form.find("button.txt-clear").trigger("click");
+        _form.find("input[name=_keyword]").focus();
+    }
+
+    function <?php echo $funcid ?>_show(qty,amount,count) {
+    }
+
+
+    function {$funcid}_keydown(obj){
+        var e = window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13 ) {
+            $("#{$funcid}_user").click();
+        }
+    }
+
+    function {$funcid}_qty_keydown(obj){
+        var e = window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13 ) {
+            $(obj).blur();
+            $("#{$funcid}_save").click();
+        } else {
+            if(!((e.keyCode >=48 && e.keyCode <= 57) || (e.keyCode >=96 && e.keyCode <= 105) || e.keyCode == 8 || e.keyCode == 9 || e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 46 || e.keyCode == 108)) {
+                e.returnValue = false;
+                return false;
+            }
+        }
+    }
+
+</script>

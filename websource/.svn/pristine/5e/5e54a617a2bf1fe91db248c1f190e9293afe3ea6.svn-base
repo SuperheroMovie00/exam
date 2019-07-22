@@ -1,0 +1,221 @@
+{__NOLAYOUT__}
+<div class="prompt-pop" data-type="detail_add" id="<?php echo $funcid ?>" style="z-index: {$zindex};" funcid="{$funcid}" last-url="{$__last_url}">
+  <div class="title">
+  	<span class="pop-name">编辑物品信息</span>
+  	<a href="javascript:void(0);" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');" class="close iconfont">&#xe60d;</a>
+   </div>
+  <div class="trees-box" style="padding-bottom: 82px">
+    <div class="trees-nav" style="display: none;">
+    <form action="{:U('EffectsCategory/index?func=detail_add')}" method="get">
+        <input type="hidden" name="category_id" value="{$category_id}" />
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+        <input type="hidden" name="zindex" value="{$zindex}" />
+        <ul>
+      	<foreach name="categorys" item="item" >
+        <li>
+        	<if condition="count($item['detail']) gt 0">
+        	<i class="iconfont">&#xe618;</i>
+        	</if>
+          	<input name="category_code[]" type="checkbox" value="{$item['main']['code']}" onclick="return _asr.submit('<?php echo $funcid;?>', this, '');" <if condition="in_array($item['main']['code'], $search['category_code'])">checked="checked"</if>>
+          	<a href="javascript:void(0);">{$item["main"]["name"]}</a>
+        </li>
+        </foreach>
+      </ul>
+      </form>
+    </div>
+    <div> <!-- class="trees-info" -->
+      <div class="screening treesorder">
+      <form id="<?php echo "$funcid"; ?>-Sales-selectProduct-Search" action="{:U('/Home/EffectsCategory/index?func=detail_add')}" method="get" verify="1">
+        <input type="hidden" name="category_id" value="{$category_id}" />
+        <input type="hidden" name="funcid" value="{$funcid}" />
+        <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+        <input type="hidden" name="zindex" value="{$zindex}" />
+        <input type="hidden" name="category_code" value="{$search['category_code']}">
+        <input type="hidden" name="loaddata" value="{$search['loaddata']}" />
+        <ul class="form form-style1">
+          <li> <span class="tit">搜关键字</span>
+            <div class="item">
+              <div class="txt-box">
+                <input type="text" name="prefix" autocomplete="off" value="{$search['prefix']}" class="txt" verify="empty?1" tips="至少输入一个搜索项" onKeyDown="{$funcid}_keydown(this);">
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <!--筛选表单-->
+        <div class="tress-sub abe-ofl">
+
+          <div class="abe-fl">
+            <em class="abe-red mrg_50"></em>
+            <input type="submit" value="在全部物品中搜索"  class="btn btn-org  mrg_10"  id="{$funcid}_goods"   onclick="$('#<?php echo $funcid; ?>-Sales-selectProduct-Search').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('/Home/EffectsCategory/index?func=detail_add&type=0')}')">
+            <input type="submit" value="未分类物品"  class="btn btn-org  mlg_30"  id="{$funcid}_order"   onclick="$('#<?php echo $funcid; ?>-Sales-selectProduct-Search').attr('verify', '0');return _asr.submit('<?php echo $funcid;?>', this, '{:U('/Home/EffectsCategory/index?func=detail_add&type=1')}')">
+
+          </div>
+          <if condition="$salesinfo">
+          <div class="abe-fl abe-ft16 pdl_30 abe-red" style="line-height: 33px;" id="{$funcid}_show_num">
+            已添加：<em class="abe-space-sm">{$salesinfo.details}</em>类   <em class="abe-space-sm">{$salesinfo.qty|system_format="N3",###,0}</em>件   <em class="abe-space-sm">{$salesinfo.amount|system_format="F32",###,0}</em>元
+          </div>
+          </if>
+          <div class="abe-fr">
+            <input type="submit" id="{$funcid}_save" value="保存输入信息, 我要继续添加物品"  class="btn btn-blue  mrg_10"      onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Select-Product-Form', '{:U('/Home/EffectsCategory/index?func=saveSelectProduct')}');"><em class="abe-red mrg_50"></em>
+          </div>
+
+        </div>
+
+        </form>
+      </div>
+      <div class="table-box">
+        <div class="table-in" style="height: 350px;">
+        <form action="{:U('Home/EffectsCategory/index?func=saveSelectProduct')}" method="post" id="<?php echo $funcid;?>-Select-Product-Form">
+          <input type="hidden" name="category_id" value="{$category_id}" />
+          <input type="hidden" name="funcid" value="{$funcid}" />
+          <input type="hidden" name="pfuncid" value="{$pfuncid}" />
+          <input type="hidden" name="p" value="{$p}" />
+            <input type="hidden" name="zindex" value="{$zindex}" />
+          <table border="0" cellspacing="0" cellpadding="0" class="pub-table ta-tr-hover">
+            <colgroup>
+              <col style="width:40px;display: none">
+              <col style="width:40px;">
+              <col style="width:40px;">
+              <col style="width: auto ;">
+              <col style="width: auto ;">
+              <col style="width:80px;">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th></th>
+                <th>#</th>
+                <th class="abe-txtl">编码</th>
+                <th class="abe-txtl">名称</th>
+                <th class="abe-txtl">别名</th>
+              </tr>
+              <foreach name="list" item="item">
+              <tr class="<?php if($key%2==0){ ?> even <?php }else{ ?> odd <?php } ?><if condition="$item['qty'] gt 0">highline<else/><if condition="$item[status] eq 0 or $item[status] eq 2">redline</if>
+              </if>">
+                <td ><input type="checkbox" name="id[]"  value="{$item["id"]}" <if condition="$item['qty'] gt 0" > checked </if> /></td>
+                <td><?php echo $key +1+ ($page_size * ($p - 1)); ?></td>
+                <td class="abe-txtl">{$item["code"]}</td>
+                <td class="abe-txtl">{$item["name"]}</td>
+                <td class="abe-txtl">{$item["alias"]}</td>
+              </tr>
+              </foreach>
+            </tbody>
+          </table>
+          </form>
+        </div>
+          <div class="blank15"></div>
+          <?php echo $page; ?>
+      </div>
+    </div>
+  </div>
+    <div class="pop-sub ">
+      <div class="abe-fl abe-txtl pdl_20" style="line-height: 14px;">
+      1. 拼音缩写输入后按回车执行"物品搜索"，定位在首个搜到物品上，按tab键进行选择，输入数量后按回车自动保存，保存成功后回到拼音输入<br/>
+      <b><span class="abe-red">2. 在当前页上完成所要物品输入/修改数量，必须先提交保存后才能翻页或再次搜索，否则输入信息丢失</span><b>
+      </div>
+      <div class="abe-fr pdr_40 pdt_10 ">
+        <input type="submit" value="输入完成，保存退出" class="btn btn-blue mrg_10" onclick="return _asr.submit('<?php echo $funcid;?>', '<?php echo $funcid;?>-Select-Product-Form', '{:U('/Home/EffectsCategory/index?func=saveSelectProduct&close=1')}');">
+        <input type="submit" value="取消" class="btn" onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('{$funcid}');">
+      </div>
+    </div>
+</div>
+<script>
+
+	function <?php echo $funcid ?>_init(){
+		var _this = $("#<?php echo $funcid ?>");
+		var ppw = _this.width()/2;
+		_this.css({'margin-left':-ppw});
+		if($("#{$funcid}-Select-Product-Form table tr").length>1)
+        {
+            $("#{$funcid}-Select-Product-Form table tr:eq(1)").find("input[name*='qty_']").focus();
+        }
+	}
+
+    function <?php echo $funcid ?>_focus()
+    {
+        var isfind=false;
+        $("#{$funcid}-Select-Product-Form table tr").each(function(){
+            var cur_qty=$(this).find("input[name*='qty_']").val();
+            if(cur_qty!=undefined && cur_qty!="")
+            {
+                $(this).find("input[name*='qty_']").focus();
+                isfind=true;
+                return false;
+            }
+        });
+        if(!isfind)
+        {
+            if($("#{$funcid}-Select-Product-Form table tr").length>1)
+            {
+                $("#{$funcid}-Select-Product-Form table tr:eq(1)").find("input[name*='qty_']").focus();
+            }
+        }
+    }
+
+	function <?php echo $funcid ?>_refresh() {
+		_asr.submit('<?php echo $funcid;?>', $("#<?php echo $funcid ?>").find("form").eq(1), '');
+	}
+
+	function <?php echo $funcid ?>_check(o) {
+        var _qty = $(o).val();
+	    var qty = parseFloat($(o).val());
+	    if(isNaN(qty)) {
+	        return false;
+        }
+
+        $(o).parents("tr").find("input[type=checkbox]").prop("checked", _qty!='');
+	    var purchase_price, packing_qty;
+        purchase_price = $(o).parents("tr").find("td[tag=purchase_price]").html();
+        packing_qty = $(o).parents("tr").find("td[tag=packing_qty]").html();
+        purchase_price = parseFloat(purchase_price);
+        if(isNaN(purchase_price)) {
+            purchase_price = 0.0;
+        }
+        packing_qty = parseFloat(packing_qty);
+        if(isNaN(packing_qty) || packing_qty == 0) {
+            packing_qty = 1.0;
+        }
+
+        $(o).parents("tr").find("td[tag=purchase_qty]").html((qty * packing_qty).toFixed(0));
+        $(o).parents("tr").find("td[tag=purchase_amount]").html((qty * packing_qty * purchase_price).toFixed(2));
+    }
+
+    function <?php echo $funcid ?>_clear() {
+	    $("#<?php echo $funcid;?>-Select-Product-Form").find("tr").not(":first").remove();
+	    var _form = $("#<?php echo $funcid; ?>-Sales-selectProduct-Search");
+        _form.find("input[name=category_code]").val("");
+        _form.find("input[name=prefix]").val("");
+        _form.find("input[name=goods_no]").val("");
+        _form.find("input[name=name]").val("");
+        _form.find("input[name=category_code_name]").val("");
+        _form.find("button.txt-clear").trigger("click");
+        _form.find("input[name=prefix]").focus();
+    }
+
+    function <?php echo $funcid ?>_show(qty,amount,count) {
+        $("#{$funcid}_show_num").html('已添加：<em class="abe-space-sm">'+ count +'</em>类   <em class="abe-space-sm">'+ qty +'</em>件   <em class="abe-space-sm">'+ amount +'</em>元');
+    }
+
+
+    function {$funcid}_keydown(obj){
+        var e = window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13 ) {
+            $("#{$funcid}_goods").click();
+        }
+    }
+
+    function {$funcid}_qty_keydown(obj){
+        var e = window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13 ) {
+            $(obj).blur();
+            $("#{$funcid}_save").click();
+        } else {
+            if(!((e.keyCode >=48 && e.keyCode <= 57) || (e.keyCode >=96 && e.keyCode <= 105) || e.keyCode == 8 || e.keyCode == 9 || e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 46 || e.keyCode == 108)) {
+                e.returnValue = false;
+                return false;
+            }
+        }
+    }
+
+</script>

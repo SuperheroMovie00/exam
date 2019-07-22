@@ -1,0 +1,174 @@
+{
+  "id": {
+    "label": "活动",
+    "display":false,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "code": {
+    "label": "活动代码",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": ["nonEmpty","check_code|#table#,###"]
+  },
+  "name": {
+    "label": "活动名称",
+    "require": true,
+    "input": {
+      "type": "text",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","check_name|#table#,###,#self_id#","maxLength|###,100"]
+  },
+  "description": {
+    "label": "描述",
+    "input": {
+      "type": "textarea",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "start_time": {
+    "label": "起始日期",
+    "input": {
+      "type": "date",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","comparison__date|#table#,###,#self_end_time#,结束日期,le"]
+  },
+  "end_time": {
+    "label": "结束日期",
+    "input": {
+      "type": "date",
+      "default_value": ""
+    },
+    "verify": ["nonEmpty","comparison__date|#table#,###,#self_start_time#,起始日期,ge"]
+  },
+  "on_once": {
+    "label": "仅参加一次",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "1": "是",
+        "0": "否"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "on_stock": {
+    "label": "有库存有效",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "1": "是",
+        "0": "否"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "on_merge": {
+    "label": "订单合并提升",
+    "input": {
+      "type": "select",
+      "value": {
+        "": "请选择",
+        "1": "是",
+        "0": "否"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "is_enabled": {
+    "label": "是否启用",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Activity_is_enabled",
+      "value": {
+        "": "请选择",
+        "1": "是",
+        "0": "否"
+      },
+      "default_value": ""
+    },
+    "verify": ["nonEmpty"]
+  },
+  "status": {
+    "label": "状态",
+    "require": true,
+    "input": {
+      "type": "select",
+      "datasource": "table_Activity_status",
+      "value": {
+        "": "请选择",
+        "0": "无效",
+        "1": "有效",
+        "8": "取消",
+        "9": "删除"
+      },
+      "default_value": "1"
+    },
+    "verify": ["nonEmpty"]
+  },
+  "create_time": {
+    "label": "创建时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "create_user": {
+    "label": "创建人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "update":false,
+    "verify": []
+  },
+  "modify_time": {
+    "label": "修改时间",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "modify_user": {
+    "label": "修改人员",
+    "display":false,
+    "input": {
+      "type": "label",
+      "default_value": ""
+    },
+    "verify": []
+  },
+  "lastchanged": {
+    "label": "最后修改时间",
+    "display":false,
+    "autoUpdate":true,
+    "input": {
+      "type": "hidden",
+      "default_value": ""
+    },
+    "verify": ["check_modify|#table#,###,#self_id#,lastchanged"]
+  }
+}
+

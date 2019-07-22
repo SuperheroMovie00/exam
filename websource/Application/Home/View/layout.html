@@ -1,0 +1,114 @@
+<include file="Common:header" />
+<body>
+<iframe id="ajaxframe" name="ajaxframe" style="display:none"></iframe>
+<div class="popup-bg" id="mask" style="display:none;z-index:99999999"></div>
+<div class="popup-bg-layer"  id="mask1" style="display:none;"></div>
+<div class="pop-scroll-box"  style="display:none;"></div>
+<div class="prompt-pop oper-pop ok-pop error-pop" style="display:none;;z-index:300000000" id="confirm">
+  <div class="title">
+  	<span class="pop-name"></span>
+  	<a href="javascript:void(0);" class="close iconfont confirm-cancel">&#xe60d;</a>
+  </div>
+  <div class="oper-info">
+    <div><i class="iconfont">&#xe614;</i></div>
+    <p></p>
+  </div>
+  <div class="oper-sub abe-txtc pdt_30">
+  <form>
+    <input type="submit" value="确定" class="btn btn-org mrg_10 confirm-submit">
+    <input type="button" value="取消" class="btn confirm-cancel">
+    <input type="hidden" name="reset-funcid" value="1" />
+  </form>
+  </div>
+</div>
+<div class="prompt-pop oper-pop ok-pop error-pop" style="display:none;z-index:300000000" id="message">
+  <div class="title">
+  	<span class="pop-name"></span>
+  	<a href="javascript:void(0);" class="close iconfont confirm-cancel">&#xe60d;</a>
+  </div>
+  <div class="oper-info">
+    <div><i class="iconfont">&#xe614;</i><span></span></div>
+    <p></p>
+  </div>
+  <div class="oper-sub abe-txtc pdt_30">
+  <input type="button" value="确定" class="btn btn-org mrg_10 message-ok">
+  </div>
+</div>
+
+<div class="prompt-pop" style="display:none;z-index:100000000" id="export">
+	<div class="title"> <span class="pop-name">数据导出</span><a class="close iconfont">&#xe60d;</a> </div>
+	<div class="table-in table-in-pop pdl_40 pdr_40">
+    <div class="blank20"></div>
+    <table border="0" cellspacing="0" cellpadding="0" class="pub-table">
+      <colgroup>
+      <col >
+      </colgroup>
+      <tbody>
+        <tr>
+          <th class="abe-txtl">选择数据导出方式</th>
+        </tr>
+        <tr class="even">
+          <td class="abe-txtl"><input type="radio" name="export-option" value="1" /> 只导出当前页内数据（缺省） </td>
+        </tr>
+        <tr class="odd">
+          <td class="abe-txtl"><input type="radio" name="export-option" value="0" /> 导出全部页内数据（数据量过大可能会造成服务器卡死）</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="blank50"></div>
+    <div class="blank50"></div>
+    <div class="oper-sub abe-txtc pdt_30">
+      <input type="button" value="确定" class="btn btn-org mrg_10 export-ok">
+      <input type="button" value="取消" class="btn export-cancel">
+    </div>
+  </div>
+</div>
+<div class="main">
+  <header class="header">
+    <h1 class="sys-logo abe-fl"></h1>
+      <!--
+          <?php if(session('CUSTOMER_ID')):?>
+          <div class="sys-name"><em class="abe-space"></em><span>使用方: {$user['customer_name']}</span></div>
+    <?php endif; ?>
+      -->
+      <div class="user-info abe-fr"> <span><?php if(session('CUSTOMER_ID')):?><a href="javascript:void(0);" onclick="return _asr.popupFun('<?php echo U('/Home/Retail/index?func=add'); ?>');" class="btn btn-xs btn-org mrg_10" style="line-height: 18px;">简易划价计算</a><?php endif; ?><em class="vi-blue">{$user['name']}</em>，您好！</span>
+    <a href="javascript:void(0);" class="uhead"><img src="/Public/css/images/uhead.png" alt=""  onerror="this.src='__PUBLIC__/Home/css/images/uhead.png'"></a><a href="javascript:void(0);" onclick="return _asr.popupFun( '<?php echo U("User/index?func=changepassword") ?>','<?php echo filterFuncId("User/changepassword","");?>'); " class="vi-blue mrg_15" >更改密码</a><a href="/index.php/Home/Auth/logout" class="quit vi-red">退出<i class="iconfont">&#xe610;</i></a> </div>
+  </header>
+  <include file="Common:left" />
+  <div class="content">
+  <div class="win-tab">
+      <ul>
+        <li class="win-tab-menu" style="display: none;">
+        <i class="iconfont">&#xe673;</i>
+        <dl>
+        </dl>
+        </li>
+      </ul>
+  </div>
+      <!--窗口切换-->
+      <div class="wrap-box home-bg" id="home-bg">
+          <div class="stel" style="font-size: 32px; position: absolute; left: 50px; bottom: 65px;line-height: 40px; color: #0076b4; font-weight: 400;">
+
+              <sub style="font-size: 32px; bottom: 2px;">服务热线</sub><br>021-88888888 转 1234
+
+          </div>
+          <div class="sys-tit"><img src="/Public/css/images/sys-bg-wz.png" alt=""></div>
+      </div>
+      {__CONTENT__}
+  </div>
+</div>
+<div class="popup-bg" id="pop-background" style="display:none;"></div>
+<div class="loader-box" style="z-index:100000000">
+            <div class="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+</body>
+<include file="Common:footer" />

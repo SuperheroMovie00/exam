@@ -1,0 +1,41 @@
+{__NOLAYOUT__}
+<div toplayer="1" class="wrap-box" id="<?php echo $funcid;?>" >
+<style type="text/css">
+.system-message{ padding: 24px 48px; }
+.system-message h1{ font-size: 100px; font-weight: normal; line-height: 120px; margin-bottom: 12px; }
+.system-message .jump{ padding-top: 10px}
+.system-message .jump a{ color: #333;}
+.system-message .success,.system-message .error{ line-height: 1.8em; font-size: 36px }
+.system-message .detail{ font-size: 12px; line-height: 20px; margin-top: 12px; display:none}
+</style>
+<div class="system-message">
+<?php if(isset($message)) {?>
+<h1>:)</h1>
+<p class="success"><?php echo($message); ?></p>
+<?php }else{?>
+<h1>:(</h1>
+<p class="error"><?php echo($error); ?></p>
+<?php }?>
+<p class="detail"></p>
+<p class="jump">
+等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+</p>
+</div>
+    </div>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait');
+var form_id = $('input[type="hidden"][name="lucky_form_id"]').val();
+$('#'+form_id+" .pop-sub").html('<input type="button" value="取消" class="btn">')
+
+var interval = setInterval(function(){
+	var time = --wait.innerHTML;
+	if(time <= 0) {
+		_asr.closeTab(<?php echo("$('#".$funcid."-Tab').find('a')"); ?>, '<?php echo( $funcid); ?>');
+        $('#'+form_id+" a").click()
+        clearInterval(interval);
+	};
+}, 1000);
+})();
+</script>
+
