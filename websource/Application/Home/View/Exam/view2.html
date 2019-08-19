@@ -67,8 +67,6 @@
         <?php } ?>
 
 
-
-
         <?php foreach($item['questions'] as $questions) { ?>
         <?php foreach($questions as $row) { ?>
         <dl class="que-item">
@@ -76,7 +74,7 @@
             <dd>
                 <?php if($row['question_kind'] == 'xz') { ?>
                     <include file="Exam:view2_xz"/>
-                <?php } elseif($row['question_kin   d'] == 'tk') { ?>
+                <?php } elseif($row['question_kind'] == 'tk') { ?>
                     <include file="Exam:view2_tk"/>
                 <?php } elseif($row['question_kind'] == 'dx') { ?>
                     <include file="Exam:view2_dx"/>

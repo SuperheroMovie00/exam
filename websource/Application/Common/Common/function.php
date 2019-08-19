@@ -6486,7 +6486,9 @@ function scanSubject($seq, $str, $qk, $img, $wrap = false, $score = 0) {
 
     if($pk == 2) {
         if($seq != 0) {
-            $lineStart = "<dt class=\"num reading\"><b>".$seq.".</b><div class=\"des-info\">";
+            //修改日期，2019-8-13 将加框前面的序号全部去掉
+            //$lineStart = "<dt class=\"num reading\"><b>".$seq.".</b><div class=\"des-info\">";
+            $lineStart = "<dt class=\"num reading\"><div class=\"des-info\">";
             $lineEnd =  "</div></dt>";
         } else {
             $lineStart = "<dd class=\"describe reading\">"."<div class=\"des-info\">";

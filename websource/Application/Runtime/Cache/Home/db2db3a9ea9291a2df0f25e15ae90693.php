@@ -24,7 +24,7 @@
     <tbody id="examlist">
 
     <tr>
-      <th>序1号</th>
+      <th>序号</th>
       <th>状态</th>
       <th class=" abe-txtl ">试卷编码</th>
       <th class=" abe-txtl ">标题</th>
@@ -67,15 +67,14 @@
            }
         }
 
-        //$(this).parents("td").attr("style","background:#fdfd00");
-
+        /**
+         * 2019-7-1
+         * 新增的点击试卷改变选中行的背景颜色
+         */
         $("#table tr").click(function(){
           $("#table tr td").css("background","");
           $(this).find('td').css("background","blue");
         });
-
-
-
 
 
     </script>

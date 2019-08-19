@@ -350,8 +350,6 @@
         <?php } ?>
 
 
-
-
         <?php foreach($item['questions'] as $questions) { ?>
         <?php foreach($questions as $row) { ?>
         <dl class="que-item">
@@ -364,8 +362,12 @@
 <?php if(strstr($row["question_quiz"],'/Uploads/img/')==null){ ?>
 
 <ul class="options">
-    <?php foreach($row['question_quiz_item'] as $subKey=>$subItem) { ?>
+    <!--新加入判读，解决没有题目的时候显示A   19-8-13 -->
+    <?php if(count($row['question_quiz_item'])<=1){ ?>
+    <?php }else{ ?>
+    <?php  foreach($row['question_quiz_item'] as $subKey=>$subItem) { ?>
     <li><em><?php echo chr(65 + $subKey); ?>.</em><?php echo ($subItem); ?></li>
+    <?php } ?>
     <?php } ?>
 </ul>
 
@@ -382,7 +384,7 @@
 
 
 
-                <?php } elseif($row['question_kin   d'] == 'tk') { ?>
+                <?php } elseif($row['question_kind'] == 'tk') { ?>
                     
                 <?php } elseif($row['question_kind'] == 'dx') { ?>
                     <ul class="options">
@@ -555,8 +557,12 @@
 <?php if(strstr($row["question_quiz"],'/Uploads/img/')==null){ ?>
 
 <ul class="options">
-    <?php foreach($row['question_quiz_item'] as $subKey=>$subItem) { ?>
+    <!--新加入判读，解决没有题目的时候显示A   19-8-13 -->
+    <?php if(count($row['question_quiz_item'])<=1){ ?>
+    <?php }else{ ?>
+    <?php  foreach($row['question_quiz_item'] as $subKey=>$subItem) { ?>
     <li><em><?php echo chr(65 + $subKey); ?>.</em><?php echo ($subItem); ?></li>
+    <?php } ?>
     <?php } ?>
 </ul>
 

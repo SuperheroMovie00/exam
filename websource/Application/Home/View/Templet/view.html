@@ -417,6 +417,13 @@
           <?php endif; ?>
           <?php endif; ?>
 
+            <!--date:2019-8-11  新添加模板拷贝功能。编辑状态下不显示拷贝按钮 -->
+          <?php if (isset($rights['toexam']) && $rights['toexam']): ?>
+          <?php if ($search['status']=='1'): ?>
+          <input type="button" value="模板拷贝" class="btn btn-sm btn-blue mlg_10 " onclick="return _asr.popupFun('<?php echo U("/Home/Templet/index?func=copy_templet&id=$search[id]") ; ?>', '<?php echo filterFuncId("/Home/Templet/index?func=copy_templet&id=$search[id]","");?>'); " />
+          <?php endif; ?>
+          <?php endif; ?>
+
 <!--
 
           <?php if (isset($rights['grid']) && $rights['grid']): ?>

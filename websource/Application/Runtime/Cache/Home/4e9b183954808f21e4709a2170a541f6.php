@@ -36,7 +36,7 @@
                 <li class="per100">
                     <div class="unit-left"><em class="abe-red mrg_5 mlg_5"></em></div>
                     <div class="unit-mid">
-                        <div><input type="radio"  value="0"  name="random"  class="mrg_10"> 抽取指定试题
+                        <div><input type="radio"  value="0"  name="random" class="mrg_10"> 抽取指定试题
                             <span style="display: none" id="randomforcode" class="pdl_15">输入题号：
                                 <input type="text" style="width: 100px"  name="code"  value="<?php echo $search['seq']; ?>"  >
                                 <input type="text" style="display: none"  name="lockertype" id="filetype" >
@@ -78,8 +78,9 @@
     <div class="pop-sub abe-txtc" >
 
         <!--<input type="button" value="重新抽题" class="btn btn-blue mrg_10 " onclick="return _asr.confirm('重抽题目','请确认是否要重抽此题目?','', '<?php echo U("/Home/Templet/index?func=select_question&tid=".$exam_detail["templet_id"]."&Key=".$exam_detail["id"]."&pfuncid=".$pfuncid); ?>');" />-->
-        <input type="button" id="submit"  value="提交" class="btn btn-blue mrg_10 " onclick="return _asr.submit('<?php echo "$funcid"; ?>', '<?php echo "$funcid"; ?>-Search', '<?php echo U("/Home/Templet/index?func=question_save&id=$exam_detail[id]") ; ?>',''); " />
-        <input type="button"  value="取消" class="btn btn-org mrg_10 " onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('<?php echo ($funcid); ?>');" />
+        <input type="button"  id="fakesubmit"  style="display: " value="提交" class="btn btn-blue mrg_10 " onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('<?php echo ($funcid); ?>');" />
+        <input type="button"  id="submit"       style="display:none;" value="提交" class="btn btn-blue mrg_10 " onclick="return _asr.submit('<?php echo "$funcid"; ?>', '<?php echo "$funcid"; ?>-Search', '<?php echo U("/Home/Templet/index?func=question_save&id=$exam_detail[id]") ; ?>',''); " />
+        <input type="button"    value="取消" class="btn btn-org mrg_10 " onclick="$(this).parents('.prompt-pop').remove();_asr.closePopup('<?php echo ($funcid); ?>');" />
     </div>
 </div>
 
@@ -95,10 +96,14 @@
 
         if ($filetype1==0){
             $("#randomforcode").show();
+            $("#fakesubmit").hide();
+            $("#submit").show();
             $("#querstionrandom").hide();
         }
         if ($filetype1==1){
             $("#randomforcode").hide();
+            $("#fakesubmit").show();
+            $("#submit").hide();
             $("#querstionrandom").show();
         }
 

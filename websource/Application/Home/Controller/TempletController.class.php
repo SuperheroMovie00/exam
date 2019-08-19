@@ -177,9 +177,19 @@ class TempletController extends BasicController
             case "question_save":
                 $this->question_save($data);
                 break;
+            case "copy_templet":
+                $this->copy_templet($data);
+                break;
+
+            case "copy_templet_save":
+                $this->copy_templet_save($data);
+                break;
+
             default :
                 $this->ajax_refresh($data ['funcid']);
                 break;
+
+
 
         }
     }
@@ -2024,6 +2034,7 @@ class TempletController extends BasicController
                     $err_msg[] = $err_msg_sign;
                 }
             } else {
+
                 $cur_data = array();
                 $cur_data["exam_id"] = $exam_id;
                 $cur_data["exam_no"] = $exam_no;
@@ -2031,7 +2042,9 @@ class TempletController extends BasicController
                 $cur_data["templet_detail_id"] = $val["id"];
                 $cur_data["type"] = $val["type"];
                 $cur_data["subject"] = $val["subject"];
+                $cur_data["additional"] = $val["additional"];
                 $cur_data["seq"] = $val["seq"];
+                $cur_data["score"] = $val["score"];
                 $cur_data["sort"] = $val["sort"];
                 $cur_data["create_user"] = session(C("USER_AUTH_KEY"));
                 $cur_data["create_time"] = date('Y-m-d H:i:s.n');
@@ -2370,9 +2383,15 @@ class TempletController extends BasicController
              */
             if ($where["id"] == null) {
                 $question_info = $model_q->field(" count(*) as num ")->where($where)->where($category_codewhere)->order($order)->select();
-                $random = rand(1, $question_info[0]["num"]) - 1;
-                $question_info = $model_q->where($where)->where($category_codewhere)->limit($random . ",1")->order($order)->select();
-                $question_info = $question_info[0];
+                if($question_info[0]["num"]){
+                    $random = rand(1, $question_info[0]["num"]) - 1;
+                    $question_info = $model_q->where($where)->where($category_codewhere)->limit($random . ",1")->order($order)->select();
+                    $question_info = $question_info[0];
+                }else{
+                    $question_info=null;
+                    $err_msg = "没有此规则的题目";
+                }
+
             } else {
                 $question_info = $model_q->where($where)->where($category_codewhere)->order($order)->find();
             }
@@ -2384,7 +2403,8 @@ class TempletController extends BasicController
                     return false;
                 }
             }else{
-                $err_msg = "此题不符合该试题的抽题规则";
+                //date :19-8-14
+                //$err_msg = "此题不符合该试题的抽题规则";
             }
 
             $cur_data = array();
@@ -2400,7 +2420,17 @@ class TempletController extends BasicController
                 $cur_data["sort"] = $templet_detail_info["sort"];
                 $cur_data["type"] = $templet_detail_info["type"];
                 $cur_data["subject"] = $templet_detail_info["subject"];
-                $cur_data["seq"] = $templet_detail_info["seq"];
+
+                /**
+                 * date:19-8-14 增加，原因：套题题干编号(判断是否添加小题编号，以及类型为套题，否则则按照原来的规则)
+                 */
+
+                if($templet_detail_info["req_type"]==1 && $templet_detail_info["req_child_seq"]==1){
+                    $cur_data["seq"] = $templet_detail_info["seq"]-$templet_detail_info["seq"];
+                }else{
+                    $cur_data["seq"] = $templet_detail_info["seq"];
+                }
+
                 $cur_data["score"] = $templet_detail_info["score"];
                 $cur_data["create_user"] = session(C("USER_AUTH_KEY"));
                 $cur_data["create_time"] = date('Y-m-d H:i:s.n');
@@ -2451,14 +2481,20 @@ class TempletController extends BasicController
                         }
                     }
 
-                    $cur_seq = $templet_detail_info["seq"];
+                    $cur_seq = $templet_detail_info["seq"]-1;
                     $sort = $templet_detail_info["sort"];
                     $level = $templet_detail_info["level"] + 1;
+
                     foreach ($question_list as $k => $question_info) {
+                        $cur_data["question_description"]='';
+
+
                         if ($templet_detail_info["req_child_seq"] == 1) {
                             $cur_seq++;
                         }
-                        $cur_data["seq"] = $cur_seq;
+
+                            $cur_data["seq"] = $cur_seq;
+
                         $score = $score_avg;
                         if ($score_left > 0) {
                             $score++;
@@ -3177,4 +3213,232 @@ class TempletController extends BasicController
         $this->ajaxResult();
 
     }
+
+
+
+    private function copy_templet($data){
+
+        $id = I("request.id/d");
+        if (!$id) {
+            //读接入参数
+            $type = I("request.type");
+            $templet_no = I("request.templet_no");
+            $subject = I("request.subject");
+            $count = I("request.count/d", 0);
+            $score = I("request.score/d", 0);
+            $req_time = I("request.req_time/d", 0);
+            $req_content = I("request.req_content");
+            $remarks = I("request.remarks");
+            //赋初值
+            $search["type"] = $type ? $type : "0";  //第一个选项
+            $search["templet_no"] = $templet_no ? $templet_no : "";
+            $search["subject"] = $subject ? $subject : "";
+            $search["count"] = $count ? $count : "";
+            $search["score"] = $score ? $score : "";
+            $search["req_time"] = $req_time ? $req_time : "";
+            $search["req_content"] = $req_content ? $req_content : "";
+            $search["remarks"] = $remarks ? $remarks : "";
+        } else {
+            $search = M(templet)->find($id);
+            if (!$search) {
+                $this->ajaxResult("组卷模板数据不存在");
+            }
+            $data["id"] = $search["id"];
+
+        }
+        $search["subject"]="";
+        $search["id"]="";
+        $data["search"] = $search;
+        foreach ($data as $key => $val) {
+            $this->assign($key, $val);
+        }
+        $html = $this->fetch("Templet:copytemplet");
+        echo $html;
+
+    }
+
+
+    private function copy_templet_save($data){
+
+        $id = I("request.id/d");
+        //读取页面输入数据
+        $type = I("request.type");
+        $templet_no = I("request.templet_no");
+        $templet_no_old= I("request.templet_no_old");
+
+        $subject = I("request.subject");
+        $count = I("request.count/d", 0);
+        $score = I("request.score/d", 0);
+        $req_time = I("request.req_time/d", 0);
+        $req_content = I("request.req_content");
+        $remarks = I("request.remarks");
+
+
+
+
+
+        //非页面输入字段
+        $input = array();
+        //数据有效性校验，非空/数值负数，范围/日期与今日比较
+        //数据校验 - 必输项不能为空
+        if (!verify_value($type, "empty", "", "")) $this->ajaxError("类型 不能为空");
+        if (!verify_value($templet_no, "empty", "", "")) $this->ajaxError("编码 不能为空");
+        if (!verify_value($count, "nagitive", "", "")) $this->ajaxError("题量 不能为负数");
+        //if ($count < 100 || $count > 105) $this->ajaxError("校验样例 题量值在100-105之间");
+        if (!verify_value($score, "nagitive", "", "")) $this->ajaxError("总分 不能为负数");
+        //if ($score < 100 || $score > 105) $this->ajaxError("校验样例 总分值在100-105之间");
+        if (!verify_value($req_time, "nagitive", "", "")) $this->ajaxError("时间要求 不能为负数");
+        //if ($req_time < 100 || $req_time > 105) $this->ajaxError("校验样例 时间要求值在100-105之间");
+        // "卷面要求" 长度超200位，没有生成非空检测
+        // "备注" 长度超200位，没有生成非空检测
+        $model = M("templet");
+        //判断 templet_no 是否重复建立
+        $orig = $model->where("templet_no='$templet_no'" . ($id ? " and id!=$id" : ""))->find();
+        if ($orig) $this->ajaxError("编码 $templet_no 已存在");
+        //页面输入字段
+        $input["type"] = $type;
+        $input["templet_no"] = $templet_no;
+        $input["subject"] = $subject;
+        $input["count"] = $count;
+        $input["score"] = $score;
+        $input["req_time"] = $req_time;
+        $input["req_content"] = $req_content;
+        $input["remarks"] = $remarks;
+        $input["modify_user"] = session(C("USER_AUTH_KEY"));
+        $input["modify_time"] = date('Y-m-d H:i:s.n');
+        $model->startTrans();
+        $result = false;
+        //需要存入日志的字段
+        $needSave = array(
+            'type' => '类型',
+            'templet_no' => '编码',
+            'subject' => '标题',
+            'count' => '题量',
+            'score' => '总分',
+            'req_time' => '时间要求',
+        );
+        if (!$id) {
+            //新增建号操作
+            // date:2019-6-19 原因：使用教师自己输入的编码  $keycode = GenOrderNo("templet");
+            $keycode = $input["templet_no"];
+
+            $count = $model->where(array("templet_no" => $keycode))->count();
+            if ($count > 0) {
+                echo json_encode(array("msg" => message("%1 %2 已存在", "组卷模板", $keycode)));
+                die ();
+            }
+            $input["templet_no"] = $keycode;
+            $input["create_user"] = session(C("USER_AUTH_KEY"));
+            $input["create_time"] = date('Y-m-d H:i:s.n');
+            //新增数据 保存数据库
+            $result = $id = $model->add($input);
+            //建立操作日志
+            $result = $result && createLogOrder('templet', $id, '新增组卷模板', '', "*", 'templet_no');
+
+            //$templet_detail_model=M("templet_detail");
+            $templet_detil_list=M("templet_detail")->where("templet_no= '".$templet_no_old."'")->select();
+
+            $parent_arr=null;
+            $parent_id_arr=null;
+            foreach ($templet_detil_list as $key=> $templetone){
+                $templetone["templet_id"]=$id;
+                $templetone["templet_no"]=$templet_no;
+                $templetone["id"]='';
+
+                if($templetone["type"]=='7'){
+                    $resultone=$idd= M("templet_detail")->add($templetone);
+                    $parent_arr[$key]=$idd;
+
+                }else if($templetone["type"]=='0'){
+                    $resultone= M("templet_detail")->add($templetone);
+                    $parent_id_arr[$key]=$templetone["parent_id"];
+                }
+                else{
+                    $resultone= M("templet_detail")->add($templetone);
+                }
+                if(!$resultone){
+                    $result=null;
+                }
+            }
+            $parent_arr_new=null;
+            $num=0;
+            foreach ($parent_arr as $parent) {
+                if (!empty($parent)) {
+                    $parent_arr_new[$num] = $parent;
+                    $num++;
+                }
+            }
+            $parent_id_arr_new=null;
+            $numer=0;
+            foreach ($parent_id_arr as $parent_id) {
+                if (!empty($parent_id)) {
+                    $parent_id_arr_new[$numer] = $parent_id;
+                    $numer++;
+                }
+            }
+
+            $parent_id_arr_new= array_flip($parent_id_arr_new);
+            $parent_id_arr_new= array_flip($parent_id_arr_new);
+            $parent_id_arr_new = array_merge($parent_id_arr_new);
+            $templet_detil_o_list=M("templet_detail")->where("templet_no= '".$templet_no."' and type='0'")->select();
+
+            foreach ($parent_id_arr_new as $s=>$parent_id_c){
+            foreach ($templet_detil_o_list as $templet_detil_o){
+                  if($templet_detil_o["parent_id"]==$parent_id_c){
+                      $templet_detil_o["parent_id"]=$parent_arr_new[$s];
+                      M("templet_detail")->save($templet_detil_o);
+                  }
+              }
+            }
+
+
+
+        } else {
+            //id存在时判断数据库内数据是否存在
+           /* $orig = $model->where("id='%d'", array($id))->find();
+            if (empty($orig)) {
+                $this->ajaxError("组卷模板数据不存在");
+            }
+            if ($orig["status"] != "0") {
+                $this->ajaxError("组卷模板非编辑状态");
+            }
+            if ($templet_no != $orig["templet_no"]) {
+                M("templet_detail")->where("templet_id = $id")->save(array("templet_no" => $templet_no));
+            }
+
+
+            //按主键更新数据
+            $result = $model->where("id = $id")->save($input);
+            $isSaveLog = false;
+            foreach ($needSave as $key => $v) {
+                if ($orig[$key] != $input[$key]) {
+                    $isSaveLog = true;
+                    break;
+                }
+            }
+            if ($isSaveLog) {
+                //建立操作日志
+                $result = $result && createLogOrder('templet', $id, '变更组卷模板', $orig, '', '', 'templet_no', $needSave);
+            }*/
+        }
+        if ($result) {
+            $model->commit();
+        } else {
+            $model->rollback();
+            echo json_encode(array("msg" => message("组卷模板保存发生错误")));
+            die;
+        }
+        //完成后跳转
+        $this->ajaxReturn($data ['pfuncid'], $data ['funcid'], "refresh", "", "closepopup", 1);
+        //转到view页面
+        $this->ajaxReturn("", "", U("Templet/index?func=view&id=$id&pfuncid=" . $data ['pfuncid']), tabtitle('组卷模板', $input["templet_no"]));
+        die;
+
+
+
+    }
+
+
+
+
 }

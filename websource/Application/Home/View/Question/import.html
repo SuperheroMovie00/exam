@@ -106,6 +106,17 @@
 
 
         <li>
+            <span class="tit">
+            <em class="abe-red mrg_5"></em>导入错误日志
+            </span>
+
+            <div class="txt-box">
+                <a href="\log.docx">点击下载</a>
+            </div>
+        </li>
+
+
+        <li>
             <input type="checkbox"  name="value" value="1"  onclick="$('#<?php echo $funcid;?>_checkbox').click();" />
             <span class="tit">编码相同覆盖</span>
         </li>

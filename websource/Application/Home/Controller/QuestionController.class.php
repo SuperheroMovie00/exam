@@ -610,7 +610,7 @@ class QuestionController extends BasicController
         }else{
             if($row["unit"]==1){
                 //试题描述加框(当试题单元为 片段阅读的时候)
-                $row["description"]="[#k][/#]".$row["description"];
+                $row["description"]="[#K][/#]".$row["description"];
             }
         }
 
@@ -688,10 +688,18 @@ class QuestionController extends BasicController
                 }
             }
 
-                $boolen=true;
+            $boolen=true;
+            $f = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["answerA"];
+
+            if (!file_exists($f)) {
+                $boolen=false;
+            }
+
             /**
              * 首先拿选项中的内容去找有没有图片
              */
+            if($boolen){
+
             if ($row["answerA"]) {
                 //如果图像不为空（需要验证必须在上传目录中存在）
                 if (is_file($row["img"])) {
@@ -706,12 +714,12 @@ class QuestionController extends BasicController
                         $err_empty = $this->cattext($err_empty, "图片不存在");
 
                     } else {
-                        $boolen=false;
+
                         //旧文件地址
                         $oldfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["answerA"];
                         $newfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . $row["answerA"];
                         copy($oldfile, $newfile); //拷贝到新目录
-                        unlink($oldfile);//删除旧目录下的文件
+                        //unlink($oldfile);//删除旧目录下的文件
                         $nickname = uniqid();
                         $extendname = substr($row["answerA"], -4);
                         $newname = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . date("Y-m-d") . $nickname . $extendname;
@@ -736,12 +744,12 @@ class QuestionController extends BasicController
                         $err_empty = $this->cattext($err_empty, "图片不存在");
 
                     } else {
-                        $boolen=false;
+
                         //旧文件地址
                         $oldfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["answerB"];
                         $newfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . $row["answerB"];
                         copy($oldfile, $newfile); //拷贝到新目录
-                        unlink($oldfile);//删除旧目录下的文件
+                        //unlink($oldfile);//删除旧目录下的文件
                         $nickname = uniqid();
                         $extendname = substr($row["answerB"], -4);
                         $newname = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . date("Y-m-d") . $nickname . $extendname;
@@ -766,12 +774,12 @@ class QuestionController extends BasicController
                         $err_empty = $this->cattext($err_empty, "图片不存在");
 
                     } else {
-                        $boolen=false;
+
                         //旧文件地址
                         $oldfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["answerC"];
                         $newfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . $row["answerC"];
                         copy($oldfile, $newfile); //拷贝到新目录
-                        unlink($oldfile);//删除旧目录下的文件
+                        //unlink($oldfile);//删除旧目录下的文件
                         $nickname = uniqid();
                         $extendname = substr($row["answerC"], -4);
                         $newname = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . date("Y-m-d") . $nickname . $extendname;
@@ -796,12 +804,12 @@ class QuestionController extends BasicController
                         $err_empty = $this->cattext($err_empty, "图片不存在");
 
                     } else {
-                        $boolen=false;
+
                         //旧文件地址
                         $oldfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["answerD"];
                         $newfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . $row["answerD"];
                         copy($oldfile, $newfile); //拷贝到新目录
-                        unlink($oldfile);//删除旧目录下的文件
+                        //unlink($oldfile);//删除旧目录下的文件
                         $nickname = uniqid();
                         $extendname = substr($row["answerD"], -4);
                         $newname = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . date("Y-m-d") . $nickname . $extendname;
@@ -813,14 +821,14 @@ class QuestionController extends BasicController
 
             }
 
-            if($boolen===false){
                 $row["quiz"]=$Aimgurl.$Bimgurl.$Cimgurl.$Dimgurl;
             }
+
 
             /**
              * 判断选项是否是图片（如果是的话，将不进行下一步）
              */
-            if($boolen){
+            if($boolen===false){
 
             //判断选项有没有ABCD没有加上Question_trim
             if (substr($row["answerA"], 0, 1) != "A") {
@@ -897,7 +905,7 @@ class QuestionController extends BasicController
                     $oldfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . $showtime = date("Y-m-d") . "/" .$zipnamepath."/". $row["img"];
                     $newfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . $row["img"];
                     copy($oldfile, $newfile); //拷贝到新目录
-                    unlink($oldfile);//删除旧目录下的文件
+                    //unlink($oldfile);//删除旧目录下的文件
                     $nickname = uniqid();
                     $extendname = substr($row["img"], -4);
                     $newname = $_SERVER['DOCUMENT_ROOT'] . "/" . "Uploads" . "/" . "img" . "/" . date("Y-m-d") . $nickname . $extendname;
@@ -1117,9 +1125,17 @@ class QuestionController extends BasicController
         foreach ($ret as $o => $cc) {
             if ($trim == $cc["content"]) {
                 $threshold = 1;
+
             } else {
-                $threshold = $lcs->getSimilar($trim, $cc["content"]);
-//              $ccc = $lcs->getSimilar("材料一中说红柳是离太阳最近树是因为红柳A花和叶外形像太阳飞洒光芒凤羽版纷披碎叶穗样细密花B不畏困难如阳光般充满热情对着高原酷热和缺氧微笑C生长环境实际情况D孤舟签翁独钓寒江雪D","依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是依次填入下文划线处词语正确一项是");
+                if(strlen($trim)<220 && strlen($cc["content"])<220){
+                    $threshold=0.5;
+                    //$threshold = $lcs->getSimilar($trim, $cc["content"]);
+                    //$threshold = $lcs->getSimilar("灯迷又名文虎也称猜灯是我国特有一种雅俗共赏民间风俗浓郁文字联想游戏链面牛不出头打一下列生肖是#AhahajpgBhahajpgChahajpgDhah", "填入文中横线上诗句是A初闻涕泪满衣裳B感时花溅泪C玉容寂寞泪阑干D回看血泪相和流A");
+
+                }else{
+                    $threshold=0.5;
+                    //$threshold = $lcs->getSimilar(substr($trim,0,60),substr($cc["content"],0,60));
+                }
             }
 
             //判断相似度 大于阀值（则报错）
@@ -1130,6 +1146,8 @@ class QuestionController extends BasicController
                 return "第 $row_no 行与题库编码为：[" . $cc['code'] . "]";
             }
         }
+
+
 
         return "";
 
@@ -1236,13 +1254,13 @@ class QuestionController extends BasicController
                 $path = iconv("utf-8","gb2312",$_SERVER['DOCUMENT_ROOT'] . '/Uploads/' . $plan["img"]["savepath"] . $plan["img"]["savename"]);
                 $resource = zip_open($filename);
 
-                while ($dir_resource = zip_read($resource)) {
+                /*while ($dir_resource = zip_read($resource)) {
 
                     $file_name = $path.zip_entry_name($dir_resource);
                     if($file_name){
 
                     }
-                }
+                }*/
 
                 // date : 2019-6-25   第一次尝试
                 /*$filename = iconv("utf-8","gb2312",$_SERVER['DOCUMENT_ROOT'] . '/Uploads/' . $plan["img"]["savepath"] . $plan["img"]["savename"]);
@@ -1476,7 +1494,7 @@ class QuestionController extends BasicController
 
                 //暂时启用有问题就报错，进行修改, 以后改成报错记录文件，下载下来
                 // date  :2019-6-20  要显示所有的日志内容
-                if ($err) $this->ajaxError($err);
+                //if ($err) $this->ajaxError($err);
 
                 if (!$err) {
                     $import[] = $row;
@@ -1485,12 +1503,14 @@ class QuestionController extends BasicController
             $codearr[] = $row["seq"];
         }
 
-        $file  = 'log.txt';
+        $file  = 'log.docx';
+
 
         if ($errs) {
             //将报错信息全部记录在日志中
-            file_put_contents($file,  date("Y-m-d h:i:sa")."   ".$csvname ."\n". $errs,FILE_APPEND);
+            file_put_contents($file,  "\n\n".date("Y-m-d h:i:sa")."   ".$csvname ."\n". $errs,FILE_APPEND);
             $this->ajaxError($errs."已经记录日志文件");
+            header('Content-Disposition:attachment;filename="'.urlencode("C:\xampp\htdocs\project\exploitproject\学库\exploit1\websource\log.txt").'"');
         }
 
         /* =========================== */
@@ -1520,13 +1540,13 @@ class QuestionController extends BasicController
         if (!$similar_value || $similar_value < 0) {
             $this->ajaxError("相似度阀值没有设置 ");
         }
-        foreach ($question as $k => $row) {
+            foreach ($question as $k => $row) {
             $err = $this->question_similar($similar_value, $row,$trim , $lcs);
 
             $errs .= $err;
 
             //暂时启用有问题就报错，进行修改, 以后改成报错记录文件，下载下来
-            if ($err) $this->ajaxError($err . "相似度超阀值");
+            //if ($err) $this->ajaxError($err . "相似度超阀值");
 
             $question[$k][0]['trim'] = $trim;
         }

@@ -2027,7 +2027,7 @@ class ExamController extends BasicController
                     $y = $pdf->getY() + 5;
                 }
                 //选项
-                print_r($list);
+
                 $boolean=true;
                 if ($list['question_quiz']) {
                     $y+=3;
